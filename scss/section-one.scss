@@ -1,0 +1,142 @@
+// section scss
+.section-part.cell {
+    border-bottom: 1px solid #EBEEF1;
+    padding: 0 0 20px 0;
+}
+
+// breajing scss
+.breaking-one {
+    display: inline-block;
+    width: 20%;
+}
+.breaking-two {
+    display: inline-block;
+    width: 73%;
+}
+.breaking-three {
+    display: inline-block;
+    width: 5%;
+}
+.breaking.grid-x p {
+    color: #fff;
+    font-size: 18px;
+}
+.breaking.grid-x {
+    background-color: #000000;
+}
+.breaking-one {
+    text-transform: capitalize;
+    padding: 0 0 0 38px;
+}
+.breaking.grid-x {
+    background-color: #000000;
+    padding: 15px 0;
+    margin: 40px 0 40px 0;
+}
+
+// heading right-left padding
+.cell.large-8.heading-right {
+    padding: 0 0 0 19px;
+}
+.cell.large-4.heading-left.text-center {
+    padding: 0 19px 0 0;
+}
+
+// heading main scss
+.news {
+    display: inline-block;
+    width: 50%;
+    text-transform: capitalize;
+}
+.stories {
+    display: inline-block;
+    width: 50%;
+    text-transform: capitalize;
+}
+.heading-left {
+    border-bottom: 1px solid #EBEEF1;
+}
+.stories button {
+    width: 100%;
+    padding: 17px 0;
+    cursor: pointer;
+}
+.stories button {
+    width: 100%;
+    padding: 17px 0;
+    cursor: pointer;
+    background-color: #990000;
+    color: #fff;
+}
+// sponsored
+.bld h2 {
+    font-weight: 600;
+}
+.sponsores-left {
+    text-align: left;
+    width: 49%;
+    display: inline-block;
+}
+.sponsores-right {
+    text-align: right;
+    width: 50%;
+    display: inline-block;
+}
+.sponsores-right button {
+    color: #fff;
+    background-color: #000000;
+    padding: 9px 19px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.comn-p p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.sponsores-t {
+    padding: 0 0 10px 0;
+}
+.sponsored {
+    padding: 12px 0;
+    border-bottom: 1px solid #EBEEF1;
+}
+.sponsores-h {
+    padding: 10px 0 20px 0;
+}
+
+// heading-right
+.side-images {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 423px;
+    margin: 0 0 20px 0;
+}
+.side-categpry li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #000000;
+}
+.side-categpry a {
+    font-size: 14px;
+    color: #990000;
+    text-transform: capitalize;
+}
+.side-categpry li:first-child {
+    padding-left: 0;
+    color: #990000;
+}
+.side-categpry li:last-child {
+    border: none;
+}
+.cell.center-categpry {
+    padding: 40px 0;
+}
+.cell.center-categpry h2 {
+    font-weight: bold;
+    font-size: 35px;
+}
+.cell.bottom-categpry p {
+    font-size: 16px;
+}

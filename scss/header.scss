@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+// header css
+header {
+    display: block;
+    background-color: #000000;
+    padding: 10px 0;
+}
+.cell.large-6.search-bar {
+    padding: 0 0 0 205px;
+}
+.date li {
+    color: #fff;
+    display: inline-block;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.contribute {
+    display: inline-block;
+}
+.mail-part {
+    float: left;
+    border-bottom: 2px solid #fff;
+}
+.lable-part {
+    float: left;
+    margin: 11px 0 0 0;
+}
+.mail-section label {
+    color: #fff;
+    float: left;
+}
+.mail-section {
+    float:left;
+}
+.contribute {
+    float: left;
+    padding: 4px 0 0 15px;
+}
+.contribute p {
+    color: #fff;
+    text-transform: capitalize;
+    margin: 5px 0 0 0;
+}
+.mail-section input {
+    background: transparent;
+    border: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.lable-part p {
+    color: #fff;
+    font-size: 12px;
+}
+.date.cell.large-6 {
+    padding: 13px 0 0 0;
+}

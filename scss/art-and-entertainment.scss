@@ -1,0 +1,120 @@
+// first column
+
+.news-two {
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid #EBEEF1;
+    margin-bottom: 10px;
+}
+.sign-in-section input[type="text"] {
+    background: #EBEEF1;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+button.signupbtn {
+    text-align: center;
+    background: #990000;
+    width: 100%;
+    padding: 13px 0;
+    color: #fff;
+    cursor: pointer;
+}
+.main-column p {
+    text-transform: capitalize;
+}
+.column p {
+    font-size: 20px;
+}
+.all-column p {
+    color: #990000;
+}
+.main-column {
+    padding: 20px 0 12px 0;
+    border-bottom: 1px solid;
+}
+.art {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 286px;
+}
+.column {
+    display: inline-block;
+    width: 50%;
+}
+.all-column {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+.art-second {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 286px;
+}
+.art-third {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+// radio button scss
+.opinion-input {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+}
+.submit-btn button {
+    text-align: center;
+    background: #990000 !important;
+    width: 100%;
+    padding: 13px 0;
+    cursor: pointer;
+    border: none !important;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff !important;
+}
+.question h2 {
+    font-size: 20px;
+}
+.question {
+    padding: 20px 0 0 0;
+}
+.result a {
+    color: #990000;
+}
+.result {
+    text-align: right;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+// part-two
+.arts-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 286px;
+}
+.arts-living h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+   }
+.arts-bdr {
+    border-bottom: 1px solid #EBEEF1;   
+  
+}
+// paddinf main 3 row
+.cell.large-4.news-section {
+    padding-right: 20px;
+}
+.arts-entertainment.large-6 {
+    padding: 0 10px;
+}
+.living {
+    padding: 0 0 0 20px;
+}
+.arts-living {
+    padding: 10px 0;
+}

@@ -1,0 +1,71 @@
+.head-btm.cell button {
+    text-transform: capitalize;
+    background-color: #990000;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin: 12px 0 0 0;
+}
+.head img {
+    width: 50px;
+}
+.bdr-head.grid-x {
+    border-bottom: 1px solid #EBEEF1;
+    padding: 5px 0 10px 0;
+}
+.head {
+    padding: 5px 0 0 0;
+}
+.btm-header-content {
+    text-align: center;
+    border-bottom: 1px solid #EBEEF1;
+    padding: 0 0 19px 0;
+}
+.btm-header {
+    padding: 10px 0 20px 0;
+}
+.more-img img {
+    max-width: 118px;
+}
+.btm-header li {
+    display: inline-block;
+    padding: 0 15px;
+}
+.btm-header a:hover{color: red; border-bottom:1px solid red;}
+.btm-header a {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 0 0 20px 0;
+    -webkit-transition: 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95) all;
+    transition: 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95) all;
+}
+
+// toggle menu css
+.container {
+    display: none;
+    cursor: pointer;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
