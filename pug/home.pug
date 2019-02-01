@@ -1,12 +1,7 @@
 doctype html
 html.no-js(lang='en')
   head
-    meta(charset='utf-8')
-    meta(http-equiv='x-ua-compatible', content='ie=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Foundation for Sites
-    link(rel="stylesheet" href="../css/app.css")
-
+    include head
 
   
   body
@@ -14,11 +9,16 @@ html.no-js(lang='en')
     include head
     include section-one
     include section-two
-    include slider
+
+    include multimedia-Stories-slider
     include art-and-entertainment
+    include Print-Issue-slider
+    include announcement
+    include footer
+    include scripts
+  
+//- include art-and-entertainment
+//-     include slider
+//-     include announcement
 
-
-    script(src="../node_modules/jquery/dist/jquery.js")
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js')
-    script(src="../node_modules/foundation-sites/dist/js/foundation.js")
-    script(src="../js/app.js")
+   

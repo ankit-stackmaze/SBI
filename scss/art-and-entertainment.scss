@@ -78,7 +78,7 @@ button.signupbtn {
     font-size: 20px;
 }
 .question {
-    padding: 20px 0 0 0;
+    padding: 20px 0 20px 0;
 }
 .result a {
     color: #990000;
@@ -90,6 +90,15 @@ button.signupbtn {
 }
 
 // part-two
+.more-stories {
+    text-align: right;
+    padding: 30px 0 20px 0;
+}
+.more-stories a {
+    text-transform: capitalize;
+    color: #990000;
+    font-size: 12px;
+}
 .arts-img {
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,4 +126,84 @@ button.signupbtn {
 }
 .arts-living {
     padding: 10px 0;
+}
+
+// sports and feature
+.image-sport {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 287px;
+}
+.hh-sport h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.pp-sport p {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.hh-sport h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.hh-sport {
+    padding: 20px 0;
+}
+.more-head-p p {
+    font-size: 14px;
+}
+.more-head-h2 p {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.more-head-h2 {
+    padding: 10px 0;
+}
+.more-head-p p {
+    font-size: 14px;
+}
+.more-sports-two.text-right a {
+    font-size: 12px;
+    color: #990000;
+    text-transform: capitalize;
+}
+.more-head-p {
+    padding: 10px 0;
+}
+.sports-bdr {
+    border-bottom: 1px solid #EBEEF1;
+}
+.john.grid-x {
+    padding: 0 0 10px 0;
+}
+.more-sports-two.text-right {
+    padding: 25px 0 0 0;
+}
+.cell.largr-8.feature {
+    border-bottom: 1px solid #EBEEF1;
+    padding-bottom: 10px;
+    margin: 40px 0 33px 10px;
+}
+.cell.large-6.soprts-left {
+    padding: 0 10px;
+}
+.feature h2 {
+    font-weight: 500;
+}
+// food and drink
+.pp-sport {
+    padding: 20px 0;
+}
+.food-drink {
+    padding: 10px 0;
+    border-bottom: 1px solid #000000;
+    margin: 0 0 20px 0;
+}
+.cell.food-drink-one.large-6 {
+    padding: 0 10px;
+}
+.cell.food-drink-two.large-6 {
+    padding: 0 0 0 10px;
 }

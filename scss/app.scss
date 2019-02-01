@@ -6,7 +6,7 @@
 
 // Global styles
 @include foundation-global-styles;
-@include foundation-forms;
+//@include foundation-forms;
 @include foundation-typography;
 
 // Grids (choose one)
@@ -19,9 +19,9 @@
 @include foundation-button-group;
 @include foundation-close-button;
 @include foundation-label;
-@include foundation-progress-bar;
-@include foundation-slider;
-@include foundation-switch;
+//@include foundation-progress-bar;
+//@include foundation-slider;
+//@include foundation-switch;
 @include foundation-table;
 // Basic components
 @include foundation-badge;
@@ -69,5 +69,8 @@
 @import 'head';
 @import 'section-one';
 @import 'section-two';
-@import 'slider';
+@import 'multimedia-Stories-slider';
 @import 'art-and-entertainment';
+@import 'announcement';
+@import 'footer';
+@import 'Print-Issue-slider';
