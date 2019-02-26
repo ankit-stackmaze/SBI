@@ -1,0 +1,127 @@
+#subscriptions-newsletters {
+    .newsletter-title-img {
+        background-repeat: no-repeat;
+        height: 536px;
+        background-position: top;
+        background-size: cover;
+        position: relative;
+    }
+    .newsletter-title-h2 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .newsletter-title-h2 h2 { 
+        z-index: 1;
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .newsletter-title-h h2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .newsletter-title-p p {
+        font-size: 16px;
+    }
+    .newsletter-title-h {
+        padding: 50px 0;
+    }
+    .newsletter-title-p {
+        padding: 0 0 40px 0;
+    }
+    .sign-up-newslatter h2 {
+        font-size: 20px;
+        font-family: EloquentJFRegularPro ☞;
+        text-transform: capitalize;
+        display: inline-block;
+        line-height: 1.8;
+        font-weight: bold;
+    }
+    .sign-up-newslatter i.fas.fa-envelope {
+        font-size: 28px;
+        color: #990000;
+        vertical-align: bottom;
+        padding: 0 30px 0 0;
+    }
+    .daily-news-bg {
+        background-repeat: no-repeat;
+        height: 380px;
+        background-position: top;
+        background-size: cover;
+    }
+    .daily-news-feature p {
+        display: inline-block;
+    }
+    .daily-news-feature p {
+        display: inline-block;
+        font-size: 17px;
+        font-family: 'Montserrat', Regular;
+        padding: 0 0 0 10px;
+    }   
+    .daily-news-h2 h2 {
+        text-transform: capitalize;
+        color: #990000;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.8;
+    }
+    .daily-news-h2 p {
+        font-family: 'Montserrat', Regular;
+        font-size: 12px;
+    }
+    .daily-news-h2 {
+        padding: 20px 0;
+    }
+    .daily-news-feature form {
+        padding: 13px 0;
+    }
+    .daily-news-letter {
+        padding: 20px 0 0 48px;
+        border-top: 1px solid #dddddd;
+    }
+    .signup-subscription input[type="text"] {
+        padding: 2% 11% 2% 1%;
+        border: 1px solid #DDDDDD;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #000;
+        margin: 0 7px;
+    }
+    .signup-subscription input[type="email"] {
+        padding: 2% 11% 2% 1%;
+        border: 1px solid #DDDDDD;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #000;
+        margin: 0 4px;
+    }
+    .signup-subscription input[type="submit"] {
+        color: #fff;
+        font-weight: bold;
+        background: #990000;
+        border: 1px solid;
+        font-size: 14px;
+        padding: 14px 24px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .cell.signup-subscription {
+        padding: 25px 0;
+    }
+    .grid-x.news-letter-sub-bdr {
+        border: 1px solid #EBEEF1;
+    }
+    .daily-news-bdr {
+        border-bottom: 1px solid #dddddd;
+    }
+    .sign-up-newslatter {
+        padding: 10px 0;
+    }
+    .newsletter-order-first {
+        display: none;
+    }
+}

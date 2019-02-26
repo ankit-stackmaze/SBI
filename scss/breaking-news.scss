@@ -1,0 +1,165 @@
+#breaking-news {
+    // section scss
+    .section-part.cell {
+        border-bottom: 1px solid #EBEEF1;
+        padding: 0 0 20px 0;
+    }
+    // breaking scss
+    .breaking-one {
+        display: inline-block;
+        width: 20%;
+    }
+    .breaking-two {
+        display: inline-block;
+        width: 73%;
+    }
+    .breaking-three {
+        display: inline-block;
+        width: 5%;
+        padding: 0 0 0 20px;
+    }
+    .breaking.grid-x p {
+        color: #fff;
+        font-size: 18px;
+    }
+    .breaking.grid-x {
+        background-color: #000000;
+    }
+    .breaking-one {
+        padding: 0 0 0 38px;
+    }
+    .breaking-one p {
+        text-transform: capitalize;
+        font-family: EloquentJFRegularPro ☞;
+    }
+    .breaking.grid-x {
+        background-color: #000000;
+        padding: 15px 0;
+        margin: 40px 0 40px 0;
+    }
+    .breaking-three i.fas.fa-times {
+        color: #fff;
+        font-size: 18px;
+    }
+    .news p {
+        font-family: EloquentJFRegularPro ☞;
+        font-size: 18px;
+    }
+
+    // heading right-left padding
+    .cell.large-8.heading-right {
+        padding: 0 0 0 19px;
+    }
+    .cell.large-4.heading-left.text-center {
+        padding: 0 19px 0 0;
+    }
+
+    // heading main scss
+    .news {
+        display: inline-block;
+        width: 50%;
+        text-transform: capitalize;
+    }
+    .stories {
+        display: inline-block;
+        width: 50%;
+        text-transform: capitalize;
+    }
+    .heading-left {
+        border-bottom: 1px solid #EBEEF1;
+    }
+    .stories button {
+        width: 100%;
+        padding: 17px 0;
+        cursor: pointer;
+    }
+    .stories button {
+        width: 100%;
+        padding: 17px 0;
+        cursor: pointer;
+        background-color: #990000;
+        color: #fff;
+        font-family: EloquentJFRegularPro ☞;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+    // sponsored
+    .bld h2 {
+        font-weight: 600;
+    }
+    .sponsores-h.bld.text-left h2 {
+        font-size: 18px;
+    }
+    .sponsores-left {
+        text-align: left;
+        width: 49%;
+        display: inline-block;
+    }
+    .sponsores-right {
+        text-align: right;
+        width: 50%;
+        display: inline-block;
+    }
+    .sponsores-right button {
+        color: #fff;
+        background-color: #000000;
+        padding: 9px 19px;
+        font-size: 12px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .comn-p p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+    .sponsores-t {
+        padding: 0 0 10px 0;
+    }
+    .sponsored {
+        padding: 12px 0;
+        border-bottom: 1px solid #EBEEF1;
+    }
+    .sponsores-h {
+        padding: 10px 0 20px 0;
+    }
+
+    // heading-right
+    .side-images {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 423px;
+        margin: 0 0 20px 0;
+    }
+    .side-category li {
+        display: inline-block;
+        padding: 0 10px;
+        border-right: 1px solid #000000;
+    }
+    .side-category a {
+        font-size: 14px;
+        color: #990000;
+        text-transform: capitalize;
+    }
+    .side-category li:first-child {
+        padding-left: 0;
+        color: #990000;
+    }
+    .side-category li:last-child {
+        border: none;
+    }
+    .cell.center-category {
+        padding: 40px 0;
+    }
+    .cell.center-category h2 {
+        font-weight: bold;
+        font-size: 35px;
+    }
+    .cell.bottom-category p {
+        font-size: 16px;
+    }
+    .category-a a {
+        font-family: EloquentJFRegularPro ☞;
+    }
+}
+  

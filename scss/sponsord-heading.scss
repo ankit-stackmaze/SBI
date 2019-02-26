@@ -1,0 +1,194 @@
+//sponsored detail scss 
+#sponsored {
+    .sponsored-detail a {
+        color: #000000;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .sponsored-heading {
+        padding: 20px 0;
+    }
+    .sponsored-detail li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .sponsored-detail li:first-child {
+        padding-left: 0;
+        border-right: 1px solid #000000;
+    }
+    .sponsored-only button {
+        background: #000000;
+        color: #fff;
+        padding: 10px 75px;
+        cursor: pointer;
+    }
+    .sponsored-only {
+        display: inline-block;
+        width: 50%;
+    }
+    .sponsored-detail-li {
+        display: inline-block;
+        width: 50%;
+    }
+    .sponsored-heading h2 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .sponsored-subheading h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .sponsored-subheading {
+        padding: 0 0 20px 0;
+        font-family: roboto;
+    }
+    .sponsored-only.text-right {
+        overflow-x: hidden;
+    }
+    
+    // slider scss
+    /* THEME: VARS */
+    $slick-btn-bg-color: #fff;
+    $slick-btn-txt-color: #000;
+    
+    $slick-btn-txt-color__hover: #fff;
+    $slick-btn-bg-color__hover: #000;
+    
+    $slick-opacity-on-hover: 1;
+    
+    
+    /* SLICK: ARROWS */
+    .slick-custom-arrow {
+        position: absolute;
+        transform: translateY(-50%);
+        z-index:100;
+        padding:20px 16px;
+        background-color: $slick-btn-bg-color;
+        color:$slick-btn-txt-color;
+        
+    &:hover {
+        cursor:pointer;
+        background-color: $slick-btn-bg-color__hover;
+        color:$slick-btn-txt-color__hover;
+    }
+    
+    &-right {
+        right: 0;
+    top: 50%;
+    }
+    &-left {
+        left: 0;
+    top: 50%;
+    }
+    }
+    
+    /* SLICK: DOTS */
+    .slick-dots {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display:flex;
+        align-items:center; 
+        
+    .slick-active {
+        button {
+            border: 0;
+            height: 15px;
+        width: 15px;
+            background-color:#ffffff;
+        }
+    }
+    li {
+        display:flex;
+        align-items:center;   
+        margin:0 4px;
+        padding:0;
+        height: 20px;
+        width: 20px;
+            
+    button {
+        background-color:rgba(255,255,255,0);
+        border: 1px solid #fff;
+        border-radius:50%;
+        opacity: 1;
+        display: block;
+        height: 18px;
+        width: 18px;
+        outline: none;
+        line-height: 0px;
+        font-size: 0px;
+    
+        cursor: pointer;
+    }
+    }
+    }
+    .slider-heading img {
+        width: 100;
+    }
+    
+    // custome scss slider
+    .slick-custom-arrow.slick-custom-arrow-right.slick-arrow i.fas.fa-angle-right {
+        font-size: 28px;
+    }
+    .slick-custom-arrow.slick-custom-arrow-left.slick-arrow i.fa.fa-angle-left {
+        font-size: 28px;
+    }
+    .slick-custom-arrow:hover {
+        background-color: #3a303000;
+    }
+    .slick-custom-arrow {
+        background-color: #fefefe03;
+    }
+    
+    // AFTER SLIDER CONTENT SCSS    
+    .sponsored-heading-p p {
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+    }
+    .sponsored-heading-p h2 {
+        font-size: 14px;
+        line-height: 3.2;
+    }
+    .sponsored-head-h2 h2 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .sponsored-head-h2 {
+        padding: 20px 0;
+    }
+    .sponsored-head-pp p {
+        font-size: 18px;
+        font-family: 'Roboto', regular;
+    }
+    .sponsored-head-main h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .sponsored-head-p p {
+        font-size: 18px;
+        font-family: roboto;
+        line-height: 28px;
+    }
+    .cell.medium-6.large-6.sponsored-head-p {
+        padding-left: 0;
+    }
+    .sponsored-head-main {
+        padding: 10px 0;
+    }
+    .cell.medium-6.large-6.sponsored-head-add {
+        width: 40%;
+    }
+    .cell.medium-6.large-6.sponsored-head-p {
+        width: 60%;
+    }
+    .listing-header h2 {
+        font-size: 18px; 
+        font-weight: bold;
+    }
+    
+}

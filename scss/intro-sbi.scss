@@ -1,0 +1,29 @@
+#intro-sbi {
+    .display_advance, .display-t, .display_advance-one, .display_advance-second, .display_advance-third {
+        display: none;
+    }
+    .display_advance-cmn h2{
+        font-size: 12px;
+        padding: 0 0 7px 0;
+        text-transform: capitalize;
+    }
+    .click_advance-cmn h2 {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: capitalize;
+        display: inline-block;
+        padding: 0 0 0 10px;
+        width: 92%;
+    }    
+    .click_advance-one.click_advance-cmn i.fas.fa-angle-down {
+        display: inline-block;
+        width: 5%;
+        vertical-align: top;
+    }
+    .display_advance-cmn {
+        padding: 10px 0 25px 20px;
+    }
+    .click_advance-cmn {
+        padding: 20px 0;
+    }
+}

@@ -1,0 +1,94 @@
+// obituary single sacss start
+
+#obituary-second {   
+    .Premium-obituary-section {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 430px;
+    }
+    .premium-head h2 {
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .premium-date h2 {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 500;
+        padding: 0 0 10px 0;
+    }
+    .premium-date p {
+        font-size: 14px;
+        font-family: Roboto;
+    }
+    .premium-date li {
+        display: inline-block;
+        padding-right: 90px;
+    }
+    .premium-heading p {
+        font-size: 18px;
+        font-family: Roboto;
+        line-height: 1.5;
+    }
+    .premium-date {
+        padding: 40px 0;
+    }
+    .Premium-obituary {
+        padding: 20px 0;
+    }
+        
+    // for slider remove scss for previus slider copied
+    .slider-content-p p {
+        display: none;
+    }
+    .slider-content-h h2 {
+        display: none;
+    }
+    .slider-more-multimedia-Stories {
+        display: none;
+    }
+    .slider-bdr {
+        display: none;
+    }
+    .slider.responsive.slick-initialized.slick-slider.slick-dotted {
+        margin: 0;
+        padding: 0;
+    }
+   .slider-content-h {
+        overflow-y: hidden;
+        padding: 0;
+    }
+    .slider-main {
+        padding: 0;
+        padding-right: 25px;
+    }
+    .slider {
+        background: none;
+        padding: 40px 0 20px 0;
+    }
+
+    // li scss 
+    .date-icon.text-center {
+        padding: 10px 0;
+    }    
+    .date-icon.text-center li {
+        display: inline-block;
+        padding: 0 20px;
+    }
+    .date-icon i {
+        font-size: 20px;
+        color: #000;
+    }     
+
+    // background images
+    .obituary-img {
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 250px;
+        margin: 30px 0 50px 0;
+    }
+    
+    
+}

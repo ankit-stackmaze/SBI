@@ -1,0 +1,30 @@
+#briefs
+    .briefs-main
+        .briefs-h
+            .grid-x.grid-margin-x
+                .cell.briefs-title.large-6.medium-6.small-6
+                    h2 briefs 
+                .cell.briefs-title-two.large-6.medium-6.small-6.text-right
+                    h3 all briefs 
+                    
+        each item in [1,2,3,4,5]
+            .briefs-heading-t.grid-x.grid-padding-x
+                .briefs-heading-img.cell.large-5.medium-5.small-5
+                    img(src="../assets/image/ef.jpg", alt="")
+                .briefs-heading-th.cell.large-7.medium-7.small-7
+                    h2 Heading goes here lorem   
+                    h3 child category
+                    p by john doe   
+        
+  
+    .news-section.medium-4.briefs-section
+    .news-two.briefs-news
+        p get news in your inbox
+    .sign-in-section
+        input(type='text', placeholder='Email address', name='email', required='')
+        button.signupbtn(type='submit') Sign Up
+
+    .twitter-main    
+        .twitter-p
+            p twitter
+

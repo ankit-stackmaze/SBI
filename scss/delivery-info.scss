@@ -1,0 +1,209 @@
+#delivery-info {
+    .what-do-h h2 {
+        font-family: EloquentJFRegularPro ☞;
+        font-size: 20px;
+        text-transform: capitalize;
+        display: inline-block;
+    }
+    .what-do-h {
+        border-bottom: 1px solid #000;
+        padding-bottom: 10px;
+        padding: 20px 0 10px 0;
+    }
+    .delivery-info p {
+        font-family: Roboto, Regular;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .delivery-info p {
+        font-family: Roboto, Regular;
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 10px 0 30px 0;
+    }   
+    .total-number.cell h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .total-number.cell h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 20px 0;
+    }
+    .total-number.cell p {
+        font-size: 14px;
+        text-transform: capitalize;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 0 0 20px;
+    }
+    .print-color p {
+        font-size: 14px;
+    }     
+    .print-color {
+        width: 10px;
+        height: 20px;
+        background: #990000;
+        display: inline-block;
+    }
+    .gray-print {
+        background:#8FA3AD;
+    }
+    .blue-print {
+        background: #003D6B;
+    }
+    .delivery-total.grid-x {
+        box-shadow: inset 0 0 25px #f2f2f2, 0 0 20px rgb(254, 254, 254);
+        padding: 55px 0;
+        position: relative;
+    }
+    .price-b {
+        position: absolute;
+        top: 54px;
+        left: 420px;
+    }
+    .price-a.comn-price {
+        position: absolute;
+        top: 30px;
+        left: 260px;
+    }
+    .price-c.comn-price {
+        position: absolute;
+        top: 210px;
+        left: 140px;
+    }
+    .total-number li {
+        padding: 10px 0;
+    }
+    .comn-price p {
+        font-size: 18px;
+        font-weight: bold
+    }
+      //-  advertise section scss   
+    .contact-delivery h2 {
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+    .contact-delivery button {
+        color: #fff;
+        background: #990000;
+        padding: 17px 53px;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 4px; 
+        margin: 10px 0;
+    }
+    .contact-delivery {
+        background: #DDDDDD;
+        padding: 159px 0;
+        text-align: center;
+    }
+    .ad-section {
+        background: #990000;
+        position: relative;
+    }
+    .gray-line {
+        height: 11px;
+        width: 176px;
+        background: #dddddd;
+        border-radius: 10px;
+        margin: 0 0 24px 0;
+    }
+    .small-add {
+        width: 55px;
+        height: 46px;
+        background: #AEBDC4;
+        display: inline-block;
+        border-radius: 4px;
+    }
+    .red-line {
+        width: 55px;
+        height: 116px;
+        background: #990000;
+        display: inline-block;
+        border-radius: 4px;
+        margin: 30px 0 0 0;
+}
+    .add-img {
+        background: #fff;
+        width: 289px;
+        height: 347px;
+        margin: 80px 0 0 112px;
+        position: absolute;
+        box-shadow: inset 0 0 25px #f2f2f2, 0 0 20px #fefefe;
+        z-index: 2;
+        bottom: -27px
+    }
+    .small-line-inner {
+        height: 11px;
+        width: 99px;
+        background: #dddddd;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 0 0 6px 22px;
+    }
+    .small-line {
+        display: inline-block;
+        width: 130px;
+        margin: 0;
+    }
+    .add-gray {
+        padding: 30px 0 0 20px;
+    }
+    .small-line-inner.inner-padd {
+        margin: 7px 0 0px 22px !important;
+    }
+    .small-line-part {
+        padding: 0 0 16px 0;
+    }
+    .cross-angle {
+        width: 200px;
+        height: 130px;
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        transform: skewX(34deg);
+        bottom: -27px;
+        left: 67px;
+        box-shadow: inset 0 0 25px #f2f2f200, 0 0 20px #1a0404a6
+    }
+    .advertise.grid-x {
+        padding-top: 40px;
+    }
+    
+}
+// tabs scss modification
+.tabs-title>a:focus, .tabs-title>a[aria-selected='true'] {
+    background: #990000;
+    color: #1779ba;
+}
+#delivery-info .tabs-title>a[aria-selected='true'] {
+    background: #990000;
+    color: #fff;
+    font-size: 16px;
+}
+.tabs-title>a {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+div#panel2c p {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+div#panel3c {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+div#panel1c {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.tabs-panel {
+    padding: 2.5rem 1rem;
+}

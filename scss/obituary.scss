@@ -1,0 +1,140 @@
+#obituary {
+    // obituary scss start top part
+    .obituary h2 {
+        text-align: center;
+        font-family: EloquentJFRegularPro ☞;
+        color: #990000;
+        text-transform: uppercase;
+    }
+    .obituary {
+        padding: 10px 0;
+    }
+    .obituary-search input[type="text"] {
+        padding: 10px 10px;
+        border: 1px solid #EBEEF1;
+        border-radius: 4px;
+        font-family: Montserrat;
+        width: 85%;
+    }
+    .obituary-search {
+        position: relative;
+    }
+    .obituary-search button {
+        position: absolute;
+        top: 42px;
+        right: 85px;
+        cursor: pointer;
+    }
+    .obituary-search i.fa.fa-search {
+        font-size: 19px;
+    }   
+    .obituary-search p {
+        font-size: 18px;
+        font-weight: bold;
+        padding:0 0 10px 0;
+    }
+    .notice a {
+        color: #000;
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    .notice li {
+        display: inline-block;
+        padding: 0 10px;
+        transition: 1s all;
+    }
+    .notice ul {
+        padding-top: 50px;
+    }
+    .notice a:hover {
+        color: #990000;
+        transition: 1s all;
+        border-bottom: 1px solid #990000;     
+    }
+    .create-obituary button {
+        font-size: 14px;
+        color: #fff;
+        background: #990000;
+        font-weight: 500;
+        width: 100%;
+        padding: 18px 0;
+        border-radius: 4px;
+    }
+    .create-obituary {
+        padding-top: 20px;
+    }
+    .atoz li {
+        display: inline-block;
+        padding: 0 10px;       
+    }
+    .atoz a {
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }   
+    .atoz {
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #EBEEF1;
+    }
+
+    // multi-img part scss start
+    .john-doe-name h2 {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }    
+    .date-multi h3 {
+        font-size: 14px;
+        font-family: Roboto, regular;
+    }
+    .date-multi a {
+        font-family: EloquentJFRegularPro ☞;
+        font-size: 14px;
+        color: #990000;
+        text-transform: capitalize;
+    }
+    .date-multi li {
+        display: inline-block;
+        padding-right: 23px;
+    }
+    .multi-heading p {
+        font-size: 16px;
+    }
+    .multi-read a {
+        text-transform: capitalize;
+        color: #990000;
+    }
+    .date-multi {
+        padding: 5px 0;
+    }
+    .multi-read {
+        padding: 31px 0 0 0;
+    }
+    .multi-img {
+        padding: 30px 0;
+    }
+    .only-detail {
+        padding: 20px 0;
+    }
+    .load-more-end {
+        text-align: center;
+    }
+    .load-more-end button {
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        background: #990000;
+        padding: 18px 77px;
+        text-transform: capitalize;
+        border-radius: 4px;
+    }
+    .load-more-end {
+        text-align: center;
+        padding: 40px 0;
+    }
+}

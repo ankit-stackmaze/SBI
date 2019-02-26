@@ -1,0 +1,22 @@
+doctype html
+html.no-js(lang='en')
+  head
+    include head
+
+  
+  body
+    include header
+    include head
+    .grid-container.top-stories
+      .grid-x.grid-margin-x
+        .cell.large-4.medium-4.top-stories-main
+          include top-stories
+        .cell.large-8.medium-8.sponsored-main
+          include sponsord-heading
+          include related-post-page-2
+          include more-like-this
+          include john-doe
+          include comment
+    include scripts
+    include footer
+    

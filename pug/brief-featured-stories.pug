@@ -1,0 +1,118 @@
+#brief-two
+    .grid-container
+        .grid-x.brief-two
+            .cell
+                .grid-x.featured-Stories-main
+                    .cell.large-6.medium-6.featured-Stories
+                        h2 featured Stories
+                    .cell.large-6.medium-6.featured-img.text-right
+                        img(src="../assets/image/fwf.jpg", alt="")
+
+                .grid-x.featured-heading-content.grid-padding-x
+                    .cell.large-8.medium-8
+                        .featured-heading
+                            h2 Heading goes here lorem ipsum dolor sit amet, consectetur
+
+                        .featured-category
+                            ul
+                                li
+                                    h3 child category
+                                li
+                                    p by john doe
+                        .featured-heading-p
+                            p Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec 
+                            
+                        .featured-heading-bg(style="background-image:url(../assets/image/jh.jpg)")
+                    
+                    .cell.large-4.medium-4
+                        .brief-img-category
+                            .featured-bg-second(style="background-image:url(../assets/image/erg.jpg)")
+                            .featured-category
+                                ul
+                                    li
+                                        h3 child category
+                                    li
+                                        p by john doe
+
+                            .feature-small-heading
+                                h2 Heading goes here lorem ipsum dolor
+
+                        .brief-img-category-second
+                            .featured-category
+                                ul
+                                    li
+                                        h3 child category
+                                    li
+                                        p by john doe
+
+                            .feature-small-heading
+                                h2 Heading goes here lorem ipsum dolor sit amet, elit. Nam ac erat metus at. In vitae purus ligula. Donec suscipit eu sagittis amet nisl
+
+                .grid-x.featured-Stories-main.grid-margin-x
+                    .cell.large-6.medium-6.featured-center-btm
+                        h2 More Child Category Stories
+
+                .grid-x.more-child-category.grid-padding-x
+                    .cell.large-4.medium-4
+                        .more-child-img(style="background-image:url(../assets/image/hdf.jpg)")
+                        .featured-category
+                            ul
+                                li
+                                    h3 child category
+                                li
+                                    p by john doe
+                        .feature-heading
+                            h2 Heading goes here lorem ipsum dolor sit amet elit. Nam ac erat metus. Etiam
+                           
+                        .brife-feature-child
+                            .grid-x.more-child-clm
+                                .more-child-clm-img.cell.large-6.medium-6.small-6(style="background-image:url(../assets/image/sd.jpg)")
+                                .more-child-head.cell.large-6.medium-6.small-6
+                                    h2 Heading goes here lorem   
+                                    h3 child category
+                                    p by john doe  
+
+                        .more-child-head-second.cell.large-12.medium-12
+                            h2 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpa  
+                            .featured-category
+                                    ul
+                                        li
+                                            h3 child category
+                                        li
+                                            p by john doe
+                        
+                        .brife-feature-child
+                            .grid-x.more-child-clm
+                                .more-child-clm-img.cell.large-6.medium-6.small-6(style="background-image:url(../assets/image/sd.jpg)")
+                                .more-child-head.cell.large-6.medium-6.small-6
+                                    h2 Heading goes here lorem   
+                                    h3 child category
+                                    p by john doe  
+
+
+                    each item in [1,2]
+                        .cell.large-4.medium-4
+                            .more-child-img(style="background-image:url(../assets/image/hdf.jpg)")
+                            .featured-category
+                                ul
+                                    li
+                                        h3 child category
+                                    li
+                                        p by john doe
+                            .feature-heading
+                                h2 Heading goes here lorem ipsum dolor sit amet elit. Nam ac erat metus. Etiam
+
+                            each item in [1,2,3]
+                                .brife-feature-child
+                                    .grid-x.more-child-clm
+                                        .more-child-clm-img.cell.large-6.medium-6.small-6(style="background-image:url(../assets/image/sd.jpg)")
+                                        .more-child-head.cell.large-6.medium-6.small-6
+                                            h2 Heading goes here lorem   
+                                            h3 child category
+                                            p by john doe   
+                        
+                        
+                .grix-x
+                    .cell.more-category-stories.text-center
+                        button more category stories
+

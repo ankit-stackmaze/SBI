@@ -1,0 +1,115 @@
+#advance-search {
+    .advance-search {
+        background: #F7F7F7;
+        padding: 0 34px;
+    }
+    .advance-search-key input[type="text"] {
+        width: 82%;
+        padding: 14px 20px;
+        border: none;
+    }
+    .advance-search-label select {
+        padding: 13px 20px;
+        border: none;
+    }
+    .advance-input form {
+        display: inline-block;
+    }
+    .advance-input form {
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: capitalize;
+        padding: 20px 0;
+    }
+    .advance-input h1 {
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    .advance-search-label.large-6 {
+        padding: 28px 0 0 0;
+    }
+    .advance-search-inner {
+        padding: 30px 0 20px 0;
+    }
+    .advance-search h2 {
+        font-size: 14px;
+        text-transform: capitalize;
+        padding: 0 0 10px 0;
+        font-weight: bold;
+    }
+    .advance-input {
+        padding: 10px 0 0 0;
+    }
+    .advance-input input[type="date"] {
+        border: none;
+        padding: 10px 30px;
+    }
+    form.advance-search-label-padd {
+        padding: 0 50px 0 0;
+    }
+    .open-search input[type="text"] {
+        color: #fff;
+        text-align: center;
+        background: #990000;
+        border: none;
+        padding: 17px 20px;
+        border-radius: 4px;
+    }
+    .open-search {
+        position: relative;
+    }
+    .open-search i.fa.fa-search {
+        position: absolute;
+        top: 39px;
+        left: 60px;
+        color: #fff;
+    }
+    .open-search ::placeholder {
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    // 
+    .search-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 160px;
+    }
+    .search-img-second {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 90px;
+    }
+    .search-category li {
+        display: inline-block;
+        padding-right: 20px;
+    }
+    .search-category h3 {
+        font-size: 14px;
+        font-family: EloquentJFRegularPro ☞;
+        text-transform: capitalize;
+        color: #990000;
+    }
+    .search-category h4 {
+        font-size: 14px;
+        font-family: Roboto;
+        text-transform: uppercase;
+    } 
+    .search-heading-h2 h2 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .search-heading-h2 {
+        padding: 10px 0;
+    }  
+    .grid-x.grid-margin-x.search-repeat {
+        padding: 21px 0;
+    }
+    form.open-search {
+        width: 100%;
+    }
+}
