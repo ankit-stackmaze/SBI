@@ -110,7 +110,8 @@ $(document).ready(function(){
     icon = $(this).find("i");
     icon.toggleClass("fas fa-angle-up fas fa-angle-down")
   })
-// CHARTS 
+
+// js CHARTS about us page
   if ($('#myChart').length){
     var ctx = document.getElementById("myChart").getContext('2d');
     var myChart = new Chart(ctx, {
@@ -133,3 +134,145 @@ $(document).ready(function(){
       }
     });
   }
+
+// bar chart advertise page Household income
+if ($('#myBarChart').length){
+  var ctx = document.getElementById("myBarChart").getContext('2d');
+  var myBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["1", "2", "3", "4", "5", "6", "7"],
+      datasets: [{
+        backgroundColor: "#990000",
+        data: [90,10,30,50,80,60,75]
+      }]
+    },
+    options: {
+      responsive: true,
+      barValueSpacing: 15,
+      scales: {
+        xAxes: [{
+            stacked: true
+        }],
+        yAxes: [{
+            stacked: true
+        }]
+    }
+    }
+  });
+}
+
+
+// pie chart advertise page Gender percentage
+if ($('#myPieChart').length){
+  var ctx = document.getElementById("myPieChart").getContext('2d');
+  var myPieChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ["dD 1", "dD 2"],
+      datasets: [{
+        backgroundColor: [
+          '#990000',
+          '#DDDDDD'
+        ],
+        data: [90,10]
+      }]
+    },
+    options: {
+      responsive: true,
+      barValueSpacing: 15,
+      scales: {
+        xAxes: [{
+            stacked: true
+        }],
+        yAxes: [{
+            stacked: true
+        }]
+    }
+    }
+  });
+}
+// bar chart advertise page second chart Age breakdown
+if ($('#myBarChart-t').length){
+  var ctx = document.getElementById("myBarChart-t").getContext('2d');
+  var myBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["1", "2", "3", "4", "5", "6", "7"],
+      datasets: [{
+        backgroundColor: "#990000",
+        data: [90,60,30,50,80,60,75]
+      }]
+    },
+    options: {
+      responsive: true,
+      barValueSpacing: 15,
+      scales: {
+        xAxes: [{
+            stacked: true
+        }],
+        yAxes: [{
+            stacked: true
+        }]
+    }
+    }
+  });
+}
+
+// pie chart advertise page second chart loyalty
+if ($('#myPieChart-t').length){
+  var ctx = document.getElementById("myPieChart-t").getContext('2d');
+  var myPieChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ["dD 1", "dD 2"],
+      datasets: [{
+        backgroundColor: [
+          '#990000',
+          '#DDDDDD'
+        ],
+        data: [90,10]
+      }]
+    },
+    options: {
+      responsive: true,
+      barValueSpacing: 15,
+      scales: {
+        xAxes: [{
+            stacked: true
+        }],
+        yAxes: [{
+            stacked: true
+        }]
+    }
+    }
+  });
+}
+
+// bar chart advertise page demographics
+
+if ($('#myBarChart-tt').length){
+  var ctx = document.getElementById("myBarChart-tt").getContext('2d');
+  var myBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
+      datasets: [{
+        backgroundColor: "#990000",
+        data: [90,60,30,50,80,60,75,60,30,50,80,60,75,50]
+      }]
+    },
+    options: {
+      responsive: true,
+      barValueSpacing: 15,
+      scales: {
+        xAxes: [{
+            stacked: true
+        }],
+        yAxes: [{
+            stacked: true
+        }]
+    }
+    }
+  });
+}

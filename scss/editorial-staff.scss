@@ -38,6 +38,7 @@
     }
     .more-staff-btn {
         text-align: center;
+        padding: 20px 0;
     }
 }
     // reveal button scss
@@ -84,6 +85,9 @@
     .edit-icon-p p {
         font-size: 12px;
         color: #990000;
+    }
+    .reveal {
+        width: 525px;
     }
     
 }

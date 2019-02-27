@@ -1,0 +1,25 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+  
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+                        
+
+        .grid-container
+            .grid-x
+                .cell.large-1
+                .cell.large-10
+                    include advertise-online
+                    include metrics-charts
+                .cell.large-1
+           
+                
+
+        include scripts

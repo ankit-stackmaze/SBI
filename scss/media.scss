@@ -654,6 +654,11 @@ premier-head h2 {
             left: 47px;
         }
     }
+    #editorial-staff {
+        .editorial-img {
+            height: 230px;
+        }
+    }
     
 }
 
@@ -1398,11 +1403,12 @@ premier-head h2 {
         }
         .add-img {
             width: 188px;
-            margin: 80px 0 0 112px;
+            margin: 0 auto;
         }
-       .cross-angle {
-            width: 159px;
+        .cross-angle {
+            width: 180px;
             height: 130px;
+            left: 172px;
         }
         .red-line {
             width: 45px;
@@ -1444,6 +1450,16 @@ premier-head h2 {
         height: 280px;
         min-height: inherit;
     }
-
-     
 }   
+
+// for iphone 6/7/8 media scss
+@media screen and (max-width: 25.875em){
+    #delivery-info {
+        .cross-angle {
+            width: 180px;
+            height: 130px;
+            left: 59px;
+        }
+    } 
+}
+    
