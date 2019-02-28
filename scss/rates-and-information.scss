@@ -1,0 +1,122 @@
+// rates and information page scss
+#rates-and-information {
+    .rates-padding{
+        padding: 50px 0 0 0;
+    }
+
+    .demographic-part h2{
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
+        line-height: 1.4;
+    }
+    .demographic-part a {
+        font-size: 14px;
+        color: $red;
+        border-bottom: 1px solid $red; 
+        font-weight: bold;
+        text-transform: capitalize;
+        line-height: 2;
+    }
+    .demographic-padding {
+        padding: 0 0 60px 0;
+    }
+    .print-advice p {
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: bold;
+        line-height: 3;
+    }
+    .print-time p {
+        font-size: 14px;
+        text-transform: capitalize;
+        line-height: 3;
+    }
+    .print-deadlines li {
+       list-style-type: none;
+    }
+    .print-deadlines h2 {
+        font-size: 18px;
+        font-family: Roboto;
+        line-height: 1.4;
+    }
+    .print-deadlines {
+        padding: 28px 0 100px 0;
+        
+    }
+    .print-advice {
+        padding-left: 3.9375rem;
+    }
+    .print-time {
+        padding-left: 3.9375rem;
+    }
+    .print-advice-main {
+        border: 1px solid #EBEEF1;
+    }
+    .print-deadlines-h {
+        padding: 0 30px 0 0;
+    }
+    .request input[type="text"] {
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        width: 372px;
+        text-transform: capitalize;
+        padding: 16px 10px;
+        margin: 20px 18px 0 0;
+    }
+
+    .request [placeholder="name"],
+     [placeholder="email"], 
+     [placeholder="orgination"] {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+    .media-kit input[type="text"] {
+        max-width: 391px;
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        padding: 16px 15px;
+        margin: 8px 50px;
+    }
+    .request-information button {
+        background: #900;
+        color: #fff;
+        text-transform: capitalize;
+        cursor: pointer;
+        font-size: 14px;
+        width: 370px;
+        padding: 14px 0;
+        border-radius: 4px;
+        font-weight: 500;
+        margin: 20px 18px 0 0;
+    }
+    .request-information select {
+        width: 370px;
+        font-size: 14px;
+        background: #DDDDDD;
+        padding: 14px 10px;
+        border-radius: 4px;
+        margin: 20px 18px 0 0;
+    }
+    .request h2 {
+            display: inline-block;
+            font-size: 20px;
+            font-family: EloquentJFRegularPro ☞;
+            padding: 0 0 0 10px;
+    }
+    .request i.fas.fa-retweet {
+        font-size: 20px;
+        color: #990000;
+    }
+    .request {
+        text-align: center;
+        border: 1px solid #DDDDDE;
+        padding: 40px 0;
+        border-radius: 4px; 
+    }
+    .request form {
+        padding: 30px 0;
+    }
+}

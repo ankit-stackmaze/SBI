@@ -1,7 +1,15 @@
 $black:#000;
+$red:#990000;
 .heading {
     font-size: 1.25em;
     font-weight: 400;
     font-family: EloquentJFRegularPro ☞;
     margin-bottom: 20px;
+}
+.rates h2 {
+    font-family: EloquentJFRegularPro ☞;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #000;
+    padding: 0 0 15px 0; 
 }

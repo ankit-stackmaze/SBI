@@ -550,9 +550,12 @@ premier-head h2 {
         .reveal {
             width: 540px;
         }
-    }
-    
-    
+        #advertise-online {
+            .new-red p {
+                margin: 0 0 6px 11px;
+            }
+        }  
+    }    
 }
 
 
@@ -659,6 +662,7 @@ premier-head h2 {
             height: 230px;
         }
     }
+    
     
 }
 
@@ -1450,10 +1454,58 @@ premier-head h2 {
         height: 280px;
         min-height: inherit;
     }
+
+    // advertise page media scss
+    #advertise-online {
+        .advertising.common {
+            padding: 47px 0 20px 0;
+            text-align: center;
+        }
+    }
+    #rates-and-information {
+        .demographic-part h2 {
+            display: inline-block;
+            padding: 0 10px 0 0;
+            width: 140px;
+        }
+        .print-advice {
+            padding-left: 0.9375rem;
+        }
+        .print-time {
+            padding-left: 0.9375rem;
+        }
+        .print-deadlines-h {
+            padding: 0 0 15px 0;
+        }
+        .request input[type="text"] {
+            margin: 20px 15px 0;
+            width: 300px;
+        }
+        .request-information select {
+            width: 300px;
+            margin: 20px 0 0 0;
+        }
+        .request-information button {
+            width: 300px;
+            font-weight: 500;
+            margin: 20px 0 0 0;
+        }
+    }
+    #matrics-charts {
+        .media-kit input[type="text"] {
+            max-width: 300px;
+            margin: 8px 0;
+        }
+        .media-download a {
+            padding: 15px 90px;
+        }
+    }
+        
+   
 }   
 
 // for iphone 6/7/8 media scss
-@media screen and (max-width: 25.875em){
+@media screen and (max-width: 25.875em) {
     #delivery-info {
         .cross-angle {
             width: 180px;
@@ -1461,5 +1513,12 @@ premier-head h2 {
             left: 59px;
         }
     } 
-}
+    #matrics-charts {
+        .media-download i.fas.fa-download {
+            color: #fff;
+            position: absolute;
+            left: 110px;
+        }
+    }
+}    
     

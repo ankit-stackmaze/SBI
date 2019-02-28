@@ -27,10 +27,16 @@
             canvas#myBarChart-tt
             h2 
                 span demographics 
-            
-        .media-kit
-            h2 Download Complete Media Kit
+        .media-kit-border
+            .media-kit
+                .media-title
+                    i.fas.fa-cloud-download-alt
+                    h2 Download Complete Media Kit
+                form
+                    input(type="text", name="name", placeholder="name")
+                    input(type="text", name="email", placeholder="email")
+                    input(type="text", name="name", placeholder="orgination")
 
-
-
-    
+                .media-download
+                    i.fas.fa-download
+                    a(href='', download='')  download now

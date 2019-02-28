@@ -10,13 +10,62 @@
     .household {
         padding-top: 100px;
     }
-    .media-kit h2 {
+     h2 {
         font-family: EloquentJFRegularPro ☞;
         font-size: 20px;
-        text-transform: uppercase;
+        text-transform: capitalize;
+        display: inline-block;
+        margin: 0 0 0 20px;
+    }
+    .media-kit i.fas.fa-cloud-download-alt {
+        display: inline-block;
+        font-size: 28px;
+        color: $red;
     }
     .media-kit {
-        text-align: center;
         margin: 0 auto;
+        padding: 50px 0;
+    }  
+    .media-download i.fas.fa-download {
+        color: #fff;
+        position: absolute;
+        left: 200px;
     }
+    .media-download {
+        padding: 48px 0 0 0;        
+        position: relative;
+    }
+    .media-kit input[placeholder="name"],
+     [placeholder="email"], 
+     [placeholder="orgination"] {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+    .media-kit input[type="text"] {
+        max-width: 391px;
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        padding: 16px 15px;
+        margin: 8px 50px;
+    }
+    .media-download a {
+        max-width: 391px;
+        background-color: #900;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 15px 134px;
+        border-radius: 4px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .media-kit-border {
+        margin: 50px 0 50px 0;
+        border: 1px solid #EBEEF1;
+        width: 100%;
+    }
+    .media-title {
+        padding: 0 0 35px 0;
+    }
+    
 }
