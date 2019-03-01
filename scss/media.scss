@@ -555,7 +555,23 @@ premier-head h2 {
                 margin: 0 0 6px 11px;
             }
         }  
-    }    
+    } 
+    // contact-us page media scss
+    #contact-us {
+        .send-input input#fname, #contact-us input#lname {
+            padding: 10px 10px;
+            margin: 0 0 25px 0;
+            width: 272px;
+        }
+         
+        input#lname {
+            padding: 15px 10px;
+            width: 272px;
+        }
+        .event-icon button {
+            font-size: 13px;
+        }    
+             
 }
 
 
@@ -660,6 +676,22 @@ premier-head h2 {
     #editorial-staff {
         .editorial-img {
             height: 230px;
+        }
+    }
+    // contact-us  page ipad media scss
+    #contact-us {
+        .cell.large-6.medium-6 {
+            width: 100%;
+            padding: 10px 0;
+        }   
+        .send-email.grid-x {
+            border: none;
+        }
+        .help-checkbox.help-select {
+            padding: 5px 0 20px 0;
+        }
+        .news-button button {
+            width: 252px;
         }
     }
     
@@ -1500,25 +1532,60 @@ premier-head h2 {
             padding: 15px 90px;
         }
     }
-        
-   
-}   
-
-// for iphone 6/7/8 media scss
-@media screen and (max-width: 25.875em) {
-    #delivery-info {
-        .cross-angle {
-            width: 180px;
-            height: 130px;
-            left: 59px;
+    // contact us page media scss
+    #contact-us {
+        .news-button {
+            margin: 20px 0;
+            text-align: center;
+            width: 100%;
         }
-    } 
-    #matrics-charts {
-        .media-download i.fas.fa-download {
-            color: #fff;
-            position: absolute;
-            left: 110px;
+        .visit-address {
+            text-align: center;
+        }
+        .news-button button {
+            width: 100%;
+        }
+        .send-input-padd {
+            padding: 0;
+        }
+        .news-tip select {
+            max-width: inherit;
+            width: 100%;
+        }
+        .help label {
+            padding: 0 ;
+        }
+        .send-input input#fname{
+            width: 100%;
+        }
+        .send-input input#lname {
+            padding: 15px 10px;
+            width: 100%;
+        }
+        .event-icon {
+            padding: 0;
+        }
+        .cell.large-3.medium-3 {
+            padding: 0 0 50px 0;
+       }
+    }       
+
+}
+    // for iphone 6/7/8 media scss
+    @media screen and (max-width: 25.875em) {
+        #delivery-info {
+            .cross-angle {
+                width: 180px;
+                height: 130px;
+                left: 59px;
+            }
+        } 
+        #matrics-charts {
+            .media-download i.fas.fa-download {
+                color: #fff;
+                position: absolute;
+                left: 110px;
+            }
         }
     }
-}    
-    
+}

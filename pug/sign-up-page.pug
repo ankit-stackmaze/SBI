@@ -1,0 +1,81 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+
+  
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+        //- contact us page html code
+        #contact-us
+            .grid-container
+                .grid-x
+                    .cell.text-center
+                        .contact-us-h
+                            h2 sign up
+
+        .grid-container
+            .grid-x
+                .cell.large-2
+
+                .cell.large-8.signup-center
+                    #sign-up
+                        .sign-up
+                            .grid-container
+                                .grid-x
+                                    .cell.large-6
+                                        .sign-up-why
+                                            h2 Why sign up?
+                                        .grid-x
+                                            .cell.large-2.symbol-detail
+                                                .circle-round
+                                                    a.btn.round-bar(href='#')
+                                                        i.far.fa-heart
+                                                        
+                                            .cell.large-10.symbol-detail-h
+                                                h2 Save / Favourite Stories
+
+                                        .grid-x
+                                            .cell.large-2.symbol-detail
+                                                .circle-round
+                                                    a.btn.round-bar(href='#')
+                                                        i.fas.fa-envelope-square                                           
+                                                    
+                                            .cell.large-10.symbol-detail-h
+                                                h2 Manage Subscriptions
+                                        .grid-x
+                                            .cell.large-2.symbol-detail
+                                                .circle-round
+                                                    a.btn.round-bar(href='#')
+                                                        i.fas.fa-sliders-h                                            
+                                                    
+                                            .cell.large-10.symbol-detail-h
+                                                h2 Set Preferences
+
+                                        .grid-x
+                                            .cell.large-2.symbol-detail
+                                                .circle-round
+                                                    a.btn.round-bar(href='#')
+                                                        i.far.fa-comment-dots
+                                                    
+                                            .cell.large-10.symbol-detail-h
+                                                h2 Comment on Stories
+
+                                    .cell.large-6.signup-section
+                                        h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat
+                                        form
+                                            input(type='text', name='name', placeholder='name')
+                                            input(type='text', name='email', placeholder='email')
+                                            input(type='password', name='pwd', placeholder='password')
+                                        
+                                            button.signupbtn(type='submit') Sign Up
+                .cell.large-2
+      
+        include scripts
+        include footer
+

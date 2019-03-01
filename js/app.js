@@ -4,7 +4,7 @@ $('.responsive').slick({
 	prevArrow: $('.prev'),
 	nextArrow: $('.next'),
   infinite: true,
-  autoplay: true,
+  autoplay: false,
   arrows: false,
   speed: 300,
   slidesToShow: 3,
@@ -276,3 +276,19 @@ if ($('#myBarChart-tt').length){
     }
   });
 }
+
+$(document).foundation();
+Foundation.Abide.defaults.validators['checkbox_limit'] =
+      function($el,required,parent) {
+        // parameter 1 is jQuery selector
+              var group = parent.closest('.checkbox-group');
+              var min = group.attr('data-abide-validator-min');
+              var checked = group.find(':checked').length;
+              if (checked >= min) {                
+                group.find('label').removeClass('is-invalid-label');
+                 return true;
+              } else {                  
+                return false;
+              }
+      };
+
