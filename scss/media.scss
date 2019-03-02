@@ -571,7 +571,15 @@ premier-head h2 {
         .event-icon button {
             font-size: 13px;
         }    
-             
+    // edit profile page media scss
+    #edit-profile {
+        .personal-info {
+            padding: 50px 20px;
+        }
+        .change-cover-two {
+            left: 14%;
+        }
+    }
 }
 
 
@@ -694,7 +702,21 @@ premier-head h2 {
             width: 252px;
         }
     }
-    
+    // sign up page media scss for ipad 
+    #sign-up {
+        .sign-up {
+            padding: 50px 0;
+            border: none;
+        }
+    }
+    // EDIT-PROFILE PAGE IPAD MEDIA SCSS
+    #edit-profile {
+        .change-cover-two {
+            top: 36%;
+            left: 14%;
+            position: absolute;
+        }
+    } 
     
 }
 
@@ -880,6 +902,7 @@ premier-head h2 {
 
         }
     }
+    // related page media scss
     #related {
         .related-h {
             display: none;
@@ -1568,8 +1591,46 @@ premier-head h2 {
         .cell.large-3.medium-3 {
             padding: 0 0 50px 0;
        }
-    }       
-
+    }
+    //signup page mobile media scss
+    #sign-up {
+        .sign-up {
+            padding: 20px 0px;
+            border: none;
+        }
+        .signup-section {
+            padding: 10px 0 0 0;
+        }
+    }
+    // edit profile page scss
+    #edit-profile {
+        .personal-info h2 {
+            display: inline-block;
+            padding: 0 20px 10px 0;
+        }
+        .personal-info p {
+            display: inline-block;
+            padding: 0 20px 10px 0;
+        }
+        .info-h {
+            padding: 0 0 10px .625rem;
+        }
+        .change-img {
+            padding: 0;
+            transform: translate(-50%, -50%);
+            left: 50%;
+        }
+        .change-cover-one {
+            top: 6%;
+            left: 62%;
+            transform: inherit;
+        }
+        .change-cover-two {
+            top: 36%;
+            left: 37%;
+            position: absolute;
+        }
+    }
 }
     // for iphone 6/7/8 media scss
     @media screen and (max-width: 25.875em) {
@@ -1586,6 +1647,6 @@ premier-head h2 {
                 position: absolute;
                 left: 110px;
             }
-        }
+        }   
     }
 }
