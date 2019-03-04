@@ -1,0 +1,95 @@
+// contact us page scss
+#contact-us {
+    .contact-us-h {
+        padding: 25px 0;
+    }
+    .contact-us-h h2 {
+        font-size: 20px;
+        font-family: EloquentJFRegularPro ☞;
+        text-transform: uppercase;
+    } 
+    .send-email h2 {
+        font-size: 18px;
+        font-weight: 500;   
+        padding: 0 0 20px 0;
+    }
+    .send-email span {
+        text-transform: capitalize; 
+    }
+    .send-email p {
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .send-email h3 {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 0 10px 0;
+    }
+    .help label {
+        font-size: 14px;
+        padding: 0 0 0 10px;
+    }
+    .send-input input#fname, input#lname {
+        border: 1px solid #EBEEF1;
+        border-radius: 4px;
+        padding: 15px 10px;
+        margin: 0 0 25px 0;
+        width: 372px;
+    }
+    .visit-address {
+        padding: 0 0 30px 0;
+    }
+    .news-tip select {
+        max-width: 183px;
+        background: #DDDDDD;
+        padding: 10px 6px;
+        border-radius: 4px;
+        border: navajowhite;
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+    .send-input-padd {
+        padding: 0 0 0 48px;
+    }
+    .send-email.grid-x {
+        border: 1px solid #EBEEF1;
+        padding: 30px 0;
+    }
+    .news-button {
+        margin: 20px 0;
+    }
+    .news-button button {
+        background: #900;
+        color: #fff;
+        text-transform: capitalize;
+        cursor: pointer;
+        font-size: 14px;
+        width: 372px;
+        padding: 14px 0;
+        border-radius: 4px;
+        font-weight: 500;
+    }
+    .event-icon button {
+        background: #900;
+        color: #fff;
+        text-transform: capitalize;
+        cursor: pointer;
+        font-size: 14px;
+        width: 100%;
+        padding: 14px 0;
+        border-radius: 4px;
+        font-weight: 500;
+    }
+    .event-icon {
+        padding: 50px 0 0 0;
+    }
+    .event-icon img {
+        height: 70px;
+    }
+    .event-btn {
+        padding: 40px 0 0 0;
+    }
+    .help-checkbox.help-select {
+        padding: 0 0 20px 0;
+    }       
+}

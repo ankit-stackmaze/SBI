@@ -1,74 +1,252 @@
 // MY ACCOUNT PAGE SCSS
 #edit-profile {
-    
-/* Base for label styling */
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
-  position: absolute;
-  left: -9999px;
+  form {
+    padding-bottom: 18px;
+  }
+  .checkbox-interest {
+    padding: 50px 0 20px 40px;
 }
-[type="checkbox"]:not(:checked) + label,
-[type="checkbox"]:checked + label {
-  position: relative;
-  padding-left: 1.95em;
-  cursor: pointer;
+  .interest {
+    display: inline-block;
+    width: 50%;
+    padding: 15px 0 16px 20px;
+  }
+  .unsubscribe {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    padding: 0 20px 0 0;
+  }
+  .unsubscribe h2 {
+    color: $red;
+  }
+  .interest span {
+    font-weight: 500;
+  }
+  .explore  {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #EBEEF1;
+    padding: 14px 0;
+    display: block;
+  }
+  .explore h2 {
+    font-size: 14px;
+    color: #900;    
+    font-weight: 500;
+  }
+  .explore span {
+    text-transform: capitalize;
+  }
+  .interest-padd {
+    border-bottom: 1px solid #EBEEF1;
+  }
+  .premier-time, i.far.fa-clock, p {
+    display: inline-block;
+  }
+  .premier-time p {
+    padding-left: 10px;
+    line-height: 2.2;
+  }
+  .premier-p p {
+    padding-left: 10px;
+    line-height: 2.2;
+  } 
+  .premier-head {
+    padding: 10px 0;
+  }
+  .premier-head h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .premier-img {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .remove-btn button {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #fff;
+    background: #990000;
+    padding: 8px 9px;
+    font-size: 14px;
+    border-radius: 4px;
+  }  
+  .premier {
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+  .remove-btn {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .remove-btn .fas {
+    padding: 0 5px 0 0;
+  }
+  .newsletter-name form {
+    padding-bottom: 18px;
+    font-weight: bold;
+  }
+  .newsletter-name p {
+    line-height: 1.5;
+  }
+  .cell.newsletter-name {
+    padding-bottom: 25px;
 }
 
-/* checkbox aspect */
-[type="checkbox"]:not(:checked) + label:before,
-[type="checkbox"]:checked + label:before {
-  content: '';
-  position: absolute;
-  left: 0; top: 0;
-  width: 1.25em; height: 1.25em;
-  border: 2px solid #ccc;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
-}
-/* checked mark aspect */
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
-  content: '\2713\0020';
-  position: absolute;
-  top: .15em; left: .22em;
-  font-size: 1.3em;
-  line-height: 0.8;
-  color: #09ad7e;
-  transition: all .2s;
-  font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
-}
-/* checked mark aspect changes */
-[type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
-  transform: scale(0);
-}
-[type="checkbox"]:checked + label:after {
-  opacity: 1;
-  transform: scale(1);
-}
-/* disabled checkbox */
-[type="checkbox"]:disabled:not(:checked) + label:before,
-[type="checkbox"]:disabled:checked + label:before {
-  box-shadow: none;
-  border-color: #bbb;
-  background-color: #ddd;
-}
-[type="checkbox"]:disabled:checked + label:after {
-  color: #999;
-}
-[type="checkbox"]:disabled + label {
-  color: #aaa;
-}
-/* accessibility */
-[type="checkbox"]:checked:focus + label:before,
-[type="checkbox"]:not(:checked):focus + label:before {
-  border: 2px dotted blue;
-}
-
-/* hover style just for information */
-label:hover:before {
-  border: 2px solid #4778d9!important;
-}
+  // news letter check box scss
+  .v-checkbox {
+    border: 0 none transparent;
+    margin: 0;
+    padding: 0;
+  }
+  .v-checkbox > .field {
+    display: none;
+  }
+  .v-checkbox > .label {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+    font-size: 0.9375em;
+    font-family: 'Lato', sans-serif;
+    color: #4c5264;
+    background: #1779ba00;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 18px;
+    padding: 15px 0;
+  }
+  .v-checkbox > .label::before {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    border: 2px solid $red;
+    border-radius: 4px;
+    transition: transform 0.75s ease-out;
+  }
+  .v-checkbox > .field:checked + .label::before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4LjA1MyIgaGVpZ2h0PSI1Ljc2IiB2aWV3Qm94PSIwIDAgOC4wNTMgNS43NiI+PHBhdGggZD0iTTMuNDY3LDUuNzYsMCwyLjI5M2wxLjEyLTEuMTJMMy40NjcsMy40NjcsNi45MzMsMGwxLjEyLDEuMTJaIiBmaWxsPSIjNGM1MjY0Ii8+PC9zdmc+');
+    background-size: 12px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .v-checkbox > .field:active + .label::before {
+    transform: scale(1.1);
+    transition: transform 0.05s ease-in;
+  }
+  
+  // forth tab scss
+  .purchase h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .Obituary p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .Obituary h3 {
+    font-size: 14px;
+    font-family: Roboto;
+  }
+  .subscription a {
+    text-transform: capitalize;
+    color: $red;
+    font-size: 12px;  
+  }
+  .subscription {
+    padding: 0 0 0 20px;
+  }
+  .Obituary h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;    
+    padding-bottom: 10px;
+  }
+  .purchase p {
+    font-size: 14px;
+    font-family: Roboto;
+  }
+  .purchase-main {
+    padding: 35px 0;
+  }
+ .purchase-padd {
+    border-top: 1px solid #EBEEF1;
+    border-bottom: 1px solid #EBEEF1;
+  }
+  // tab five scss
+  .Posts-bg {
+    height: 127px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+  }
+  .remove-john h2{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: Roboto;
+  }
+  .remove-john h3{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .remove-john h4{
+    font-size: 14px;
+  }
+  .remove-comn {
+    padding-bottom: 10px;
+  }
+  .remove-red  i{
+    color: $red;
+  }
+  .remove-red  h2 {
+    color: $red;
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+  .remove-red {
+    padding-top: 30px;
+  }
+  .remove-bdr {
+    border-top: 1px solid #EBEEF1;
+  } 
+  .edit-profile-cover {
+    position: relative;
+  }
+  // TABS SCSS 
+  .tabs-title>a {
+    font-size: 14px;
+  }
+  .tabs-title>a:focus, .tabs-title>a[aria-selected='true'] {
+    background: #FFFFFF;
+    color: #000;
+  }
+  ul#example-tabs {
+    width: 800px;
+    position: absolute;
+    top: 412px;
+    right: 0;
+  }
+  .tabs-panel.is-active {
+    box-shadow: 0px 3px 13px 12px #fefcfcdb;
+  }
+  ul#example-tabs {
+    background: transparent;
+    color: #fff;
+    border: none;
+  }
+  .tabs-title>a {
+    font-size: 14px;
+    color: #fff;
+  }
 
 }

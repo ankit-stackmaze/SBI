@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+.grid-container {
+    overflow-x: hidden;
+}
+#header {
+    // header css
+    header {
+        display: block;
+        background-color: #000000;
+        padding: 2px 0 10px 0;
+    }
+    .cell.large-6.search-bar {
+        padding: 0 0 0 70px;
+        overflow: hidden;
+    }
+    .date li {
+        color: #fff;
+        display: inline-block;
+        padding: 0 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+    .users i.fas.fa-user {
+        color: #fff;
+    }
+    .users {
+        display: inline-block;
+        padding: 11px 0 0 0;
+    }
+    .mail-part {
+        float: left;
+        border-bottom: 2px solid #fff;
+        padding: 9px 0 0 0;
+    }
+    .mail-section label {
+        color: #fff;
+        float: left;
+    }
+    .mail-section {
+        float:left;
+    }
+    .contribute {
+        float: left;
+        padding: 4px 30px 0;
+    }
+    .contribute p {
+        color: #fff;
+        text-transform: capitalize;
+        margin: 5px 0 0 0;
+    }
+    .mail-section input[type="text"] {
+        padding: 5px 0;
+        color: #fff;
+        background: #ffffff03;
+        border: none;
+    }
+    .mail-section input {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+    }
+    .lable-part {
+        float: left;
+        padding: 0 0 0 30px;
+    }
+    .date.cell.large-6 {
+        padding: 13px 0 0 0;
+    }
+    .lable-part p {
+        color: #fff;
+    }
+    .head i.fas.fa-bars {
+        font-size: 28px;
+        color: #000000;
+    }
+    .head i.fas.fa-search {
+        font-size: 28px;
+        color: #000000;
+        padding: 0 0 0 25px;
+    }
+    .date.cell.large-6 i.far.fa-clock {
+        padding: 0 10px;
+    }
+    .date.cell.large-6 i.fas.fa-thermometer-three-quarters {
+        padding: 0 10px;
+    }
+    .date.cell.large-6 a {
+        color: #fff;
+    }
+    .head.cell.large-4.logo-part.medium-4 {
+        padding: 20px 0 0 0;
+    }
+    
+    // bottom header scss
+    .head-btm.cell button {
+        text-transform: capitalize;
+        background-color: #990000;
+        color: #fff;
+        padding: 14px 28px;
+        border-radius: 4px;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        margin: 12px 0 0 0;
+    }
+    .head img {
+        width: 50px;
+    }
+    .bdr-head.grid-x {
+        border-bottom: 1px solid #EBEEF1;
+        padding: 5px 0 10px 0;
+    }
+    .head {
+        padding: 5px 0 0 0;
+    }
+    .btm-header-content {
+        text-align: center;
+        border-bottom: 1px solid #EBEEF1;
+        padding: 0 0 19px 0;
+    }
+    .btm-header {
+        padding: 10px 0 20px 0;
+    }
+    .more-img img {
+        max-width: 118px;
+    }
+    .btm-header li {
+        display: inline-block;
+        padding: 0 15px;
+    }
+    .btm-header a:hover{color: red; border-bottom:1px solid red;}
+    .btm-header a {
+        color: #000;
+        text-transform: capitalize;
+        font-weight: 600;
+        padding: 0 0 20px 0;
+        -webkit-transition: 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95) all;
+        transition: 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95) all;
+    }
+    // toogle menu css
+    .toogle-menu {
+        display:none;
+        cursor: pointer;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+    
+        

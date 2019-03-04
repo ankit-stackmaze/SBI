@@ -1,0 +1,91 @@
+doctype html
+html.no-js(lang='en')
+  head
+    include head
+
+  
+  body
+    include header
+    include head
+    #breaking-news
+        .grid-container
+            .section.grid-x
+                .section-part.cell.large-12.text-center
+                    img(src="../assets/image/Rectangle.png", alt="")
+
+        .grid-container
+            .grid-x
+                .cell.large-2
+                .cell.large-8
+                    #sponsored
+                        .sponsored-detail
+                            .sponsored-detail-li
+                                li
+                                    a(href="#") category
+                                li 
+                                    a(href="#") by john doe
+                                li 
+                                    a(href="#") mon, jul 09
+                        .sponsored-heading
+                            h2 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing
+                        .sponsored-subheading
+                            h2 Sub heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue            
+                .cell.large-2
+  
+        .site
+        #sponsored
+        .slider-heading
+            .slick-slide
+                img(src="../assets/image/imd.jpg", alt="")
+            .slick-slide
+                img(src="../assets/image/imd.jpg", alt="")
+            .slick-slide
+                img(src="../assets/image/imd.jpg", alt="")
+
+        .grid-container
+            .grid-x
+                .cell.large-2
+                .cell.large-8
+                    #sponsored
+                        .sponsored-heading-p
+                            p Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor bibendum
+                            h2 photo cradit
+                        .sponsored-head-h2
+                            h2 Lorem ipsum dolor header here
+                        .sponsored-head-pp
+                            p Lorem ipsum dolor sit amet elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor bibendum sed vitae  
+                        .sponsored-head-main
+                            h2 Lorem ipsum dolor header here
+                        .sponsored-head-center
+                            .grid-x.grid-padding-x.align-center
+                                .cell.medium-6.large-6.sponsored-head-p
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor bibendum sed vitae diam. Morbi pharetra odio eget neque auctor fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                                .cell.medium-6.large-6.sponsored-head-add
+                                    img(src="../assets/image/group.jpg", alt="")
+                .cell.large-2
+
+        .news-full-img(style="background-image: url(../assets/image/awd.jpg)")
+        .grid-container
+            .grid-x
+                .cell.large-2
+                .cell.large-8
+
+                    include related-post-page-2
+
+                    .write-img(style="background-image: url(../assets/image/jh.jpg)")
+                        .news-single-h
+                            h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit goes here lorem ipsum dolor sit amet, sectetur adipiscing elit
+                .cell.large-2   
+        .news-full-img-second(style="background-image: url(../assets/image/vr.jpg)")
+        
+        .grid-container
+            .grid-x
+                .cell.large-2
+                .cell.large-8
+                    include more-like-this
+                    include comment
+                   
+                .cell.large-2   
+        include footer
+        include scripts
+                

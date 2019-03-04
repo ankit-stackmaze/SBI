@@ -1,0 +1,65 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+        #edit-profile
+            .grid-container.edit-profile-cover
+                .grid-x
+                    .cell.text-center
+                        .edit-profile
+                            h2 EDIT PROFILE
+                    
+                    .cell.cover-image(style="background-image:url(../assets/image/cover.svg)")
+                        .change-img
+                            img(src="../assets/image/death.jpg", alt="")
+                            
+                            h2 john doe
+                            p Johndoe@gmail.com
+                        
+                        .change-cover-one
+                            label.button(for='exampleFileUpload') change cover
+                            input#exampleFileUpload.show-for-sr(type='file')
+
+                        .change-cover-two
+                            label.button(for='exampleFileUpload') change
+                            input#exampleFileUpload.show-for-sr(type='file')
+            
+            .grid-container.personal-detail
+                .grid-x.personal-info.grid-padding-x
+                    .cell.large-4.medium-4.info-h
+                        h2 Personal info
+                        p Change password
+                    .cell.large-4.medium-4
+                        form
+                            label(for='fname') Name
+                            input#fname(type='text', name='firstname', placeholder='john doe')
+                            label(for='lname') Email
+                            input#lname(type='email', name='email', placeholder='Johndoe@email.com')
+                            input(type='submit', value='Save')
+
+                .grid-x.personal-info.grid-padding-x
+                    .cell.large-4.medium-4.info-h
+                        p Personal info
+                        h2 Change password
+
+                    .cell.large-4.medium-4
+                        form
+                            label(for='fname') Current password
+                            input(type='password', name='pwd', placeholder='Johndoe')
+                            label(for='lname') new password
+                            input(type='password', name='pwd', placeholder='Johndoe@email.com' )
+                            label(for='lname') conform password
+                            input(type='password', name='pwd', placeholder='Johndoe@email.com')
+                            input(type='submit', value='Save')
+
+        include scripts
+        include footer

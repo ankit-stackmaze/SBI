@@ -1,0 +1,83 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+        #subscriptions-newsletters
+            .newsletter-title-img(style="background-image: url(../assets/image/wsd.svg)")
+                .newsletter-title-h2
+                    h2 Newsletter title goes here
+            
+            .grid-container
+                .grid-x
+                    .cell.large-2.medium-2
+                    .cell.large-8.medium-8
+                        .grid-x
+                            .cell
+                                .newsletter-title-h
+                                    h2 Newsletter intro text here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque.
+                                .newsletter-title-p
+                                    p Newsletter intro text here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor bibendum sed vitae diam. Morbi pharetra odio eget neque auctor fermentum. Class aptent taciti sociosqu ad litora 
+
+                        .grid-x.daily-sub-bdr
+                            .cell
+                                .sign-up-newslatter.text-center
+                                    i.fas.fa-envelope
+                                    h2 Sign up For The Newsletter
+
+                                .grid-x
+                                    .cell.large-6.medium-6.newsletter-order-first
+                                        .daily-news-bg(style="background-image: url(../assets/image/hdf.jpg)")
+                                   
+                                    .cell.large-6.medium-6.newsletter-order
+                                        .daily-news-letter.newsletter
+                                            .daily-news-h2
+                                                h2 daily news letter
+                                                p Select features that you want to subscibe to
+                                            .daily-news-feature
+                                                each item in [1,2,3,4,5]
+                                                    form
+                                                        input(type='checkbox', name='featuer', value='feature')
+                                                        p  Feature name goes here     
+
+                                    .cell.large-6.medium-6.newsletter-order-second
+                                        .daily-news-bg(style="background-image: url(../assets/image/hdf.jpg)")
+
+                                    .cell.large-6.medium-6
+                                        .daily-news-bg(style="background-image: url(../assets/image/hdf.jpg)")
+
+                                    .cell.large-6.medium-6.daily-news-bdr
+                                        .daily-news-letter
+                                            .daily-news-h2
+                                                h2 daily news letter
+                                                p Select features that you want to subscibe to
+                                            .daily-news-feature
+                                                each item in [1,2,3,4,5]
+                                                    form
+                                                        input(type='checkbox',id=check-box name='featuer', value='feature')
+                                                        p  Feature name goes here     
+                                    
+                                    .cell.signup-subscription
+                                        form(action='/action_page.php')
+                                            input(type='text', name='fullname', placeholder='name')
+                                            input(type='email', name='email', placeholder='email address')
+                                            input(type='submit', value='sign up now')
+                    .cell.large-2.medium-2
+                
+        include scripts
+        include footer
+                            
+
+
+
+                    
+
+

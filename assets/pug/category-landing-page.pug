@@ -1,0 +1,35 @@
+doctype html
+html.no-js(lang='en')
+  head
+    include head
+
+  
+  body
+    include header    
+    #category
+        .grid-container
+            .grid-x
+                .cell.large-1.medium-1
+                .cell.large-10.text-center.medium-10
+                    .category-title
+                        h2 CATEGORY TITLE
+                    .category-img(style="background-image:url(../assets/image/awf.jpg)")
+                .cell.large-1
+        
+        .grid-container.middle-brief
+            .grid-x.grid-padding-x
+                .cell.large-4.medium-4.brief
+                    include briefes
+                .cell.large-8.medium-8.brief-featured
+                    include brief-featured-stories
+                        
+        .grid-container
+            .grid-x
+                .cell.large-2
+                .cell.large-9.text-center
+                    .category-img-last(style="background-image:url(../assets/image/awf.jpg)")
+                .cell.large-1
+    
+    include scripts
+    include footer
+        

@@ -1,0 +1,65 @@
+#announcement {
+    // contribute scss
+    .Contribute-btn button {
+        width: 100%;
+        background: #990000;
+        padding: 28px 0;
+        margin: 15px 0;
+        font-size: 14px;
+        color: #fff;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+    .Contribute h2 {
+        font-size: 20px;
+        font-family: EloquentJFRegularPro ☞;
+        text-transform: capitalize;
+    }
+    .Contribute {
+        border-bottom: 1px solid #000000;
+        padding: 0 0 15px 0;
+    }
+    .announcemrnt-slid {
+        padding: 20px 0;
+    }
+    .announcement-heading h2 {
+        font-size: 20px;
+        font-family: EloquentJFRegularPro ☞;
+        text-transform: capitalize;
+    }
+    .announcement-inner p {
+        font-size: 14px;
+    }
+    .announcement-heading {
+        border-bottom: 1px solid #000000;
+        padding: 0 0 15px 0;
+    }
+    .announcement-img {
+        width: 20%;
+        float: left;
+    }
+    .announcement-P {
+        float: left;
+        width: 80%;
+        padding-top: 20px;
+    }
+    .announcement-inner {
+        display: inline-block;
+    }
+    .announcement-inner {
+        display: inline-block;
+        padding: 15px 0;
+    }
+    .more-announcement a{
+        text-transform: capitalize;
+        color: #990000;
+        font-size: 12px;
+    }
+    .announcement {
+        padding: 0 25px 0 0;
+    }
+    .Contribute-main {
+        padding: 0 0 0 25px;
+    }
+}
+  

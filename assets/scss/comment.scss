@@ -1,0 +1,178 @@
+#comment {
+    .comment-numbers {
+        display: inline-block;
+        padding: 0 0 0 50px;
+    }
+    .comment-heading {
+        display: inline-block;
+    }
+    .comment-heading p {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-family: EloquentJFRegularPro ☞;
+    }
+    .comment-main {
+        border-bottom: 1px solid #000000;
+        padding-bottom: 20px;
+    
+    }
+    .comment-numbers i.far.fa-comment {
+        color: #990000;
+    }
+    .text-area-section textarea {
+        width: 100%;
+        height: 125px;
+        background: #DDDDDD;
+        border: navajowhite;
+        border-radius: 4px;
+    }
+    .respond-head h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .respond-head {
+        padding: 20px 0 10px;
+    }
+    .notify-section h2 {
+        display: inline-block;
+        font-size: 12px;
+    }
+    .notify-section input[type="submit"] {
+        text-transform: capitalize;
+        color: #fff; 
+        font-weight: bold;
+        border: navajowhite;
+        background: #990000;
+        font-family: 'Montserrat', sans-serif;
+        padding: 16px 52px;
+        cursor: pointer;
+        border-radius: 4px; 
+    }
+    .notify-section h2 {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .comment-john-doe-response h1 {
+        display: inline-block;
+        padding: 0 10px;
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+    .comment-john-doe-response i.fas.fa-reply {
+        color: #8FA3AD;
+        font-size: 24px;
+    }
+    .comment-john-doe-response i.far.fa-thumbs-up {
+        color: #8FA3AD;
+        font-size: 24px;
+    }
+    .comment-semi-time p {
+        color: #8FA3AD;
+        font-size: 12px;
+    }
+    .comment-semi-detail h2 {
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    .comment-semi-detail {
+        padding: 5px 0;
+    }
+    .comment-semi-time {
+        padding: 5px 0;
+    }
+    .comment-john-doe-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .comment-john-doe-content {
+        padding: 10px 0 20px 0;
+    }
+    .comment-jonn-main {
+        position: relative;
+        padding: 25px 0 25px 0;
+    }
+    .comment-bdr {
+        clear: both;
+        border-right: 2px solid #EBEEF1;
+        height: 140px;
+        width: 2px;
+        margin-left: 24px;
+    }
+    .comment-img img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        position: absolute;
+        top: 25px;
+        left: -25px;
+    }
+    .comment-john-doe.grid-x.admin {
+        margin: 0 0 0 50px;
+        background: #DDDDDD;
+        border-left: 2px solid#EBEEF1;
+    }
+    .comment-right-detail.cell.large-11.medium-11 {
+        border-left: 2px solid#EBEEF1;
+        padding-left: 45px;
+    }
+    .comment-john-doe.grid-x.admin-btm {
+        padding: 0 0 0 47px;
+    }
+    .comment-john-doe.grid-x.admin-right {
+        padding-left: 60px;
+    }
+    .respond-head-last h2 {
+        font-size: 14px;
+    }
+    .notify-section button {
+        color: #000000;
+        background: #DDDDDD;
+        text-transform: capitalize;
+        font-size: 16px;
+        padding: 17px 44px;
+        margin: 0 17px;
+        border-radius: 4px;
+    }
+    .comment-john-doe.grid-x.admin-right {
+        border-left: 2px solid#EBEEF1;
+    }
+    .comment-john-doe.grid-x.admin-btm {
+        border-left: 2px solid #EBEEF1;
+    }
+    .main-border-line:before {
+        //&:first-child(1) { height: 600px;}
+        content: "";
+        position: absolute;
+        width: 2px;
+        background: red;
+        border-left: 2px solid #EBEEF1;
+        top: 50px;
+        height: 500px;
+    }
+    .main-border-line {
+        position: relative;
+    }
+    .semi-admin button {
+        background: #000;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 7px 10px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .semi-admin {
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+        padding: 0 25px 0 0;
+    }
+    .semi-detail-h2 {
+        display: inline-block;
+        width: 50%;
+    }
+}   
+   

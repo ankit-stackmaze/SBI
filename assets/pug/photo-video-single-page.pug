@@ -1,0 +1,122 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+  
+    body
+        include header
+        include head
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+        #single-heading
+            .slider-single-head-main.common-single-back
+                .grid-container
+                    .grid-x
+                        .slider-single-head-h
+                            h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat metus. Etiam volutpat 
+        
+            include single-slider
+
+        #single-heading
+            .common-single-back
+                .grid-container
+                    .grid-x
+                        .slider-single-head-p
+                            p Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis 
+                    .slider-single-comment.grid-x
+                        .single-comment.cell.large-6.medium-6
+                            ul 
+                                li
+                                    p comments
+                                        i.far.fa-comment
+                                li
+                                    p like
+                                        i.far.fa-thumbs-up
+                        .single-category.cell.large-6.text-right.medium-6
+                            ul 
+                                li
+                                    p
+                                        span category
+                                li
+                                    p By John Doe
+                                li
+                                    p MON, JUL 09
+                                    
+
+        #single-heading
+            .grid-container
+                .grid-x
+                    .cell.large-1.medium-1
+                    .cell.large-10.medium-10
+                        .single-heading
+                            h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor bibendum sed vitae diam. Morbi pharetra odio eget neque auctor fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vel imperdiet mauris. Donec accumsan mollis rutrum. Nam a purus vitae lacus aliquam aliquet vitae in nisl. Phasellus bibendum vulputate lorem, ut ullamcorper ligula feugiat vel. Curabitur neque lacus, sollicitudin porta ex quis, ullamcorper vestibulum quam. Mauris ultrices condimentum purus quis blandit. Etiam dapibus dictum elit sit amet volutpat.
+                        .single-heading
+                            h2 Vestibulum id scelerisque orci. Nunc volutpat condimentum augue, vitae tempor urna tempus vel. Pellentesque a risus at nisi aliquam molestie nec eget nibh. Pellentesque maximus euismod nibh. Suspendisse luctus mauris ligula, quis molestie lorem dictum sed. In eget velit vitae elit consequat finibus. Duis ac dignissim neque. Vestibulum et tristique risus, non commodo erat. Phasellus vulputate orci scelerisque, dignissim quam nec, finibus nulla. Suspendisse blandit purus et eleifend ullamcorper. Sed felis libero, tempus ac consectetur nec, semper non augue. Integer ut porta eros, sit amet aliquet mauris. Nulla facilisi. Curabitur leo augue, ultrices vitae suscipit sit amet, blandit vel ex.
+                        .single-heading
+                            h2  Ut vitae diam tincidunt, pretium ipsum non, ornare nunc. Duis hendrerit vulputate auctor. Ut sagittis leo quis tellus consectetur tincidunt. Nulla venenatis accumsan porta. Donec nulla dui, egestas sit amet purus eget, tincidunt tincidunt ante. Integer nec nisl nibh. Etiam mollis odio turpis, vel tincidunt nibh dapibus sit amet. Vivamus in posuere magna, ac dapibus leo. Aliquam erat volutpat. Nam non aliquam ex, sit amet vestibulum ante. Sed sed nunc facilisis dui elementum pulvinar nec non diam. Sed aliquet placerat ex, ac laoreet sem commodo vel. Mauris fringilla, elit vitae mollis sagittis, diam arcu semper lectus, nec suscipit quam leo at ligula. In non urna mollis, interdum ante ac, mollis ligula.
+                        .single-heading
+                            h2 Nam bibendum ex eros, in tempor lectus fermentum a. Pellentesque vel eros nibh. Mauris vitae aliquam ante. Praesent in mauris blandit libero feugiat pellentesque. Ut sit amet ex non dui elementum egestas. Donec vel justo elit. Integer ut magna eu tellus malesuada rutrum. Donec a ligula purus. Aliquam vitae 
+                        
+                    .cell.large-1.medium-1
+
+        #single-heading
+            .grid-container
+                .grid-x
+                    .cell.popular-head-h
+                        h2 Most Popular Photos / Videos
+
+        #single-heading
+            .grid-container.many-img-padd#single-head-side
+                .grid-x.grid-padding-x
+                    each itam in [1,2,3]
+                        .cell.large-4.many-img.latest-media-img.medium-4
+                            .archive-img(style="background-image: url(../assets/image/erg.jpg)")
+
+                            .archive-h2.latest-media-head
+                                h2 Heading goes here lorem ipsum dolor sit amet, 
+
+                            .archive-listing.latest-media-head
+                                ul
+                                    li
+                                        h3 category
+                                    li
+                                        p by john doe
+                                            
+                        .cell.large-4.many-img.latest-media-img.medium-4
+                            .archive-img(style="background-image: url(../assets/image/sd.jpg)")
+
+                            .archive-h2
+                                h2 Heading goes here lorem ipsum dolor sit amet, 
+
+                            .archive-listing
+                                ul
+                                    li
+                                        h3 category
+                                    li
+                                        p by john doe
+                                        
+                        .cell.large-4.many-img.latest-media-img.medium-4
+                            .archive-img(style="background-image: url(../assets/image/hdf.jpg)")
+
+                            .archive-h2
+                                h2 Heading goes here lorem ipsum dolor sit amet, 
+
+                            .archive-listing
+                                ul
+                                    li
+                                        h3 category
+                                    li
+                                        p by john doe
+        #single-heading
+            .grid-container    
+                .grid-x 
+                    .cell.large-10 
+                        include comment
+                    .cell.large-2
+                    
+            include footer
+                include scripts
+                
