@@ -1,0 +1,50 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+
+  
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+        #premiere-event
+            .grid-container
+                .grid-x
+                    .cell.text-center
+                        .premiere-event
+                            h2 PREMIERE EVENTS
+
+            include premiere-event-slider
+            
+            .grid-container
+                .grid-x.grid-padding-x
+                    .cell.large-4
+                        .event-today
+                            h2 events today
+                        .event-heading
+                            each item in [1,2,3]
+                                .premier
+                                    .premier-img(style="background-image: url(../assets/image/sd.jpg)")
+                                    .premier-time
+                                        i.far.fa-clock
+                                        p 6:46 A.M &nbsp; &nbsp;&nbsp; MON, JUL 09
+                                    .premier-p
+                                        i.fas.fa-map-marker-alt
+                                        p Santa Barbara
+                                    .premier-head
+                                        h2 Heading goes here is is sit th amet, consectetur elit adipiscing 
+                            
+                            .event-bg-one(style="background-image: url(../assets/image/Group.jpg)")
+
+                            .event-bg-two(style="background-image: url(../assets/image/bt.png)")
+                                
+                        
+                    .cell.large-8.upcoming-event
+                        include upcoming-event
+
+        include scripts

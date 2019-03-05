@@ -4,8 +4,12 @@
     padding-bottom: 18px;
   }
   .checkbox-interest {
-    padding: 50px 0 20px 40px;
-}
+    padding: 50px 0 40px 0;
+    border-top: 1px solid #EBEEF1;
+  }
+  .check-center {
+    margin: 0 auto;
+  }
   .interest {
     display: inline-block;
     width: 50%;
@@ -19,6 +23,10 @@
   }
   .unsubscribe h2 {
     color: $red;
+    font-size: 14px;
+  }
+  .interest p {
+    font-size: 14px;
   }
   .interest span {
     font-weight: 500;
@@ -38,15 +46,13 @@
   .explore span {
     text-transform: capitalize;
   }
-  .interest-padd {
-    border-bottom: 1px solid #EBEEF1;
-  }
   .premier-time, i.far.fa-clock, p {
     display: inline-block;
   }
   .premier-time p {
     padding-left: 10px;
     line-height: 2.2;
+    font-size: 14px;
   }
   .premier-p p {
     padding-left: 10px;
@@ -64,6 +70,26 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  .cover-btn {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+  }
+  .cover-btn  i.far.fa-edit {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+  .cover-btn button {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .cover-btn button:hover {
+    background: #00000026;
+    color: #ffffff7d
   }
   .remove-btn button {
     text-transform: capitalize;
@@ -149,11 +175,11 @@
     font-weight: 500;
     line-height: 1.5;
   }
-  .Obituary p {
+  .obituary p {
     font-size: 14px;
     line-height: 1.5;
   }
-  .Obituary h3 {
+  .obituary h3 {
     font-size: 14px;
     font-family: Roboto;
   }
@@ -165,7 +191,7 @@
   .subscription {
     padding: 0 0 0 20px;
   }
-  .Obituary h2 {
+  .obituary h2 {
     font-size: 18px;
     font-weight: bold;
     text-transform: capitalize;    
@@ -177,11 +203,9 @@
   }
   .purchase-main {
     padding: 35px 0;
-  }
- .purchase-padd {
     border-top: 1px solid #EBEEF1;
-    border-bottom: 1px solid #EBEEF1;
   }
+ 
   // tab five scss
   .Posts-bg {
     height: 127px;
@@ -233,7 +257,7 @@
   ul#example-tabs {
     width: 800px;
     position: absolute;
-    top: 412px;
+    top: 414px;
     right: 0;
   }
   .tabs-panel.is-active {
@@ -247,6 +271,18 @@
   .tabs-title>a {
     font-size: 14px;
     color: #fff;
+    border-radius: 4px 4px 0 0;
   }
-
+  .tabs-title>a:hover {
+    background: #fefefe85;  
+}
+  .tabs-panel {
+    padding: 0;
+  }
+  .obituary a {
+    display: none;
+  }
+  .remove-hide {
+    display: none;
+  }
 }

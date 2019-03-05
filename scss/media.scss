@@ -583,7 +583,7 @@ premier-head h2 {
 }
 
 
-
+// FOR IPAD MEDIA SCSS
 @media screen and (max-width: 48.000em) {
     #briefs {
         .briefs-heading-th h2 {
@@ -716,7 +716,29 @@ premier-head h2 {
             left: 14%;
             position: absolute;
         }
+        .premier-time p {
+            padding-left: 4px;
+            line-height: 1.2;
+            font-size: 13px;
+            display: inline-block;
+        }
+        .premier-time {
+            padding: 5px 0 0 0;
+        }  
+        ul#example-tabs {
+            width: 800px;
+            position: absolute;
+            top: 414px;
+            right: -32px;
+        }   
+        .premier-img {
+            height: 170px;
+        }   
+        .remove-btn button {
+            font-size: 10px;;
+        }
     } 
+    
     
 }
 
@@ -1631,7 +1653,74 @@ premier-head h2 {
             position: absolute;
         }
     }
+    // my account page scss
+    #edit-profile {
+        ul#example-tabs {
+            position: absolute;
+            top: 434px;
+            left: 0px;
+        }
+        .tabs-title>a {
+            font-size: 10px;
+        }
+        .tabs-title>a {
+            padding: 0.75rem 0.2rem;
+        }
+        .checkbox-interest {
+            padding: 50px 0 40px 0;
+        }
+        .subscription {
+            padding: 5px 0 0 0;
+        }
+        .obituary a {
+            display: inline-block;
+            text-transform: capitalize;
+            color: $red;
+            font-size: 12px;  
+        }
+        .subscription a {
+            display: none;
+        }
+        .purchase-main {
+            padding: 28px 0;
+        }
+        .remove-red {
+            order: 1;
+        }
+        .remove-john, .favourites-bg {
+            order: 2;
+        }
+        .remove-hide {
+            display: inline-block;
+        }
+        .remove-mobile-hide {
+            display: none;
+        }
+        .remove-hide h4 {
+            padding: 5px 0;
+        }
+        .remove-comn {
+            padding: 10px 0 0 0;
+        }
+        .remove-red {
+            padding-top: 210px;
+        }
+        .obituary {
+            padding: 0;
+        }
+        .obituary a {
+            padding: 10px 0;
+        }
+        .newsletter-name p {
+            font-size: 14px;
+        }
+        .checkbox-media {
+            text-align: center;
+        }
+    }
 }
+
+
     // for iphone 6/7/8 media scss
     @media screen and (max-width: 25.875em) {
         #delivery-info {

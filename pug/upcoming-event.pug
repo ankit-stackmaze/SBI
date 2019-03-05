@@ -1,0 +1,54 @@
+
+.grid-x.upcoming-event-bdr
+    .cell.large-4
+        .event-today.event-today-bdr
+            h2 upcoming-event
+    .cell.large-4
+        input#datepicker(type='text')
+
+    .cell.large-4.create-event
+        h3 create event
+            i.fas.fa-plus-circle
+.grid-x
+    .cell.large-3
+        form.example(action='/action_page.php', style='margin:auto;max-width:300px')
+            input(type='text', placeholder='Search..', name='search2')
+            i.fa.fa-search
+            
+    .cell.large-3
+        button santa barbara
+            i.fas.fa-map-marker-alt
+
+    .cell.large-3.comn-select
+        select
+            option(value='husker') location
+            option(value='starbuck') Starbu0ck
+            option(value='hotdog') newyork
+            option(value='apollo') rush
+
+    .cell.large-3.comn-select
+        select
+            option(value='husker') location
+            option(value='starbuck') Starbu0ck
+            option(value='hotdog') newyork
+            option(value='apollo') rush
+
+each item in [1,2,3,4,5,6,7]
+    .grid-x.grid-padding-x
+        .cell.large-5
+            .premier
+            .premier-img(style="background-image: url(../assets/image/sd.jpg)")
+        .cell.large-7.premier-time-padd
+            .premier-time
+                i.far.fa-clock
+                p 6:46 A.M &nbsp; &nbsp;&nbsp; MON, JUL 09
+            .premier-p
+                i.fas.fa-map-marker-alt
+                p Santa Barbara
+            .premier-head
+                h2 Heading goes here lorem ipsum dolor sit amet, consecteturffds adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies
+
+.grid-x
+    .cell
+        button  load more
+           

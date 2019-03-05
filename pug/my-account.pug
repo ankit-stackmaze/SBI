@@ -25,6 +25,9 @@ html.no-js(lang='en')
                             
                             h2 john doe
                             p Johndoe@gmail.com
+                        .cover-btn
+                            button edit profile
+                                i.far.fa-edit
                         
                     //- for tabs html
                 .grid-x
@@ -42,7 +45,7 @@ html.no-js(lang='en')
                                 a(data-tabs-target='panel5', href='#panel5') Favourites     
                         .tabs-content(data-tabs-content='example-tabs')
                            
-                            //-  tab one
+                            //-  tab one my interest
                             #panel1.tabs-panel.is-active
                                 .interest-padd
                                     .interest
@@ -51,17 +54,17 @@ html.no-js(lang='en')
                                     .unsubscribe
                                         h2 Unsubscribe to all
                                                                 
-                                    .grid-x.checkbox-interest
-                                        .cell.large-1
-                                        .cell.large-10
+                                    .grid-x.checkbox-interest.grid-padding-x.checkbox-media
+                                        
+                                        .cell.large-10.medium-10.text-center.check-center
                                             each item in [1,2,3,4,5,6,7,8]
                                                 .grid-x
                                                     each item in [1,2,3,4]
-                                                        .cell.large-3
+                                                        .cell.large-3.medium-3.small-6
                                                             form
                                                                 input(type="checkbox")
                                                                 |   Interest name
-                                        .cell.large-1
+                                     
 
                                     .explore
                                         h2 
@@ -69,7 +72,7 @@ html.no-js(lang='en')
                                             | all topics
                                         
 
-                            //- tab two
+                            //- tab two my event
                             #panel2.tabs-panel
                                 .interest-padd
                                     .interest
@@ -79,11 +82,11 @@ html.no-js(lang='en')
                                         h2 Clear All Events all
                                                              
                                 .grid-x.checkbox-interest
-                                    .cell.large-1
-                                    .cell.large-10
+                                    .cell.large-1.medium-1
+                                    .cell.large-10.medium-10
                                         .grid-x.grid-padding-x
                                             each item in [1,2,3,4,5,6]
-                                                .cell.large-4
+                                                .cell.large-4.medium-4
                                                     .premier
                                                         .premier-img(style="background-image: url(../assets/image/sd.jpg)")
                                                         .premier-time
@@ -98,15 +101,15 @@ html.no-js(lang='en')
                                                             button 
                                                                 i.fas.fa-trash-alt 
                                                                 | remove   
-                                    .cell.large-1
+                                    .cell.large-1.medium-1
 
                                 .explore
                                     h2 
                                         span explore 
-                                        | all event
+                                        | all events
                                 
 
-                            //- tab three
+                            //- tab three news letter preference
                             #panel3.tabs-panel
                                 .interest-padd
                                     .interest
@@ -116,8 +119,8 @@ html.no-js(lang='en')
                                         h2 Unsubscribe to all
                                                              
                                 .grid-x.checkbox-interest
-                                    .cell.large-1
-                                    .cell.large-10
+                                    .cell.large-1.medium-1
+                                    .cell.large-10.medium-10
                                         each item in [1,2,3]
                                             .grid-x.grid-padding-x
                                                 .cell.newsletter-name
@@ -125,7 +128,7 @@ html.no-js(lang='en')
                                                         input.field(id="checkbox", type="checkbox")
                                                         label.label(for="checkbox") Newsletter name
                                                     p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-                                    .cell.large-1
+                                    .cell.large-1.medium-1
 
                                 .explore
                                     h2 
@@ -133,44 +136,49 @@ html.no-js(lang='en')
                                         | all newsletters
 
 
-                            //- tab four
+                            //- tab four my purchase
                             #panel4.tabs-panel
-                                .interest-padd
-                                    .interest
-                                        p Purchased 
-                                            span 3 Items
-                                    
-                                                             
-                                .grid-x.purchase-main
-                                    .cell.large-2.purchase
-                                        h2 evant
-                                        p 29th July 2018
-                                    .cell.large-9.Obituary
-                                        p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque...
+                                .grid-container
+                                    .grid-x.grid-padding-x
+                                        .cell
+                                            .interest-padd
+                                                .interest
+                                                    p Purchased 
+                                                        span 3 Items
+                                                
+                                                                        
+                                            .grid-x.purchase-main
+                                                .cell.large-2.purchase.medium-2.small-5
+                                                    h2 evant
+                                                    p 29th July 2018
+                                                .cell.large-9.obituary.medium-9.small-7
+                                                    p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque...
+                                                    a(href="#") more details
+                                                .cell.large-1.subscription.medium-1.small-7
+                                                    a(href="#") more details
 
-                                    .cell.large-1.subscription
-                                        a(href="#") more details
+                                            .grid-x.purchase-main.purchase-padd
+                                                .cell.large-2.purchase.medium-2.small-5
+                                                    h2 obituary
+                                                    p 29th July 2018
+                                                .cell.large-9.obituary.medium-9.small-7
+                                                    h2 john doe
+                                                    h3 1934 - 2018 
+                                                    p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis
+                                                    a(href="#") more details
 
-                                .grid-x.purchase-main.purchase-padd
-                                    .cell.large-2.purchase
-                                        h2 obituary
-                                        p 29th July 2018
-                                    .cell.large-9.Obituary
-                                        h2 john doe
-                                        h3 1934 - 2018 
-                                        p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis
-
-                                    .cell.large-1.subscription
-                                        a(href="#") more details
-                                
-                                .grid-x.purchase-main
-                                    .cell.large-2.purchase
-                                        h2 subscription
-                                        p 29th July 2018
-                                    .cell.large-9.Obituary
-                                        p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus
-                                    .cell.large-1.subscription
-                                        a(href="#") more details
+                                                .cell.large-1.subscription.medium-1
+                                                    a(href="#") more details
+                                            
+                                            .grid-x.purchase-main
+                                                .cell.large-2.purchase.medium-2.small-5
+                                                    h2 subscription
+                                                    p 29th July 2018
+                                                .cell.large-9.obituary.medium-9.small-7
+                                                    p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus
+                                                    a(href="#") more details
+                                                .cell.large-1.subscription.medium-1
+                                                    a(href="#") more details
 
                             //- tab five
                             #panel5.tabs-panel
@@ -182,20 +190,30 @@ html.no-js(lang='en')
                                         h2 Unsubscribe to all
                                 each itam in [1,2,3]                             
                                     .grid-x.checkbox-interest.grid-padding-x.remove-bdr
-                                        .cell.large-2
+                                        .cell.large-2.medium-2.small-9.favourites-bg
                                             img(src="../assets/image/we.jpg", alt="")
-                                        .cell.large-9.remove-john
+
+                                            .cell.large-9.remove-john.medium-8.small-9.remove-hide
+                                                .remove-comn
+                                                    h2 by john doe
+                                                .remove-comn 
+                                                    h3 Heading goes here lorem ipsum dolor sit amet, sectetur   adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat 
+                                                    h4 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec 
+
+                                            
+                                        .cell.large-9.remove-john.medium-8.small-9.remove-mobile-hide
                                             .remove-comn
                                                 h2 by john doe
                                             .remove-comn 
                                                 h3 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat 
-                                            h4 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec 
+                                                h4 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec 
 
-                                        .cell.large-1.text-center.remove-red
+                                        .cell.large-1.text-center.remove-red.medium-2.small-3
                                             i.far.fa-heart
                                             h2 remove
 
-
+        
         include scripts
+        include footer
 
 

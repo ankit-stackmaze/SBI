@@ -276,5 +276,7 @@ if ($('#myBarChart-tt').length){
     }
   });
 }
-
-// for my account page remove button script
+// date
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
