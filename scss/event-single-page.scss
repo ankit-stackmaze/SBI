@@ -1,0 +1,33 @@
+// event single page scss
+#event-single {
+    .create-event-h2  h2 {
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .create-event-h2 i {
+        color: $red;
+        font-size: 28px;
+    }
+    .event-title h2 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .event-bg {
+        height: 500px;
+        margin: 20px 0;
+    }
+    .location-category-h h3 {
+        font-size: 14px;
+        color: $red;
+        font-family: EloquentJFRegularPro ☞;
+        text-transform: capitalize;
+    }
+    .location-category-h  {
+        display: inline-block;
+        padding-right: 30px; 
+    }
+    .location-category {
+        padding: 0 0 13px 0;
+        border-bottom: 1px solid #000;
+    }
+}

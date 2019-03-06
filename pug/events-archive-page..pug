@@ -23,13 +23,13 @@ html.no-js(lang='en')
             
             .grid-container
                 .grid-x.grid-padding-x
-                    .cell.large-4
+                    .cell.large-3.medium-4.event-archive-cell      
                         .event-today
                             h2 events today
                         .event-heading
                             each item in [1,2,3]
                                 .premier
-                                    .premier-img(style="background-image: url(../assets/image/sd.jpg)")
+                                    .premier-img-one.back-ground(style="background-image: url(../assets/image/sd.jpg)")
                                     .premier-time
                                         i.far.fa-clock
                                         p 6:46 A.M &nbsp; &nbsp;&nbsp; MON, JUL 09
@@ -39,12 +39,12 @@ html.no-js(lang='en')
                                     .premier-head
                                         h2 Heading goes here is is sit th amet, consectetur elit adipiscing 
                             
-                            .event-bg-one(style="background-image: url(../assets/image/Group.jpg)")
+                            .event-bg-one.back-ground(style="background-image: url(../assets/image/Group.jpg)")
 
-                            .event-bg-two(style="background-image: url(../assets/image/bt.png)")
+                            .event-bg-two.back-ground(style="background-image: url(../assets/image/bt.png)")
                                 
                         
-                    .cell.large-8.upcoming-event
-                        include upcoming-event
-
+                    .cell.large-9.upcoming-event.medium-8
+                        include upcoming-eventZ
+        include footer
         include scripts

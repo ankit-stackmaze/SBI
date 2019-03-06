@@ -280,3 +280,4 @@ if ($('#myBarChart-tt').length){
 $( function() {
   $( "#datepicker" ).datepicker();
 } );
+

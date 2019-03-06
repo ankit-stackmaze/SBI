@@ -1,43 +1,46 @@
 
 .grid-x.upcoming-event-bdr
-    .cell.large-4
+    .cell.large-4.medium-4
         .event-today.event-today-bdr
             h2 upcoming-event
-    .cell.large-4
-        input#datepicker(type='text')
+    .cell.large-4.event-dtae-pick.text-center.medium-4
+        input#datepicker(type='text', placeholder='Wednesday  Aug 8')
+            
 
-    .cell.large-4.create-event
+    .cell.large-4.create-event.text-right.medium-4
         h3 create event
             i.fas.fa-plus-circle
-.grid-x
-    .cell.large-3
+        h4  event
+            i.fas.fa-plus-circle
+.grid-x.grid-padding-x.grid-padding-y
+    .cell.large-3.search-event.medium-3
         form.example(action='/action_page.php', style='margin:auto;max-width:300px')
             input(type='text', placeholder='Search..', name='search2')
             i.fa.fa-search
             
-    .cell.large-3
+    .cell.large-3.event-btn.medium-3
         button santa barbara
             i.fas.fa-map-marker-alt
 
-    .cell.large-3.comn-select
+    .cell.large-3.comn-select.medium-3
         select
             option(value='husker') location
             option(value='starbuck') Starbu0ck
             option(value='hotdog') newyork
             option(value='apollo') rush
 
-    .cell.large-3.comn-select
+    .cell.large-3.comn-select.medium-3
         select
-            option(value='husker') location
+            option(value='husker') category
             option(value='starbuck') Starbu0ck
             option(value='hotdog') newyork
             option(value='apollo') rush
-
+//- up coming bg-img
 each item in [1,2,3,4,5,6,7]
-    .grid-x.grid-padding-x
+    .grid-x.grid-padding-x 
         .cell.large-5
-            .premier
-            .premier-img(style="background-image: url(../assets/image/sd.jpg)")
+            .premier.premier-main
+                .premier-img-again(style="background-image: url(../assets/image/sd.jpg)")
         .cell.large-7.premier-time-padd
             .premier-time
                 i.far.fa-clock
@@ -45,10 +48,10 @@ each item in [1,2,3,4,5,6,7]
             .premier-p
                 i.fas.fa-map-marker-alt
                 p Santa Barbara
-            .premier-head
+            .premier-head.event-head-x
                 h2 Heading goes here lorem ipsum dolor sit amet, consecteturffds adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies
 
 .grid-x
-    .cell
+    .cell.load-btn.text-center
         button  load more
            

@@ -1,0 +1,81 @@
+.upcoming-event {
+    padding-bottom: 70px;
+}
+.premier-time-padd {
+    padding-top: 15px; 
+}
+.comn-select select {
+    background: $red;
+    border: none;
+    border-radius: 4px;
+    padding: 14px 10px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.search-event i.fa.fa-search {
+    position: absolute;
+}    
+.event-btn i.fas {
+    padding-left: 25px;
+}    
+.event-btn button {
+    background: #990000;
+    font-size: 14px;
+    padding: 18px 29px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;  
+    text-transform: capitalize;
+}     
+.premier-img-again {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 250px;
+}
+.search-event i.fa.fa-search {
+    position: absolute;
+    top: 14px;
+    right: 32px;
+}
+.search-event input[type="text"] {
+    width: 100%;
+    padding: 14px 5px;
+    border: none;
+    border: 1px solid $silver;
+    border-radius: 4px; 
+} 
+.upcoming-event-bdr {
+    border-bottom: 1px solid #000;
+    padding: 0 0 15px 0;
+}
+.create-event h3 {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.create-event h4 {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: none;
+}
+.event-dtae-pick {
+    margin: 25px 0 0 0;
+}
+.create-event {
+    margin: 30px 0 0 0;
+}
+.event-head-x {
+    padding-top: 30px !important;
+}
+.create-event i.fas.fa-plus-circle {
+    color: #990000;
+    padding: 0 0 0 5px;
+}
+.load-btn {
+    padding: 20px 0 0 0;
+}
+input#datepicker {
+    width: 100%;
+}

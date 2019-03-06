@@ -1,5 +1,8 @@
 #premiere-event {
     // cell event todau scss
+    .premier-main {
+        margin: 17px 0;
+    }
     .premiere-event h2{
         font-size: 20px;
         font-family: EloquentJFRegularPro ☞;
@@ -15,7 +18,13 @@
     } 
     .event-today {
         border-bottom: 1px solid #000;
-        padding-bottom: 10px;
+        padding: 15px 0;
+    }
+    .premier-img-one {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 200px;
     }
     .event-bg-one {
         background-size: cover;
@@ -30,6 +39,15 @@
         background-position: top;
         height: 600px;
         margin: 25px 0 0 0;
+    }
+    .load-btn button {
+        background: #990000;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 14px;
+        padding: 18px 78px;;
+        border-radius: 4px;
+        cursor: pointer;
     }
     // date formate
     .demo-non-form {
@@ -58,5 +76,4 @@
     .upcoming-event-bdr {
         border-bottom: 1px solid #000;
     }
-    // create event cell
 }

@@ -1,4 +1,4 @@
-premier-head h2 {
+.premier-head h2 {
     font-weight: bold;
     font-size: 1.111em;
     overflow-x: hidden;
@@ -11,6 +11,13 @@ premier-head h2 {
 // News Single / Standard Articleformat
 // for i-pad media query
 @media screen and (max-width: 63.9375em) {
+
+
+// upcoming page scss
+.event-btn button {
+    padding: 18px 13px;
+    font-size: 11px;
+}
 // header scss start
     #header {
         .date.cell.large-6 a {
@@ -580,7 +587,12 @@ premier-head h2 {
             left: 14%;
         }
     }
+
+
+
 }
+
+
 
 
 // FOR IPAD MEDIA SCSS
@@ -600,7 +612,7 @@ premier-head h2 {
         .briefs-news p {
             font-size: 18px;
         }
-        
+
     }
     #brief-two {
         .grid-x>.medium-6 {
@@ -735,10 +747,72 @@ premier-head h2 {
             height: 170px;
         }   
         .remove-btn button {
-            font-size: 10px;;
+            font-size: 10px;
         }
     } 
+    // upcoming event page ipad scss
+    .event-btn button {
+        padding: 17px 5px;
+        font-size: 10px;
+    }
+    .comn-select select {
+        font-size: 12px;
+    }
+    #premiere-event {
+        .premier-time p {
+            padding: 0 0 0 11px;
+            font-size: 12px;
+        }
+        .premier-head h2 {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .premier-img-one {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: 180px;
+        }
+        .event-bg-two {
+            height: 530px;
+        }
+        .event-today h2 {
+            font-size: 16px;
+        }
+        .event-dtae-pick {
+            margin: 18px 0 0 0;
+        }
+        
+        
+    }
+    // upcoming page ipad  media scss
+    .search-event input[type="text"] {
+        padding: 10px 5px;
+        font-size: 11px;
+    }
+    .event-btn i.fas {
+        padding-left: 6px;
+    }
+    .event-btn button {
+        padding: 12px 5px;
+        font-size: 10px;
+    }
+    .comn-select select {
+        padding: 10px 10px;
+    }
+    .premier-img-one {
+        height: 180px;
+    }
+    .premier-img-again {
+        height: 220px;
+    }
+    .create-event {
+        margin: 20px 0 0 0;
+    }
+  
     
+    
+        
     
 }
 
@@ -1717,6 +1791,59 @@ premier-head h2 {
         .checkbox-media {
             text-align: center;
         }
+    }
+    // Events Archive page scss
+    .upcoming-event{
+        order: 1;
+    }
+    .event-archive-cell{
+        order: 2;
+    }
+    form.example {
+        width: 100%;
+        margin: 0;
+        max-width: 639px !important;
+    }
+    .event-btn button { 
+        width: 100%;
+    }
+    .create-event{
+        position: relative;
+    }
+    .create-event h3 {
+        display: none;
+    }
+    .create-event h4 {
+        display: inline-block;
+        position: absolute;
+        top: -105px;
+        right: 0;
+    }
+    input#datepicker {
+        padding: 6px 0;
+    }
+    #premiere-event {
+        .upcoming-event-bdr {
+            border-bottom: none;
+        }
+        .event-today h2 {
+            font-size: 16px;
+            border-bottom: 1px solid #000   ;
+            padding-bottom: 15px;
+        }
+        .upcoming-event-bdr {
+            padding: 0;
+        }
+        .event-today {
+           border-bottom: none;
+        }
+        .event-bg-two {
+            margin-bottom: 54px;
+        }
+        .load-btn button {
+            width: 100%;
+        }
+        
     }
 }
 
