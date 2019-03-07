@@ -11,8 +11,6 @@
 // News Single / Standard Articleformat
 // for i-pad media query
 @media screen and (max-width: 63.9375em) {
-
-
 // upcoming page scss
 .event-btn button {
     padding: 18px 13px;
@@ -252,7 +250,7 @@
             font-size: 16px;
             font-weight: bold;
         }
-       .related-header-content-h h2 {
+        .related-header-content-h h2 {
             font-size: 17px;
         }
         .related-header-content-p p {
@@ -578,6 +576,7 @@
         .event-icon button {
             font-size: 13px;
         }    
+    }
     // edit profile page media scss
     #edit-profile {
         .personal-info {
@@ -587,9 +586,62 @@
             left: 14%;
         }
     }
-
-
-
+    // event-single page scss
+    #event-single {
+        .contact-btn button {
+            padding: 17px 40px;
+        }
+        .contact-btn button {
+            padding: 16px 22px;
+            font-size: 13px;
+        }
+        .event-title h2 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .event-bg {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .event-icons {
+            padding: 181px 0 0 40px;
+        }
+        .phone-add h3 {
+            font-size: 13px;
+        }
+        .event-date p {
+            font-size: 12px;
+            font-family: Roboto;
+            text-transform: capitalize;
+        }
+        .category-time-i {
+            margin-right: 10px;
+        }
+        .category-detail p {
+            font-size: 16px;
+            font-family: roboto;
+        }
+        .event-location {
+            margin-right: 10px;
+        }
+        .related-event-heading h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .event-related-post.back-ground {
+            height: 228px;
+        }
+        .contact-detail-main {
+            padding: 16px 0;
+            border-bottom: 1px solid #000;
+        }
+        .related-post-h h2 {
+            font-size: 17px;
+            padding: 0 18px;
+        }
+        
+    }
+       
 }
 
 
@@ -808,12 +860,37 @@
     }
     .create-event {
         margin: 20px 0 0 0;
+    }     
+    // event-single page ipad media
+    #event-single {
+        .event-bg {
+            height: 400px;
+            margin: 20px 0;
+        }   
+        .contact-btn button {
+            padding: 13px 14px;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        .category-detail {
+            padding-bottom: 25px;
+            width: 100%;
+        }
+        .category-time {
+            width: 100%;
+            padding-bottom: 20px;
+       } 
+       .event-icons {
+            padding: 200px 0 0 40px;
+        }
+        .event-bg {
+            height: 319px;
+            margin: 20px 0;
+        }
+        .contact-detail-main {
+            padding: 16px 0;
+        }
     }
-  
-    
-    
-        
-    
 }
 
 
@@ -1843,26 +1920,91 @@
         .load-btn button {
             width: 100%;
         }
-        
     }
+    //  event single part media mobile scss
+    #event-single {
+        .event-bg {
+            height: 219px;
+            margin: 20px 0;
+            background-size: cover;
+        }
+        
+        .event-title h2 {
+            font-size: 30px;
+            font-weight: bold;
+        }     
+        .btns {
+            display: inline-block;
+            padding-top: 15px;
+            width: 100%;
+        }
+        .contact-btn button {
+            margin-left: 0;
+            width: 100%;
+        }
+        .category-detail {
+            order: 2;
+        }
+        .category-time {
+            order: 1;
+        }
+        .related-post-bg {
+            padding-right: 0;
+            padding-bottom: 10px;
+        }
+        .location-category {
+            padding: 0 0 15px 0;
+        }
+        .event-icons {
+            padding: 0;
+            display: inline-block;
+            position: absolute;
+        }
+        .event-icons-ul ul {
+            background: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .event-icons li {
+            display: inline-block;
+            padding: 0 32px;
+        }
+
+        // for stickey notes
+        .header-sticky {
+            color: #f1f1f1;
+            width: 100%;
+        }
+        .content {
+            padding: 16px;
+        }
+        .sticky {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .sticky + .content {
+            padding-top: 102px;
+        }
+    }
+   
 }
 
 
-    // for iphone 6/7/8 media scss
-    @media screen and (max-width: 25.875em) {
-        #delivery-info {
-            .cross-angle {
-                width: 180px;
-                height: 130px;
-                left: 59px;
-            }
-        } 
-        #matrics-charts {
-            .media-download i.fas.fa-download {
-                color: #fff;
-                position: absolute;
-                left: 110px;
-            }
-        }   
-    }
+// for iphone 6/7/8 media scss
+@media screen and (max-width: 25.875em) {
+    #delivery-info {
+        .cross-angle {
+            width: 180px;
+            height: 130px;
+            left: 59px;
+        }
+    } 
+    #matrics-charts {
+        .media-download i.fas.fa-download {
+            color: #fff;
+            position: absolute;
+            left: 110px;
+        }
+    }   
 }

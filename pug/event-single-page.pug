@@ -13,36 +13,39 @@ html.no-js(lang='en')
                         img(src="../assets/image/Rectangle.png", alt="")
 
         //- event single page html 
+        
+
         #event-single
             .grid-container
-                .grid-x 
-                    .cell.large-1.event-icons
-                        ul 
-                            li
-                                a(href="#")
-                                    i.fab.fa-facebook-f
-                            li
-                                a(href="#")
-                                    i.fab.fa-twitter
-                            li
-                                a(href="#")
-                                    i.fas.fa-sim-card
-                            li
-                                a(href="#")
-                                    i.fas.fa-info
-                            li
-                                a(href="#")
-                                    i.fas.fa-envelope
+                .grid-x.grid-padding-x 
+                    .top-container
+                    #myHeader.header-sticky.cell.large-1.event-icons.medium-1
+                        .event-icons-ul
+                            ul
+                                li
+                                    a(href="#")
+                                        i.fab.fa-facebook-f
+                                li
+                                    a(href="#")
+                                        i.fab.fa-twitter
+                                li
+                                    a(href="#")
+                                        i.fas.fa-file-invoice
+                                li
+                                    a(href="#")
+                                        i.fas.fa-info
+                                li
+                                    a(href="#")
+                                        i.fas.fa-envelope
                            
-
-
-                    .cell.large-11
+                    .content
+                    .cell.large-11.medium-11
                         .grid-x
                             .cell.create-event-h2.text-right
                                 h2 create
                                     span 
                                     | event
-                                    i.fas.fa-plus-circle
+                                i.fas.fa-plus-circle
                             .cell.event-title
                                 h2 Event title goes here lorem ipsum dolor sit amet, sectetur adipiscing 
                             .cell.event-bg(style="background-image: url(../assets/image/vr.jpg)")
@@ -52,48 +55,57 @@ html.no-js(lang='en')
                                     h3 category
                                 .location-category-h 
                                     h3 location category 
-                        .grid-x
-                            .cell
-                                .contact-add 
-                                    h2 contact 
-                                .phone-add p
-                                     john doe
-                                .contact-add 
-                                    h2 phone 
-                                .phone-add 
-                                    h2 000-000-0000
-
-                            .cell
-                                button add to calendor
-                                button Get Tickets - $15
-                        .grid-x
-                            .cell
-                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor bibendum sed vitae diam. Morbi pharetra odio eget neque auctor fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vel imperdiet mauris. Donec accumsan mollis rutrum. Nam a purus vitae lacus aliquam aliquet vitae in nisl. Phasellus bibendum vulputate lorem, ut ullamcorper ligula feugiat vel. Curabitur neque lacus, sollicitudin porta ex quis, ullamcorper vestibulum quam. Mauris ultrices condimentum purus quis blandit. Etiam dapibus dictum elit sit amet volutpat.
-                                p Vestibulum id scelerisque orci. Nunc volutpat condimentum augue, vitae tempor urna tempus vel. Pellentesque a risus at nisi aliquam molestie nec 
-                            
-                            .cell
-                                .grid-x 
+                        .grid-x.contact-detail-main
+                            .cell.large-6.medium-6
+                                .grid-x
                                     .cell
+                                        .contact-add.large-12
+                                            h2 contact 
+                                        .phone-add.large-12
+                                            h3 john doe
+                                    .cell
+                                        .contact-add    
+                                            h2 phone 
+                                        .phone-add 
+                                            h3 000-000-0000
+
+                            .cell.large-6.contact-btn.text-right.medium-6
+                                .btns 
+                                    button add to calendor
+                                .btns
+                                    button Get Tickets - $15
+                        .grid-x.category-detail-main.grid-padding-x
+                            .cell.category-detail.large-9.medium-9
+                                .category-detail
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor bibendum sed vitae diam. Morbi pharetra odio eget neque auctor fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vel imperdiet mauris. Donec accumsan mollis rutrum. Nam a purus vitae lacus aliquam aliquet vitae in nisl. Phasellus bibendum vulputate lorem, ut ullamcorper ligula feugiat vel. Curabitur neque lacus, sollicitudin porta ex quis, ullamcorper vestibulum quam. Mauris ultrices condimentum purus quis blandit. Etiam dapibus dictum elit sit amet volutpat.
+                                .category-detail
+                                    p Vestibulum id scelerisque orci. Nunc volutpat condimentum augue, vitae tempor urna tempus vel. Pellentesque a risus at nisi aliquam molestie nec 
+                            
+                            .cell.large-3.category-time.medium-3
+                                .grid-x
+                                    .cell.large-1.category-time-i.medium-1.small-1
                                         i.fas.fa-clock
-                                    .cell   
+                                    .cell.large-10.category-time-h.medium-10.small-10  
                                         .event-time 
                                             h2 date &amp; time
                                         each item in [1,2,3]
                                             .event-date
-                                                p   mon, jul 6:46 A.M.
+                                                p   mon, jul  &nbsp;  &nbsp; &nbsp; 6:46 A.M.
                                 .grid-x
-                                    .cell
+                                    .cell.large-1.medium-1.event-location.small-1
                                         i.fas.fa-map-marker-alt
-                                    .cell   
+                                    .cell.large-10.medium-10.small-10
+                                        .event-time 
+                                            h2 location
                                         p santa barbara
                         .grid-x 
-                            .cell       
+                            .cell.related-post-h       
                                 h2 related posts
                             each itam in [1,2,3]
-                                .cell               
-                                    .event-related-post(style="background-image: url(../assets/image/ef.jpg)")
+                                .cell.large-4.related-post-bg.medium-4             
+                                    .event-related-post.back-ground(style="background-image: url(../assets/image/ef.jpg)")
                                     .related-event-heading  
                                         h2 Heading goes here sit amet, consectetur  elit. 
-
-                
+        include footer
+        include scripts
 

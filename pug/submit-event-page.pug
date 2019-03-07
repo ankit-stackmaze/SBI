@@ -1,0 +1,89 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+  
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+
+        #submit-event   
+            .grid-container
+                //- create event grid   
+                .grid-x
+                    .cell.title.text-center
+                        h2 create event
+                .grid-x
+                    .cell.submit-title
+                        .intro-title-h
+                            h2 Intro content headline here
+                        .intro-title-p
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor 
+                
+                //- basic details grid
+                .grid-x
+                    .cell
+                        .intro-title-h
+                            h2 Basic details
+                    .cell
+                        .event-title
+                            h3 Event Title
+                        label
+                            input(type='text', placeholder='')
+
+                        .event-title
+                            h3 discription
+                        label
+                            textarea(placeholder='')
+
+                    .cell
+                        .grid-x 
+                            .cell
+                                .event-title
+                                    h3 category
+                                label
+                                    select
+                                        option(value='husker') select category
+                                        option(value='starbuck') Starbuck
+                                        option(value='hotdog') Hot Dog
+                                        option(value='apollo') Apollo
+
+                            .cell
+                                .event-title
+                                    h3 admission
+                                label
+                                    select
+                                        option(value='husker') $ 10
+                                        option(value='starbuck')  $ 20
+                                        option(value='hotdog')  $ 30
+                                        option(value='apollo')  $ 40
+                    .cell 
+                        .grid-x  
+                            .cell
+                                .event-title
+                                    h3 Featured image
+                            .cell
+                                input#myFile(type='file')
+                //- event location grid
+                .grid-x 
+                    .cell
+                        .intro-title-h
+                            h2 Event Location
+                    .cell
+                        .event-title
+                            h3 address
+                        label
+                            textarea(placeholder='')
+                //- event date & time grid
+                .grid-x 
+                    .cell
+                        .intro-title-h
+                            h2 Event date &nsb; time
+                    .cell
+                        .event-title
+                            h3 date

@@ -1,6 +1,7 @@
 $black:#000;
 $red:#990000;
 $silver:#EBEEF1;
+$white: #fff;
 .heading {
     font-size: 1.25em;
     font-weight: 400;
@@ -18,4 +19,31 @@ $silver:#EBEEF1;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    border-radius: 4px;
 }
+
+button {
+    text-transform: capitalize;
+    background: $red;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+}  
+button:hover {
+    background-color: #a70a0ad9;
+    color: #000;
+    font-weight: 500;
+}
+a:hover {
+    color: $red;
+}
+i:hover {
+    color: $red;
+}
+.title h2 {
+    font-family: EloquentJFRegularPro ☞;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+    
