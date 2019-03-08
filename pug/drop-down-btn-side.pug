@@ -1,0 +1,39 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+        #drop-down-menu
+            .grid-container
+                .grid-x
+                    .cell.large-1.select-input-box
+                         input(type='radio', name='gender', value='free', checked='')
+                    .cell.large-3
+                         P free
+                .grid-x
+                    .cell.large-1.select-input-box
+                        input(type='radio', name='gender', value='free', checked='')
+                    .cell.large-3
+                        .grid-x
+                            .cell.large-8.select-input-box
+                                input(type='text-box')
+                            .cell.large-1.select-p
+                                P $
+                .grid-x
+                    .cell.large-1.select-input-box
+                        input(type='radio', name='gender', value='free', checked='')
+                    .cell.large-3
+                        .grid-x
+                            .cell.large-1
+                                P free
+                            .cell.large-6
+                                input(type='text-box')
+                            

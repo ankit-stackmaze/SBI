@@ -283,7 +283,6 @@ $( function() {
 
 // stickey header
 window.onscroll = function() {myFunction()};
-
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
 
@@ -294,3 +293,11 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+// submit event page drop down
+  $(document).foundation();
+
+  // Menu links disabled just for demo purposes
+  $('.menu a').on('click', function (a) {
+    a.preventDefault();
+  });

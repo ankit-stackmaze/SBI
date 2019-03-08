@@ -1,4 +1,7 @@
 #submit-event {
+    .submit-event-main {
+        margin: 0 auto;
+    }
     .intro-title-h h2 {
         font-size: 20px;
         font-weight: bold;
@@ -8,5 +11,161 @@
         font-size: 16px;
         line-height: 1.5;
         text-transform: capitalize;
+    }
+    .date-picker.event h3 {
+        display: inline-block;
+    }
+    .event-title h3{
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    .intro-title-h {
+        padding: 50px 0 10px 0;
+        border-bottom: 1px solid #000;
+    }
+    .intro-title-p p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .comn-submit-lable label {
+        width: 100%;
+    }
+    .comn-submit-lable input[type="text"], input#url {
+        width: 100%;
+        border: 1px solid $silver;
+        padding: 15px 5px;
+        font-size: 12px;
+    }
+    .comn-submit-lable textarea {
+        width: 100%;
+        border: 1px solid $silver;
+    }
+    .event-title {
+        padding-top: 20px;
+    }
+    .submit-category-event select {
+        background: $silver;
+        border: none;
+        padding: 15px 10px;
+        font-size: 14px;
+        border-radius: 4px; 
+    }
+    .submit-category-padd {
+        padding-right: 20px;
+    }
+    .event-title {
+        padding: 20px 0 5px 0;
+    }
+    .submit-file input {
+        border: none;
+    }
+    .event-title input[type="text"] {
+        border: none;
+        background: #dddddd;
+    }
+    .cell.large-6.date-time-background {
+        background: $silver;
+        padding: 0 10px;
+    }
+    .date-time-background input[type="date"], input[type="time"] {
+        border: #dddddd;
+        margin: 10px 4px 10px 0;
+        font-size: 11px;
+    }
+    .add-link-date h4 {
+        font-size: 12px;
+        color: $red;
+        text-transform: capitalize;
+    }
+    .add-link-date {
+        padding-top: 25px;
+    }
+    // for check box scss
+    input[type=checkbox] + label {
+        display: block;
+        cursor: pointer;
+        padding: 20px 0 0 0;
+        font-size: 12px;
+      }
+      
+    input[type=checkbox] {
+        display: none;
+    }
+      
+    input[type=checkbox] + label:before {
+    content: "\2714";
+        border: 0.1em solid #000;
+        border-radius: 0.2em;
+        display: inline-block;
+        width: 1.4em;
+        height: 1.4em;
+        padding-left: 0.2em;
+        padding-bottom: 0.3em;
+        margin-right: 0.8em;
+        vertical-align: bottom;
+        color: transparent;
+        transition: .2s;
+    }
+    input[type=checkbox] + label:active:before {
+        transform: scale(0);
+    }
+    input[type=checkbox]:checked + label:before {
+        background-color: $red;
+        border-color: $red;
+        color: #fff;
+    }
+    .submit-event-btn button {      
+        width: 400px;
+        padding: 17px 0;
+    }
+    .submit-event-btn  {
+        width: 100%;
+        padding: 50px 0 65px 0;
+    }
+
+    // drop down 
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: red;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        top: 50px;
+        left: 0;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    
+    .main {
+        display:inline-box;
+    }
+    .rglm {
+        display:inline-box;
     }
 }

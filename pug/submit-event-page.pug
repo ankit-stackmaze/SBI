@@ -14,76 +14,167 @@ html.no-js(lang='en')
 
         #submit-event   
             .grid-container
-                //- create event grid   
                 .grid-x
-                    .cell.title.text-center
-                        h2 create event
-                .grid-x
-                    .cell.submit-title
-                        .intro-title-h
-                            h2 Intro content headline here
-                        .intro-title-p
-                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor 
-                
-                //- basic details grid
-                .grid-x
-                    .cell
-                        .intro-title-h
-                            h2 Basic details
-                    .cell
-                        .event-title
-                            h3 Event Title
-                        label
-                            input(type='text', placeholder='')
-
-                        .event-title
-                            h3 discription
-                        label
-                            textarea(placeholder='')
-
-                    .cell
-                        .grid-x 
+                    .cell.large-8.submit-event-main
+                        //- create event grid   
+                        .grid-x
+                            .cell.title.text-center
+                                h2 create event
+                        .grid-x
+                            .cell.submit-title
+                                .intro-title-h
+                                    h2 Intro content headline here
+                                .intro-title-p
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor 
+                        
+                        //- basic details grid
+                        .grid-x.comn-submit-lable
+                            .cell
+                                .intro-title-h
+                                    h2 Basic details
                             .cell
                                 .event-title
-                                    h3 category
+                                    h3 Event Title
                                 label
-                                    select
-                                        option(value='husker') select category
-                                        option(value='starbuck') Starbuck
-                                        option(value='hotdog') Hot Dog
-                                        option(value='apollo') Apollo
+                                    input(type='text', placeholder='')
+
+                                .event-title
+                                    h3 discription
+                                label
+                                    textarea(placeholder='')
 
                             .cell
+                                .grid-x.submit-category-event 
+                                    .cell.large-6.submit-category-padd
+                                        .event-title
+                                            h3 category
+                                        label
+                                            select
+                                                option(value='husker') select category
+                                                option(value='starbuck') Starbuck
+                                                option(value='hotdog') Hot Dog
+                                                option(value='apollo') Apollo
+
+                                    .cell.large-6
+                                        .event-title
+                                            ul.menu.dropdown(data-dropdown-menu='')
+                                                li
+                                                    a(href='#') Services
+                                                        ul.menu
+                                                            li
+                                                                a(href='#') Consultancy
+                                                            li
+                                                                a(href='#') Accounting
+                                                            li
+                                                                a(href='#') Dynamics
+
+                                            //- button.dropdown Dropdown
+                                            //-     .dropdown-content
+                                            //-         .grid-container
+                                            //-             .grid-x
+                                            //-                 .cell.large-1.select-input-box
+                                            //-                     input(type='radio', name='gender', value='free', checked='')
+                                            //-                 .cell.large-3
+                                            //-                     P free
+                                            //-             .grid-x
+                                            //-                 .cell.large-1.select-input-box
+                                            //-                     input(type='radio', name='gender', value='free', checked='')
+                                            //-                 .cell.large-3
+                                            //-                     .grid-x
+                                            //-                         .cell.large-8.select-input-box
+                                            //-                             input(type='text-box')
+                                            //-                         .cell.large-1.select-p
+                                            //-                             P $
+                                            //-             .grid-x
+                                            //-                 .cell.large-1.select-input-box
+                                            //-                     input(type='radio', name='gender', value='free', checked='')
+                                            //-                 .cell.large-3
+                                            //-                     .grid-x
+                                            //-                         .cell.large-1
+                                            //-                             P free
+                                            //-                         .cell.large-6
+                                            //-                             input(type='text-box')
+                                                        
+
+                            .cell 
+                                .grid-x
+                                    .event-title
+                                        h3 Featured image
+                                    .cell.submit-file
+                                        input#myFile(type='file', placeholder='')
+                        //- event location grid
+                        .grid-x.comn-submit-lable 
+                            .cell
+                                .intro-title-h
+                                    h2 Event Location
+                            .cell
                                 .event-title
-                                    h3 admission
+                                    h3 address
                                 label
-                                    select
-                                        option(value='husker') $ 10
-                                        option(value='starbuck')  $ 20
-                                        option(value='hotdog')  $ 30
-                                        option(value='apollo')  $ 40
-                    .cell 
-                        .grid-x  
+                                    textarea(placeholder='')
+
+                        //- event date & time grid
+                        .grid-x.comn-submit-lable
                             .cell
+                                .intro-title-h
+                                    h2 Event date & time
+                            .cell
+                                .event-title.date-picker.event.grid-x.grid-margin-x
+                                    .cell.large-6
+                                        .event-title  
+                                            h3 date
+                                        .grid-x.grid-margin-x
+                                            .cell.large-6.date-time-background
+                                                h3 from 
+                                                br
+                                                input(type='date', name='')
+                                                i.fas.fa-calendar-alt
+                                            .cell.large-6.date-time-background
+                                                h3 to 
+                                                br
+                                                input(type='date', name='')
+                                                i.fas.fa-calendar-alt
+
+                                    .cell.large-6
+                                        .event-title  
+                                            h3 time
+                                        .grid-x.grid-margin-x
+                                            .cell.large-6.date-time-background
+                                                h3 from
+                                                br
+                                                input(type='time')
+                                                i.far.fa-clock
+                                            .cell.large-6.date-time-background
+                                                h3 to 
+                                                br
+                                                input(type='time')
+                                                i.far.fa-clock
+                                    .cell
+                                        .add-link-date
+                                            h4 add date
+                        //-  event links
+                        .grid-x.comn-submit-lable
+                            .cell
+                                .intro-title-h
+                                    h2 Event links  
                                 .event-title
-                                    h3 Featured image
-                            .cell
-                                input#myFile(type='file')
-                //- event location grid
-                .grid-x 
-                    .cell
-                        .intro-title-h
-                            h2 Event Location
-                    .cell
-                        .event-title
-                            h3 address
-                        label
-                            textarea(placeholder='')
-                //- event date & time grid
-                .grid-x 
-                    .cell
-                        .intro-title-h
-                            h2 Event date &nsb; time
-                    .cell
-                        .event-title
-                            h3 date
+                                    h3 ticket url
+                                input#url(type='url', name='url', placeholder='https://example.com' , pattern='https://.*', size='30', required='')
+                                .event-title
+                                    h3 enter url
+                                input#url(type='url', name='url', placeholder='https://example.com' , pattern='https://.*', size='30', required='')
+                                .event-title
+                                    h3 Additional Media URL 
+                                input#url(type='url', name='url', placeholder='https://example.com' , pattern='https://.*', size='30', required='')
+
+                                .add-link-date
+                                    h4 add links
+                                input#fruit1(type='checkbox', name='fruit-1', value='Apple')
+                                label(for='fruit1') Sponsor this Event
+
+                            .grid-x.submit-event-btn
+                                .cell.text-center.large-12
+                                    button submit event
+
+        include scripts
+        include footer

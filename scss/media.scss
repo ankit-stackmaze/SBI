@@ -639,8 +639,14 @@
             font-size: 17px;
             padding: 0 18px;
         }
-        
     }
+    // submit-event page media scss
+        #submit-event {
+            .submit-category-padd {
+                padding-right: 0;
+        }
+}
+
        
 }
 
@@ -834,7 +840,6 @@
         .event-dtae-pick {
             margin: 18px 0 0 0;
         }
-        
         
     }
     // upcoming page ipad  media scss
@@ -1987,6 +1992,16 @@
             padding-top: 102px;
         }
     }
+// for submit-event page mobile media scss
+    #submit-event {
+        .submit-event-btn button {
+            width: 100%;
+            padding: 17px 0;
+        }
+        input[type="time"] {
+            font-size: 15px;
+        }
+    }
    
 }
 
@@ -2001,7 +2016,7 @@
         }
     } 
     #matrics-charts {
-        .media-download i.fas.fa-download {
+        .date-time-background input[type="date"], input[type="time"] {
             color: #fff;
             position: absolute;
             left: 110px;
