@@ -1,0 +1,83 @@
+    // create-death-notice-obit-premium scss
+#become-supporter{
+    .title h2 {
+        display: inline-block;
+    }
+    .title p {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .title i.fas.fa-star {
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        background: $red;
+        border-radius: 50%;
+        padding-top: 3px;
+    }
+}
+
+
+
+#death-notice-premium {
+    .obituary-premium-second {
+        padding-top: 30px;
+    }
+    .obituary-premium {
+        margin: 0 auto;
+    }
+    .common-btn-text {
+        display: none;
+    }
+    // .date-of-input {
+    //     display: none;
+    // }
+    .purchase-premium.obit-h2 {
+        display: none;
+    }
+    .obit-btn.large-12 {
+        display: none;
+    }
+    .add-btn button {
+        width: 232px;
+        padding: 16px 0;
+    }
+    .cancel-btn button {
+        width: 232px;
+        padding: 16px 0;
+        background: $silver;
+        color: #000;
+        font-weight: bold;
+    }
+    .product-btn {
+        display: none;
+    }    
+    .add-to-carts h2 {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: capitalize;
+        display: inline-block;
+    }
+    .add-to-carts p {
+        font-size: 18px;
+        display: inline-block
+    }
+    .add-to-carts {
+        padding: 6px 0 130px 0;
+        border-top: 1px solid #EBEEF1;
+    }
+    .total-price {
+        padding: 15px 0 30px 0;
+    }
+    .date-of-submit {
+        margin-right: 70px;
+    }
+    .purchase-premium {
+        display: none;
+    }
+    .date-of-input select {
+        max-width: 126px;
+    }
+    
+ }

@@ -1,0 +1,45 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+  
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+
+        
+        //- product-single page pug 
+        #become-supporter
+            .grid-container
+                .grid-x
+                    .cell.title.text-center.become-title
+                        h2 page title here
+
+        #title-page
+            .grid-container
+                .grid-x
+                    .cell.large-8.standard-default
+                        .title-page-bg(style="background-image: url(../assets/image/hdf.jpg)")
+                        .title-page-h2
+                            h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor bibendum sed vitae diam. Morbi pharetra odio eget neque auctor fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vel imperdiet mauris. Donec accumsan mollis rutrum. Nam a purus vitae lacus aliquam aliquet vitae in nisl. Phasellus bibendum vulputate lorem, ut ullamcorper ligula feugiat vel. Curabitur neque lacus, sollicitudin porta ex quis, ullamcorper vestibulum quam. Mauris ultrices condimentum purus quis blandit. Etiam dapibus dictum elit sit amet volutpat.
+                        .title-page-h2
+                            h2 Vestibulum id scelerisque orci. Nunc volutpat condimentum augue, vitae tempor urna tempus vel. Pellentesque a risus at nisi aliquam molestie nec eget nibh. Pellentesque maximus euismod nibh. 
+
+
+
+                        .grid-x
+                            .cell.related-post-h      
+                                h2 related posts
+                            each itam in [1,2,3]
+                                .cell.large-4.related-post-bg.medium-4             
+                                    .event-related-post.back-ground(style="background-image: url(../assets/image/ef.jpg)")
+                                    .related-event-heading  
+                                        h2 Heading goes here sit amet, consectetur  elit.
+
+        include scripts
+        include footer

@@ -1,4 +1,7 @@
 #comment {
+    .comment-john-doe-response i:hover {
+        color: $red;
+    }
     .comment-numbers {
         display: inline-block;
         padding: 0 0 0 50px;
@@ -113,7 +116,6 @@
     .comment-john-doe.grid-x.admin {
         margin: 0 0 0 50px;
         background: #DDDDDD;
-        border-left: 2px solid#EBEEF1;
     }
     .comment-right-detail.cell.large-11.medium-11 {
         border-left: 2px solid#EBEEF1;

@@ -12,7 +12,7 @@
         text-transform: capitalize;
     }
     .more-like-this {
-        padding: 20px 25px;
+        padding: 20px 0;
     }
     .more-like-left-content h2 {
         font-size: 26px;
@@ -28,7 +28,14 @@
     .more-like-left-content {
         padding: 20px 0;
     }
-    .newsletter-order-first {
-        display: block;
+    .more-like-this p {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-family: EloquentJFRegularPro ☞;
+    }
+    .more-like-this p {
+        border-bottom: 1px solid #000000;
+        padding-bottom: 20px
     }
 }

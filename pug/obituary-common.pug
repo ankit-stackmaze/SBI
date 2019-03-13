@@ -1,0 +1,84 @@
+.grid-x
+    .cell.large-8.medium-12
+        .date-of-birth
+            h2 Name
+        .date-of-input
+            input(type='text', placeholder='')
+        .date-of-birth
+            h2 date-of-birth
+        .date-of-input
+            select
+                option(value='') mm
+                option(value='') 01s
+                option(value='') 02
+                option(value='') 03
+            select
+                option(value='') dd
+                option(value='') 01
+                option(value='') 02
+                option(value='') 03
+            select
+                option(value='') year
+                option(value='') 2018
+                option(value='') 2019
+                option(value='') 2020
+        .date-of-birth
+            h2 date-of-death
+        .date-of-input
+            select
+                option(value='') mm
+                option(value='') 01
+                option(value='') 02
+                option(value='') 03
+            select
+                option(value='') dd
+                option(value='') 01
+                option(value='') 02
+                option(value='') 03
+            select
+                option(value='') year
+                option(value='') 2018
+                option(value='') 2019
+                option(value='') 2020
+        .cell.large-12
+            .obit-textarea
+                .date-of-birth
+                    h2 Obituary Description
+                .date-of-submit
+                    textarea
+                .grid-x
+                    .cell.large-4
+                        h2 300
+                    .cell.large-8.text-right
+                        .purchase-premium.obit-h2  
+                            a(href="#") purchase-premium &nbsp;
+                            h2 for long description
+                    .cell.obit-btn.large-12
+                        button submits
+
+                
+           
+    .cell.large-4.medium-12
+        #drop-area
+            form.my-form
+                input#fileElem(type='file', multiple='', accept='image/*', onchange='handleFiles(this.files)')
+                label.button(for='fileElem') Upload featured image
+            progress#progress-bar(max='100', value='0')
+            .purchase-premium   
+                a(href="#") purchase-premium
+                h2 to add image gallery 
+           
+            #gallery
+                .gallery 
+                    h2 image gallery
+                .lmtd-img   
+                    h2 up to 4 image
+                
+    .cell.large-12.common-btn-text
+        .date-of-birth
+            h2 Obituary Description
+        .date-of-submit
+            textarea
+    .cell.text-center.product-btn
+        .date-of-input
+            button submit

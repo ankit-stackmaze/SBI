@@ -1,0 +1,60 @@
+// product single page scss
+#become-supporter {
+    .become-title {
+        padding: 34px 0 43px;
+    }
+    .become-support {
+        margin: 0 auto;
+    }
+    .one-time h2 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .select-number h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .select-year h2 {
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+    .select-plan a {
+        font-size: 14px;
+        font-weight: bold;
+        color: $red;
+    }
+    .one-time {
+        padding-bottom: 30px;
+    }
+    .monthly-time {
+        padding-top: 60px;
+    }
+    .select-year {
+        padding: 7px 0;
+    }
+    .ad-free-h h2 {
+        font-size: 20px;
+        font-family: EloquentJFRegularPro ☞;
+        text-transform: capitalize;
+    }
+    .ad-free-h {
+        padding-bottom: 16px;
+        border-bottom: 1px solid #000;
+    }
+    .ad-free-part {
+        padding-bottom: 70px;
+    }
+    .ad-free-p p {
+        font-size: 18px;
+        line-height: 1.5;
+        font-family: Roboto;
+    }
+    .ad-free-padd {
+        padding: 38px 0;
+    }
+    .ad-free-h {
+        padding-top: 65px;
+    }
+
+}
+

@@ -1,0 +1,30 @@
+#premium-obituaries {
+    .premium-intro {
+        margin: 0 auto;
+    }
+    .premium-intro-h h2 {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.4;
+    }
+    .premium-intro-p p{
+        font-size: 18px;
+        line-height: 1.4;
+        font-family: Roboto;
+    }
+    .premium-intro-h, .premium-intro-p {
+        padding-bottom: 35PX;
+    }
+    .create-obituaries-t h2 {
+        font-size: 20px;
+        font-family: EloquentJFRegularPro ☞;
+        text-transform: capitalize;
+    }
+    .purchase-premium {
+        display: none;
+    }
+    .obit-textarea {
+        display: none;
+    }
+    
+}

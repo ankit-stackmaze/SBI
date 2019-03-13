@@ -39,6 +39,32 @@
         .date li {
             padding: 0 2px;
         }     
+        .btm-header-content ul {
+            display: none;
+        }
+        .toogle-menu {
+            display: inline-block;
+            position: absolute;
+            top: 64px;
+            left: 5px;
+        }
+        .btm-header li {
+            display: block;
+            padding: 10px 35px;
+            text-align: left;
+        }
+        .btm-header a {
+            color: #fff;
+        }
+        .cell.btm-header-content ul {
+            background: #000;
+        }
+        .head i.fas.fa-bars {
+            display: none;
+        }
+        .cell.btm-header-content {
+            display: none;
+        }
     }
 
     #breaking-news { 
@@ -641,13 +667,54 @@
         }
     }
     // submit-event page media scss
-        #submit-event {
-            .submit-category-padd {
-                padding-right: 0;
+    #submit-event {
+        .submit-category-padd {
+            padding-right: 0;
         }
-}
-
-       
+    }
+    // media scss for product single obituary page
+    #premium-obituaries {
+        .date-of-input select {
+            max-width: 115px;
+        }
+        .date-of-input input[type="text"] {
+            width: 100%;
+        }
+        .common-btn-text {
+            padding-top: 70px;
+        }
+    } 
+    // create death notice page
+    #death-notice {
+        .common-btn-text {
+            display: inline-block;
+        }
+        .product-btn {
+            display: inline-block;
+        }
+        .date-of-input select {
+            max-width: 122px;
+            margin-right: 9px;
+        }
+        .obit-textarea {
+            display: none;
+        }
+    }
+    // death-notice-premium  media scss
+    #death-notice-premium {
+        .date-of-submit {
+            margin-right: 0;
+        }
+        .obit-textarea {
+            display: none;
+        }
+        .common-btn-text {
+            display: block;
+            padding-top: 70px;
+        }
+    }
+        
+    
 }
 
 
@@ -655,6 +722,61 @@
 
 // FOR IPAD MEDIA SCSS
 @media screen and (max-width: 48.000em) {
+    
+    #header  {
+        .general-detail{
+           width: 100%;
+        }
+        .cell.large-6.search-bar {
+            padding: 0;
+            width: 100%;
+        }
+        .toogle-menu {
+            display: inline-block;
+            position: absolute;
+            top: 95px;
+            left: 5px;
+        }
+        .toogle-menu {
+            top: 95px;
+        }
+    }
+    // for footer ipad scss
+    #footer {
+        .lable-part-ftr {
+            display: inline-block;
+            padding: 0 0 0 0;
+        }
+        .footer-menu a {
+            font-size: 13px;
+        }
+    }
+
+// for home page in sports feature
+    #art {
+        .more-head-p {
+            padding: 0 0 10px 0;
+        }
+        .image-sport {
+            height: 168px;
+        }
+        .more-head-h2 {
+            padding: 5px 0;
+        }
+        .more-sports-two {
+            padding: 2px;
+        }
+        .news-two h2 {
+            font-size: 1.011em;
+        }
+        .art-third {
+            height: 230px;
+        }
+        .question h2 {
+            font-size: 18px;
+        }
+    }
+    // brief section
     #briefs {
         .briefs-heading-th h2 {
             font-size: 15px;
@@ -840,6 +962,14 @@
         .event-dtae-pick {
             margin: 18px 0 0 0;
         }
+        .last-img {
+            height: 206px;
+        }
+        .center-img {
+            height: 196px;
+        }.premier-two-bg {
+            height: 200px;
+        }
         
     }
     // upcoming page ipad  media scss
@@ -896,6 +1026,15 @@
             padding: 16px 0;
         }
     }
+    // for standard default page ipad media
+    #title-page {
+        .event-related-post.back-ground {
+            height: 198px;
+        }
+        .title-page-bg {
+            height: 400px;
+        } 
+    }
 }
 
 
@@ -916,31 +1055,11 @@
         .head-btm.cell.large-4.logo-part {
             display: none;
         }
-        .btm-header-content ul {
-            display: none;
-        }
-        .btm-header li {
-            display: block;
-            padding: 10px 35px;
-            text-align: left;
-        }
-        .btm-header a {
-            color: #fff;
-        }
-        .cell.btm-header-content ul {
-            background: #000;
-        }
-        .toogle-menu {
-            display: inline-block;
-            position: absolute;
-            top: 64px;
-            left: 5px;
-        }
-        .head i.fas.fa-bars {
-            display: none;
-        }
         .head i.fas.fa-search {
             padding: 0 0 0 50px;
+        }
+        .btm-header {
+            padding: 0;
         }
     }
 // breaking-news scss
@@ -960,13 +1079,39 @@
         .cell.large-8.heading-right {
             padding: 0;
         }
+        .heading-left {
+            padding: 0;
+        }
+        .side-images {
+            height: 232px;
+        }
+        .heading-icon {
+            display: none;
+        }
+        .news-full-img {
+            background-size: contain;
+        }
+        .news-full-img {
+            margin: 50px 0 0 0;
+            height: 250px;
+        }
     }
+    //  art scss
     #art {
         .more-img.cell.large-4.medium-4 {
             text-align: center;
         }
         .john.grid-x {
             margin: 0 0 20px 0;
+        }
+        .more-heading {
+            padding: 0;
+        }   
+        .more-sports-two {
+            padding: 0;
+        }
+        .more-head-p {
+            padding: 10px 0 10px 0;
         }
     }
 // premiere event scss
@@ -992,6 +1137,18 @@
             .premiere-bg-img {
                 background-size: contain;
             }
+            .premier {
+                background: #F8F8F8;
+                margin: 20px 0;
+            }
+            .event-last {
+                padding: 0;
+            }
+            .event-center {
+                padding: 20px 0;
+            }
+            
+            
         }
 //announcement patr scss
         #announcement {
@@ -1077,7 +1234,14 @@
             width: 100%;
             text-align: center;
             padding: 20px 0 0 0;
-
+        }
+        // for slider
+        .slick-custom-arrow.slick-custom-arrow-right.slick-arrow i.fas.fa-angle-right, 
+        .slick-custom-arrow.slick-custom-arrow-left.slick-arrow i.fa.fa-angle-left {
+            font-size: 28px;
+            width: 40px;
+            height: 40px;
+            padding-top: 7px;
         }
     }
     // related page media scss
@@ -1263,8 +1427,11 @@
     .news-single-h {
         left: 65px;
         right: 75px;
-        bottom: 120px;
+        bottom: 130px;
     }    
+    .news-full-img-second {
+        height: 250px;
+    }
     // obituary page media scss
     #obituary {
         .cell.large-4.medium-4 {
@@ -2002,8 +2169,67 @@
             font-size: 15px;
         }
     }
+    // product-single-supporter-format
+    #become-supporter {
+        .select-number h2 {
+            font-size: 30px;
+        }
+        .one-time {
+            text-align: center;
+        }
+    }
+    #multimedia-Stories-slider, #Print-Issue-slider {
+        .slick-custom-arrow.slick-custom-arrow-right.slick-arrow {
+            width: 40px;
+            height: 40px;
+            padding-top: 7px;
+            top: 40%;
+        }
+        .slick-custom-arrow.slick-custom-arrow-left.slick-arrow {
+            width: 40px;
+            height: 40px;
+            padding-top: 7px;
+            top: 40%;
+        }
+    }
+    // MOBILE media scss for product single obituary page
+    #premium-obituaries {
+        .date-of-input select {
+            max-width: 110px;
+            margin-right: 10px;
+        }    
+        .date-of-input button {
+            width: 380px;
+        }
+    }
+    // death notice premium mobile scss
+    #death-notice-premium {
+        .add-btn button {
+            width: 100%;
+            padding: 16px 0;
+        }
    
+        .cancel-btn button {
+            width: 100%;
+            margin: 10px 0;
+        }
+        .total-price {
+            text-align: center;
+        }
+        .date-of-input select {
+            max-width: 109px;
+        }
+    }
+    #title-page {
+        .related-post-bg {
+            padding-right: 0;
+        }
+        .related-post-bg {
+            padding-bottom: 10px;
+        }
+    }
 }
+
 
 
 // for iphone 6/7/8 media scss
@@ -2022,4 +2248,10 @@
             left: 110px;
         }
     }   
+     // for standard default page ipad media
+     #title-page {
+        .title-page-bg {
+            height: 250px;
+        }
+    } 
 }

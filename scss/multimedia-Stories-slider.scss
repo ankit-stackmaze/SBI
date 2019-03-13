@@ -1,7 +1,9 @@
 #multimedia-Stories-slider {
+    overflow: hidden;
     //  slider inbuilt css
     html {box-sizing: border-box;}
-    *, *:before, *:after {box-sizing:border-box;}
+    *, *:before, *:after {box-sizing:border-box;  
+    }
 
     .slick-dots {
         text-align: center;
@@ -10,13 +12,30 @@
     }
 
     /* Custom Arrow */
-    .prev{
-        color: #990000;
+    .slick-custom-arrow.slick-custom-arrow-left.slick-arrow{
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 13px;
+        left: 0;
+        top: 40%;
         position: absolute;
-        top: 38%;
-        left: -2em;
-        font-size: 1.5em;
         z-index: 1;
+        cursor: pointer;
+    }
+    .slick-custom-arrow.slick-custom-arrow-right.slick-arrow {
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 13px;
+        top: 40%;
+        position: absolute;
+        right: 6px;
+        cursor: pointer;
     }
 
     .slick-dots li.next {
@@ -26,10 +45,26 @@
         right: -2em;
         font-size: 1.5em;
     }
-    @media screen and (max-width: 800px) {
-    .next {
-        display: none !important;
+    i.fas.fa-angle-right, .fas.fa-angle-left {
+        font-size: 24px;
     }
+    i.fa.fa-angle-left {
+        font-size: 24px;
+    }
+    .next.common-font {
+        display: none;
+    }
+    .prev.common-font {
+        display: none;
+    }
+    .slick-custom-arrow.slick-custom-arrow-right.slick-arrow,
+    .slick-custom-arrow.slick-custom-arrow-left.slick-arrow {
+        box-shadow: 0 0 10px #33350df5;
+    }
+    @media screen and (max-width: 800px) {
+        .next {
+            display: none !important;
+        }
     }
 
     // slider css
@@ -89,5 +124,9 @@
         color: #fff;
         font-size: 20px;
     }
+    .slider-more-multimedia-Stories {
+        text-align: right;
+    }    
+
 }  
   

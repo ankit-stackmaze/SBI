@@ -124,9 +124,11 @@
     }
     .btm-header li {
         display: inline-block;
-        padding: 0 15px;
+        padding: 0 10px;
     }
-    .btm-header a:hover{color: red; border-bottom:1px solid red;}
+    .btm-header a:hover{
+        color: red;
+    }
     .btm-header a {
         color: #000;
         text-transform: capitalize;
@@ -135,28 +137,53 @@
         -webkit-transition: 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95) all;
         transition: 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95) all;
     }
-    // toogle menu css
-    .toogle-menu {
-        display:none;
-        cursor: pointer;
+
+    // side nav
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
     }
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
+      
+    .sidenav a {
+        margin: 13px 8px 0 32px;
+        padding-bottom: 14px;
+        text-decoration: none;
+        font-size: 13px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: capitalize;
+        border-bottom:1px solid #ffffff47;
     }
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
+    .sidenav i {
+        font-size: 18px;
+        padding: 0 38px 0 0;
     }
-    .change .bar2 {
-        opacity: 0;
+    .sidenav a:hover {
+        color: #f1f1f1a8;
+        transition: 0.3s;
     }
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
     }
 }
     

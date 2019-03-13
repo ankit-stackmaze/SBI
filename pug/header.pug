@@ -3,7 +3,7 @@
     header   
         .grid-container
             .grid-x.align-justify
-                .date.cell.large-6.small-12.medium-4
+                .date.cell.large-6.small-12.medium-4.general-detail
                     ul 
                         li
                             a(href="#") mon,thu09,2018
@@ -32,8 +32,33 @@
         .grid-container
             .bdr-head.grid-x
                 .head.cell.large-4.logo-part.medium-4.small-4
-                    a(href="#")
-                        i.fas.fa-bars
+                    //- a(href="#")
+                    #mySidenav.sidenav
+                        a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+                        a(href='#') home
+                        a(href='#') news
+                        a(href='#') Art & Entertainment
+                        a(href='#') opinion
+                        a(href="#") living 
+                        a(href="#") event
+                        a(href="#") food $ drink
+                        a(href="#") sports
+                        a(href="#") obituaries
+                        a(href="#") classified
+                        a(href="#") real estate
+                        a(href="#") Newsletter
+                        a(href="#") About us
+                        a(href="#") Opinion
+                        a(href="#") Advertising
+                        a(href="#") Contact us
+                        a(href="#") Advertising
+                        a(href="#")
+                            i.fab.fa-instagram
+                            i.fab.fa-facebook-f
+                            i.fab.fa-twitter
+
+                    span(style='font-size:30px;cursor:pointer', onclick='openNav()') ☰ 
+                
                     a(href="#")
                         i.fas.fa-search            
                 .head-center.cell.large-4.logo-part.text-center.medium-4.small-4
@@ -45,10 +70,7 @@
     .btm-header               
         .grid-container
             .grid-x
-                .toogle-menu(onclick='myFunction(this)')
-                    .bar1
-                    .bar2
-                    .bar3
+
                 .cell.btm-header-content
                     ul
                         li
@@ -68,6 +90,6 @@
                         li
                             a(href="#") obituaries   
                         li
-                            a(href="# ") classified
+                            a(href="#") classified
                         li
                             a(href="#") real estate   

@@ -1,0 +1,42 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+  
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+
+        
+        //- product-death notice obit page pug because of previous common code
+        #become-supporter
+            .grid-container
+                .grid-x
+                    .cell.title.text-center.become-title
+                        h2 OBITUARIES 
+                        p   
+                            i.fas.fa-star
+                            |  premium
+
+                #death-notice-premium.grid-x
+                    .cell.large-8.obituary-premium
+                        include obituary-common
+                    .cell.large-8.obituary-premium.obituary-premium-second
+                        .grid-x.add-to-carts
+                            .cell.total-price
+                                h2 total: 
+                                p  $100
+                            .cell.large-6.add-btn.text-left.medium-6
+                                button 
+                                    i.fas.fa-cart-plus 
+                                    | add to cart
+                            .cell.large-6.cancel-btn.text-right.medium-6
+                                button cancel
+
+        include scripts     
+        include footer

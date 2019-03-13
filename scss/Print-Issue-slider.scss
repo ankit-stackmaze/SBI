@@ -1,4 +1,47 @@
 #Print-Issue-slider {
+    // slider arrows scss
+    .slick-custom-arrow.slick-custom-arrow-left.slick-arrow{
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 13px;
+        left: 0;
+        top: 40%;
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .slick-custom-arrow.slick-custom-arrow-right.slick-arrow {
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 13px;
+        top: 40%;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .slick-dots li.next {
+        color: #990000;
+        position: absolute;
+        top: 38%;
+        right: -2em;
+        font-size: 1.5em;
+    }
+    i.fas.fa-angle-right, .fas.fa-angle-left {
+        font-size: 24px;
+    }
+    i.fa.fa-angle-left {
+        font-size: 24px;
+    }
+    .prev, .next {
+        display: none;
+    }
     // slider css
     .slider-main {
         padding: 0 20px;
