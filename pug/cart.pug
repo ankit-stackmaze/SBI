@@ -1,0 +1,74 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+  
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+
+        
+        //- product-death notice obit page pug because of previous common code
+        #become-supporter
+            .grid-container
+                .grid-x
+                    .cell.title.text-center.become-title
+                        h2 YOUR CART (4)
+
+        #cart
+            .grid-container
+                .grid-x.cart-main
+                    .cell.large-8.medium-8.cart-part
+                        each item in [1,2,3,4]
+                            .grid-x 
+                                .cell.large-8.cart-line.medium-8.small-8
+                                    .grid-x.grid-padding-x
+                                        .cell.large-6.medium-6.small-6
+                                            .cart-img(style="background-image:url(../assets/image/hdf.jpg)")
+                                        .cell.large-6.medium-6.small-6
+                                            .cart-title
+                                                h2 Title Goes Here
+                                            .cart-price
+                                                h2 $79.00
+                                .cell.large-4.medium-4.small-4
+                                    .grid-x.align-middle.grid-padding-x.field-button
+                                        .cell.large-6.medium-6.small-6 
+                                            #field1
+                                                button#sub.sub(type='button') -
+                                                input#1(type='number', value='1', min='1', max='3')
+                                                button#add.add(type='button') +
+
+
+                                        .cell.large-6.medium-6.small-6
+                                            .cross
+                                                a(href="#") &#10006;
+
+
+                    .cell.large-4.medium-4.cart-part
+                        .order-section
+                            .total-order.order-price
+                                h2 order total
+                            .grid-x.align-justify
+                                .cell.column.large-6.sub-total.medium-6.small-6
+                                    h2 total
+                                .cell.column.large-6.order-price.text-right.medium-6.small-6
+                                    h2 $316.00
+                                .cell.column.large-6.sub-total.medium-6.small-6
+                                    h2 sub-total
+                                .cell.column.large-6.order-price.text-right.medium-6.small-6
+                                    h2 $316.00
+                                .cell.large-8.coupon-code.medium-8.small-8
+                                    input(type='text', name='', value='' placeholder='Enter Coupon Code')
+                                .cell.large-4.apply-btn.medium-4.small-4 
+                                    button apply
+
+                        .order-btn
+                            button check out
+                            
+        include scripts
+        include footer

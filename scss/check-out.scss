@@ -1,0 +1,122 @@
+// check out page scss
+#check-out {
+    //- common page check out and payment method scss
+    .order-section {
+        background: #dddddd47;
+        padding: 37px 23px;
+        margin-top: 20px;
+    }
+    .order-price {
+        padding-bottom: 25px;
+    }
+    .order-price h2 {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    .sub-total h2 {
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    .order-btn {
+        padding-top: 36px;
+    }
+    .order-btn button {
+        width: 100%;
+        padding: 17px 0;
+    }
+    // check-out page scss 
+    .customer-info h2 {
+        font-size: 20px;
+        font-family: EloquentJFRegularPro ☞;
+        text-transform: capitalize;
+    }
+    .customer-info {
+        border-bottom: 1px solid #000;
+        padding: 0 0 13px 0;
+        margin-bottom: 10px;
+    }
+    .customer-update {
+        padding: 10px 0 0 0;
+    }
+    .customer-detail h3 {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    .customer-update h3 {
+        font-size: 14px;
+    }
+    .customer-input input {
+        border: 1px solid #EBEEF1;
+        border-radius: 4px;
+        padding: 15px 10px;
+        width: 100%;
+    }
+    .common-check-padd {
+        padding-top: 26px;
+    }
+    .customer-detail {
+        padding: 0 0 10px 0;
+    }
+    .customer-input select {
+        border: none;
+        padding: 15px 0;
+        border-radius: 4px;
+        background: #DDDDDD;
+        font-size: 14px;
+    }
+    .check-out-part {
+        padding: 50px 0 92px 0;
+    }
+    .checkout-center {
+        margin: 0 auto;
+    }
+    // for check box scss
+    
+    .o-checkbox {
+        width: 30px;
+        position: relative;
+        
+        input[type=checkbox] {
+            visibility: hidden;
+        }
+        input[type=checkbox]:checked+label:after {
+            opacity: 1;
+        }
+        input[type=checkbox][disabled]+label{
+            background-color: #ddd; // or whatever
+        }
+        label {
+            width: 28px;
+            height: 28px;
+        cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #FBFFFE;
+            border: 1px solid #D1D1D1;
+            border-radius: 4px;
+            &:after {
+                content: '';
+                    width: 15px;
+                    height: 7px;
+                    position: absolute;
+                    top: 9px;
+                    left: 6px;
+                    border: 5px solid $red;
+                    border-top: none;
+                    border-right: none;
+                    background: transparent;
+                    opacity: 0;
+                    transform: rotate(-45deg);
+                    color: #000;;
+            }
+        }
+    }
+    .o-checkbox {
+        align-self: center;
+    }
+}
+ 

@@ -1,0 +1,124 @@
+// cart page scss
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+#cart {
+    .cart-main {
+        padding-bottom: 94px;
+    }
+    .cart-img {
+        height: 162px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .cart-title h2 {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    .cart-price h2 {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    .order-price h2 {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    .sub-total h2 {
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    .cart-title {
+        padding: 30px 0;
+    }
+    .cart-price {
+        padding: 20px 0;
+    }
+    .field-button {
+        height: 162px;
+    }
+    .cross a {
+        color: #000;
+    }
+    .cross a:hover {
+        text-decoration: none;
+    }
+    .cart-line {
+        padding: 22px 0;
+        border-bottom: 1px solid #F8F8F8; 
+    }
+    .order-btn button {
+        width: 100%;
+        padding: 17px 0;
+    }
+    .coupon-code input{
+        width: 100%;
+    }
+    .coupon-code input[type="text"] {
+        color: #707070;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        border-radius: 4px 0 0 4px;
+    }
+    .apply-btn button {
+        width: 100%;
+        padding: 17px 0;
+        border-radius: 0 4px 4px 0;
+    }
+    .order-section {
+        background: #dddddd47;
+        padding: 45px 42px;
+        margin-top: 20px;
+    } 
+    .coupon-code, .apply-btn{
+        padding-top: 20px;
+    }
+    .sub-total {
+        padding: 8px 0;
+    }
+    .order-price {
+        padding-bottom: 25px;
+    }
+    .order-btn {
+        padding-top: 36px;
+    }
+    // for button plus minus css
+    /* -- quantity box -- */
+    button#add, #sub {
+        padding: 6px 0;
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+        border: 1px solid $silver;
+        width: 28px;
+        border-radius: 0;
+    }
+    input {
+        height: 58px;
+        width: 50px;
+        background: $silver;
+        border: none;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+    div#field1 {
+        position: relative;
+    }
+    button#add {
+        position: absolute;
+        left: 38px;
+        
+    }
+    button#sub {
+        position: absolute;
+        left: 38px;
+        bottom: 0;
+    }
+    
+   
+    
+    
+}

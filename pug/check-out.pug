@@ -1,0 +1,125 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+  
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+
+        
+        //- product-death notice obit page pug because of previous common code
+        #become-supporter
+            .grid-container
+                .grid-x
+                    .cell.title.text-center.become-title
+                        h2 CHECK OUT
+
+        #check-out
+            .grid-container
+                .grid-x
+                    .cell.large-10.checkout-center     
+                        .grid-x.cart-main.grid-padding-x
+                            .cell.large-8.medium-8.cart-part
+                                .grid-x
+                                    .cell.large-12
+                                        .customer-info
+                                            h2 Customer Information
+                                    .cell.large-12.common-check-padd
+                                        .customer-detail
+                                            h3 First Name
+                                        .customer-input
+                                            input(type='text', name='fullname')
+                                    .cell.large-12.common-check-padd
+                                        .customer-detail
+                                            h3 Last Name
+                                        .customer-input
+                                            input(type='text', name='fullname')
+                                    .cell.large-12.common-check-padd
+                                        .customer-detail
+                                            h3 Email
+                                        .customer-input
+                                            input(type='text', name='email')
+                                    .cell.large-12.common-check-padd    
+                                        .grid-x
+                                            .cell.large-1.medium-1.small-1
+                                                .o-checkbox
+                                                    input#my-checkbox(type='checkbox', value='None', name='')
+                                                    label(for='my-checkbox')
+                                            .cell.large-11.medium-11.small-11
+                                                .customer-update
+                                                    h3 Keep me update news and offers
+                                
+                                .grid-x.check-out-part
+                                    .cell.large-12
+                                        .customer-info
+                                            h2 address
+                                    .cell.large-12.common-check-padd
+                                        .customer-detail
+                                            h3 Street
+                                        .customer-input
+                                            input(type='text', name='fullname')
+                                    .cell.large-12.common-check-padd
+                                        .customer-detail
+                                            h3 city
+                                        .customer-input
+                                            input(type='text', name='fullname')
+                                    .cell.large-12.common-check-padd
+                                        .customer-detail
+                                            h3 Province 
+                                        .customer-input
+                                            input(type='text', name='fullname')
+                                    .cell.large-12
+                                        .grid-x.grid-padding-x
+                                            .cell.large-6.common-check-padd
+                                                .customer-detail
+                                                    h3 Zipcode 
+                                                .customer-input
+                                                    input(type='text', name='fullname')
+                                            .cell.large-6.common-check-padd
+                                                .customer-detail
+                                                    h3 Zipcode 
+                                                .customer-input
+                                                    select
+                                                        option(value='husker') Select Country
+                                                        option(value='starbuck') india
+                                                        option(value='hotdog') pakisthan 
+                                                        option(value='apollo') australia
+
+                                    .cell.large-12.common-check-padd
+                                        .customer-detail
+                                            h3 Mobile Number 
+                                        .customer-input
+                                            input(type='text', name='fullname')
+                                        
+
+
+                            //- common page check out and payment method html
+                            .cell.large-4.medium-4.cart-part
+                                .order-section
+                                    .total-order.order-price
+                                        h2 order total
+                                    .grid-x.align-justify
+                                        .cell.column.large-6.sub-total.medium-6.small-6
+                                            h2 total
+                                        .cell.column.large-6.order-price.text-right.medium-6.small-6
+                                            h2 $316.00
+                                        .cell.column.large-6.sub-total.medium-6.small-6
+                                            h2 Coupon Discount
+                                        .cell.column.large-6.order-price.text-right.medium-6.small-6
+                                            h2 -$10.00
+                                        .cell.column.large-6.sub-total.medium-6.small-6
+                                            h2 sub-total
+                                        .cell.column.large-6.order-price.text-right.medium-6.small-6
+                                            h2 $316.00
+
+                                .order-btn
+                                    button Proceed To Payment
+
+        include scripts
+        include footer

@@ -713,7 +713,33 @@
             padding-top: 70px;
         }
     }
-        
+    // for cart page media scss
+    #cart {
+        .cart-title h2 {
+            font-size: 17px;
+        }
+        .order-price h2 {
+            font-size: 16px;
+        }
+        .cart-price h2 {
+            font-size: 17px;
+        }
+        .cart-img {
+            height: 142px;
+        }
+        .apply-btn button {
+            font-size: 15px;
+        }
+        .coupon-code input[type="text"] {
+            font-size: 11px;
+        }
+        .order-section {
+            padding: 24px 22px;
+        }
+        .cross {
+            text-align: right;
+        }
+    }
     
 }
 
@@ -1035,6 +1061,27 @@
             height: 400px;
         } 
     }
+     // for cart page media scss
+     #cart {
+        .cart-part {
+            width: 100%;
+        }
+     }
+    //  for check-out page scss
+    #check-out {
+        .cart-part {
+            width: 100%;
+        }
+        .cart-part {
+            width: 100%;
+            padding-bottom: 30px;
+        }
+        .check-out-part {
+            padding: 50px 0 20px 0;
+        }
+    }
+    
+    
 }
 
 
@@ -2228,6 +2275,17 @@
             padding-bottom: 10px;
         }
     }
+    // tv-listing-movie-showtime
+    #tv-listing {
+        .tv-listing {
+            height: 450px;
+            background: #dddddd;
+        }
+        .tv-img {
+            padding: 24px 0 90px;
+        }
+    }
+
 }
 
 
@@ -2254,4 +2312,32 @@
             height: 250px;
         }
     } 
+    // tv-listing-movie-showtime
+    #tv-listing {
+        .tv-listing {
+            height: 250px;
+            background: #dddddd;
+        }
+    }
+    // cart page mobile media scss
+    #cart  {
+        input {
+            width: 43px;
+        } 
+        .field-button {
+            height: 112px;
+        }
+        .cart-img {
+            height: 90px;
+        }
+        .cart-title {
+            padding: 10px 0;
+        }
+        .cart-price {
+            padding: 10px 0;
+        }
+        .cart-line {
+            padding: 12px 0;
+        }
+    }
 }
