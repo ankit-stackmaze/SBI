@@ -1,0 +1,45 @@
+//  payment-conform page scss
+#payment-conform {
+    .congratulation-h h1 {
+        font-family: EloquentJFCaptionPro ☞;
+        font-size: 45px;
+        text-transform: capitalize;
+    }
+    .payment-h h2 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .continue-story h2 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .mix-all-a li {
+        display: inline-block;
+        padding: 0 16px;
+    }
+    .mix-all-a a {
+        font-size: 14px;
+        color: $red;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    .congratulation {
+        background: #dddddd3b;
+        max-width: 728px;
+        margin: 15px auto 57px;
+        padding: 32px 0;
+    }
+    .payment-bdr {
+        border-bottom: 1px solid #000;
+        max-width: 216px;
+        margin: 0 auto;
+    }
+    .payment-h {
+        padding: 11px 0 36px;
+    }
+    .continue-story {
+        padding: 30px 0;
+    }
+    
+    
+}

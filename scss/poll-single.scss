@@ -1,0 +1,20 @@
+// for poll-single page scss for common with polls-archive page
+#polls-archive {
+    .polls-single-h h2 {
+        font-size: 40px !important;
+        font-weight: bold !important;
+    }
+    .pull-single {
+        margin: 0 auto;
+    }
+    .poll-view a {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: capitalize;
+        color: $red;
+    }
+    .polls-single-h {
+        padding: 10px 0;
+    }
+
+}

@@ -1080,6 +1080,16 @@
             padding: 50px 0 20px 0;
         }
     }
+    // polls archive page tab scss
+    #polls-archive {
+        .polls-vote {
+            width: 25%;
+        }
+        .polls-result {
+            width: 25%;
+        }
+    }
+    
     
     
 }
@@ -2224,6 +2234,9 @@
         .one-time {
             text-align: center;
         }
+        .become-title {
+            padding: 16px 0;
+        }
     }
     #multimedia-Stories-slider, #Print-Issue-slider {
         .slick-custom-arrow.slick-custom-arrow-right.slick-arrow {
@@ -2285,6 +2298,61 @@
             padding: 24px 0 90px;
         }
     }
+    // check out page scss mobile
+    #check-out {
+        .payment-btn-top{
+            padding-top: 36px;
+            display: none;
+        }
+        .top-payment {
+            order: 1;
+        }
+        .btm-payment {
+            order: 2;
+        }
+        .order-btn.payment-btn {
+            display: block;
+        }
+        .payment-btn {
+            padding-top: 0;
+        }
+    }
+    // payment-conform page mobile media
+    #payment-conform {
+        .congratulation-h h1 {
+            font-family: EloquentJFCaptionPro ☞;
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+        .mix-all-a li {
+            display: block;
+            padding: 0 16px 20px;
+        }
+    } 
+    // polls-archive page mobile scss
+    #polls-archive {
+        .polls-category select {
+            max-width: 100%;
+            border: none;
+            background: #900;
+            border-radius: 4px;
+            padding: 14px 10px;
+            color: #fff;
+        }
+        .polls-bdr {
+            padding: 16px 0 27px;
+            border-bottom: 1px solid #000;
+        }
+        .polls-main {
+            padding: 15px 0;
+        }
+        .polls-common-size {
+            max-width: inherit;
+        }
+        .pull-load {
+            padding: 10px 0 38px;
+        }
+    } 
 
 }
 

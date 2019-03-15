@@ -10,11 +10,11 @@
         padding-bottom: 25px;
     }
     .order-price h2 {
-        font-size: 20px;
+        font-size: 18px;
         text-transform: capitalize;
         font-weight: bold;
     }
-    .sub-total h2 {
+    .sub-total h2 { 
         font-size: 14px;
         text-transform: capitalize;
         font-weight: 500;
@@ -37,8 +37,9 @@
         padding: 0 0 13px 0;
         margin-bottom: 10px;
     }
+    
     .customer-update {
-        padding: 10px 0 0 0;
+        padding: 2px;
     }
     .customer-detail h3 {
         font-size: 14px;
@@ -54,6 +55,17 @@
         padding: 15px 10px;
         width: 100%;
     }
+    .customer-input {
+        position: relative;
+    }
+    .lock, .question {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .lock, .question i.fas {
+        font-size: 20px;
+    }
     .common-check-padd {
         padding-top: 26px;
     }
@@ -62,7 +74,7 @@
     }
     .customer-input select {
         border: none;
-        padding: 15px 0;
+        padding: 15px 8px;
         border-radius: 4px;
         background: #DDDDDD;
         font-size: 14px;
@@ -89,8 +101,8 @@
             background-color: #ddd; // or whatever
         }
         label {
-            width: 28px;
-            height: 28px;
+            width: 20px;
+            height: 20px;
         cursor: pointer;
             position: absolute;
             top: 0;
@@ -99,13 +111,13 @@
             border: 1px solid #D1D1D1;
             border-radius: 4px;
             &:after {
-                content: '';
-                    width: 15px;
-                    height: 7px;
+                    content: '';
+                    width: 13px;
+                    height: 6px;
                     position: absolute;
-                    top: 9px;
-                    left: 6px;
-                    border: 5px solid $red;
+                    top: 5px;
+                    left: 3px;
+                    border: 3px solid $red;
                     border-top: none;
                     border-right: none;
                     background: transparent;

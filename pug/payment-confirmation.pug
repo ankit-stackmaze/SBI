@@ -1,0 +1,38 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+  
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+        #payment-conform
+            .grid-container
+                .grid-x
+                    .cell.text-center
+                        .congratulation
+                            .congratulation-h   
+                                h1 Congratulations !
+                            .payment-h  
+                                h2 Your payment has been successful.
+                            .payment-bdr    
+                            .continue-story 
+                                h2 Continue reading stories...
+                            .mix-all-a
+                                ul
+                                    li 
+                                        a(href="#") Arts & Entertaiment
+                                    li 
+                                        a(href="#") Living Stories
+                                    li 
+                                        a(href="#") Sports Feature
+                                    li 
+                                        a(href="#") Food & Drink
+
+        include scripts
+        include footer

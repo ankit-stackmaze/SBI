@@ -1,0 +1,121 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+  
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+
+        
+        //- product-death notice obit page pug because of previous common code
+        #become-supporter
+            .grid-container
+                .grid-x
+                    .cell.title.text-center.become-title
+                        h2 payment method
+        //-same id with page check out because of same structure #check-out
+        #check-out
+            .grid-container
+                .grid-x
+                    .cell.large-10.checkout-center     
+                        .grid-x.cart-main.grid-padding-x
+                            .cell.large-8.medium-8.cart-part.btm-payment
+                                .grid-x
+                                    .cell.large-12
+                                        .customer-info
+                                            h2 cradit card
+                                    .cell.large-12.common-check-padd
+                                        .customer-detail
+                                            h3 Card Number
+                                        .customer-input
+                                            input(type='text', name='fullname')
+                                            .lock
+                                                i.fas.fa-lock
+                                    .cell.large-12.common-check-padd
+                                        .customer-detail
+                                            h3 Card Holder Name
+                                        .customer-input
+                                            input(type='text', name='fullname')
+                                    .cell.large-12.common-check-padd
+                                        .grid-x.grid-padding-x
+                                            .cell.large-4.medium-4.small-4
+                                                .customer-detail
+                                                    h3 month
+                                                .customer-input
+                                                    select
+                                                        option(value='husker') mm 
+                                                        option(value='starbuck') january
+                                                        option(value='hotdog') february 
+                                                        option(value='apollo') march
+                                            .cell.large-4.medium-4.small-4
+                                                .customer-detail
+                                                    h3 year
+                                                .customer-input
+                                                    select
+                                                        option(value='husker')  yyyy
+                                                        option(value='starbuck') 2017
+                                                        option(value='hotdog') 2018 
+                                                        option(value='apollo') 2019
+                                            .cell.large-4.medium-4.small-4
+                                                .customer-detail
+                                                    h3 cvv
+                                                .customer-input
+                                                    input(type='text', name='fullname')
+                                                    .question
+                                                        i.fas.fa-question-circle
+
+                                .grid-x.check-out-part
+                                    .cell.large-12
+                                        .customer-info
+                                            h2 billing address
+                                    .cell.large-12
+                                        .order-section
+                                            .total-order.order-price
+                                                h4  4627 Strother Street, <br> Tuscaloosa, Alabama.<br>35404<br>  Mobile Number - 205-633-0558
+                                                    
+                                            .grid-x
+                                                .cell.large-1.medium-1.small-1
+                                                    .o-checkbox
+                                                        input#my-checkbox(type='checkbox', value='None', name='')
+                                                        label(for='my-checkbox')
+                                                .cell.large-11.medium-11.small-11
+                                                    .customer-update
+                                                        h3 Use this address as billing address
+                                        .billing-address
+                                            h3 Add different billing address
+                                
+
+
+                            //- common page check out and payment method html
+                            .cell.large-4.medium-4.cart-part.top-payment
+                                .order-section
+                                    .total-order.order-price
+                                        h2 order total
+                                    .grid-x.align-justify
+                                        .cell.column.large-6.sub-total.medium-6.small-6
+                                            h2 total
+                                        .cell.column.large-6.order-price.text-right.medium-6.small-6
+                                            h2 $316.00
+                                        .cell.column.large-6.sub-total.medium-6.small-6
+                                            h2 Coupon Discount
+                                        .cell.column.large-6.order-price.text-right.medium-6.small-6
+                                            h2 -$10.00
+                                        .cell.column.large-6.sub-total.medium-6.small-6
+                                            h2 sub-total
+                                        .cell.column.large-6.order-price.text-right.medium-6.small-6
+                                            h2 $316.00
+
+                                .order-btn.payment-btn-top
+                                    button Purchase
+                        .cell
+                            .order-btn.payment-btn
+                                button Purchase
+
+        include scripts
+        include footer

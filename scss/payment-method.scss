@@ -1,0 +1,26 @@
+// check our id scss for payment page
+#check-out {
+    .order-price h4 {
+        font-family: Roboto;
+        font-size: 18px;
+        text-transform: capitalize;
+        line-height: 1.5;
+    }
+    .billing-address h3 {
+        color: $red;
+        font-size: 12px;
+    }
+    
+    .billing-address {
+        padding-top: 11px;
+    }
+    .order-btn.payment-btn {
+        display: none;
+    }
+    .order-btn.payment-btn {
+        padding-bottom: 32px;
+    }
+    
+    
+    
+}
