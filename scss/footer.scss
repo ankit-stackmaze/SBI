@@ -73,6 +73,7 @@
         float: right;
         border-bottom: 1px solid #fff;
         width: 40%;
+        padding-bottom: 14px;
     }
     .lable-part-ftr p {
         color: #fff;
@@ -102,5 +103,12 @@
     .footer-symbol i.fab {
         font-size: 18px;
         color: #fff;
+    }
+    .footer-center-menu {
+        text-align: center;
+    }
+    .footer-bold a {
+        font-weight: 500;
+        border-bottom: 1px solid #fff; 
     }
 }

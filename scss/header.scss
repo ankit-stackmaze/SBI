@@ -41,7 +41,7 @@
     }
     .contribute {
         float: left;
-        padding: 4px 30px 0;
+        padding: 4px 20px 0;
     }
     .contribute p {
         color: #fff;
@@ -87,9 +87,14 @@
         color: #fff;
     }
     .head.cell.large-4.logo-part.medium-4 {
-        padding: 20px 0 0 0;
+        padding: 10px 0 0 0;
     }
-    
+    .head-mobile-search {
+        display: none;
+    }
+    .hide-mobile {
+        display: inline-block;
+    }   
     // bottom header scss
     .head-btm.cell button {
         text-transform: capitalize;

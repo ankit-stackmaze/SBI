@@ -1,0 +1,42 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include head
+  
+    body
+        include header
+        #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/Rectangle.png", alt="")
+
+        #error-404
+            .grid-container
+                .grid-x
+                    .cell.large-12
+                        .found-page(style= "background-image: url(../assets/image/error.png)")
+                    .cell.large-12.text-center
+                        .not-found
+                            h2 Ooops.. Page Not Found
+
+        //- for common class of page payment conformation
+        #payment-conform
+            .cell.text-center
+                .payment-bdr    
+                .continue-story 
+                    h2 Continue reading stories...
+                .mix-all-a
+                    ul
+                        li 
+                            a(href="#") Arts & Entertaiment
+                        li 
+                            a(href="#") Living Stories
+                        li 
+                            a(href="#") Sports Feature
+                        li 
+                            a(href="#") Food & Drink
+        #error-padding  
+
+        include scripts 
+        include footer

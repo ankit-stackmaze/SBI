@@ -1,5 +1,3 @@
-
-
 // **** Drag and drop **** for product single page //
 let dropArea = document.getElementById("drop-area")
 
@@ -147,6 +145,7 @@ $(document).ready(function(){
     dots: true,
     speed: 1000,
     infinite: true,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
     nextArrow: '<div class="slick-custom-arrow slick-custom-arrow-right"><i class="fas fa-angle-right"></i></div>',
@@ -160,6 +159,7 @@ $(document).ready(function(){
     $('.carousel').slick({
     slidesToShow: 1,
     dots:true,
+    arrows: true,
     nextArrow: '<div class="slick-custom-arrow slick-custom-arrow-right"><i class="fas fa-angle-right"></i></div>',
     prevArrow: '<div class="slick-custom-arrow slick-custom-arrow-left"><i class="fa fa-angle-left"></i></div>',
     infinite: true,

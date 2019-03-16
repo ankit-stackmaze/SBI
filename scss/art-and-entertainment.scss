@@ -70,7 +70,7 @@
     }
     .art-second {
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         height: 286px;
     }
@@ -79,6 +79,9 @@
         background-size: contain;
         background-position: center;
         height: 400px;
+    }
+    .sponsores-t p {
+        font-size: 13px;
     }
     // radio button scss
     .opinion-input {
@@ -247,7 +250,7 @@
     .food-drink {
         padding: 10px 0;
         border-bottom: 1px solid #000000;
-        margin: 0 0 20px 0;
+        margin: 0 0 20px 10px;
     }
     .cell.food-drink-one.large-6 {
         padding: 0 10px;

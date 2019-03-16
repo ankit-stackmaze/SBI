@@ -23,6 +23,34 @@
         width: 100%;
         height: 700px;
     }
+    // slider scroll button scss 
+    .slick-custom-arrow.slick-custom-arrow-right.slick-arrow {
+        width: 40px;
+        height: 40px;
+        background: #a51515;
+        border-radius: 50%;
+        position: absolute;
+        top: 45%;
+    }
+    i.fas.fa-angle-right {
+        position: absolute;
+        top: 13px;
+        left: 16px;
+    }
+    // .slick-custom-arrow.slick-custom-arrow-left.slick-arrow {
+    //     width: 40px;
+    //     height: 40px;
+    //     background: #a51515;
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     top: 50%;
+       
+    // }
+    // i.fa.fa-angle-left{
+    //     position: absolute;
+    //     top: 13px;
+    //     left: 16px;
+    // }
         
 }
 

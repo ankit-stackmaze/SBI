@@ -25,7 +25,7 @@
                             p Sign up to Newsletters   
                     .contribute                                                                                       
                         p contribute
-                    .users
+                    .users  
                         i.fas.fa-user
 
     .center-part-header
@@ -58,19 +58,21 @@
                             i.fab.fa-twitter
 
                     span(style='font-size:30px;cursor:pointer', onclick='openNav()') ☰ 
-                
-                    a(href="#")
-                        i.fas.fa-search            
+                        .hide-mobile
+                            a(href="#")
+                                i.fas.fa-search
                 .head-center.cell.large-4.logo-part.text-center.medium-4.small-4
                     a(href="#")
                         img(src="../assets/image/logo.svg", alt="")
                 .head-btm.cell.large-4.logo-part.text-right.medium-4.small-4
                     button tips
-    //- header bottom
+                    .head-mobile-search
+                        a(href="#")
+                            i.fas.fa-search
+        //- header bottom
     .btm-header               
         .grid-container
             .grid-x
-
                 .cell.btm-header-content
                     ul
                         li
