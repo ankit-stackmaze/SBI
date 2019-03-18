@@ -1,24 +1,36 @@
-include head
-body
-    #multimedia-wrapper
-        .wrapper.multimedia-wrapper
-            
-            h2
-            .carousel
-                div 
-                    .video-control
-                        video( controls='')
-                            source(src="../assets/image/video.mp4", type='video/mp4')
-                div 
-                    .video-control
-                        video( controls='')
-                            source(src="../assets/image/video.mp4", type='video/mp4')
-                div 
-                    .video-control
-                        video( controls='')
-                            source(src="../assets/image/video.mp4", type='video/mp4')
-                div 
-                    .video-control
-                        video( controls='')
-                            source(src="../assets/image/video.mp4", type='video/mp4')
-include scripts
+#multimedia-wrapper
+    
+    .wrapper.multimedia-wrapper
+        h2
+        .carousel
+            div 
+                .video-control
+                    video( controls='')
+                        source(src="../assets/image/video.mp4", type='video/mp4')
+                .video-relative
+                    .grid-container
+                        .grid-x
+                            .cell
+                                .video-content  
+                                    .video-category 
+                                        ul  
+                                            li
+                                                p category
+                                            li 
+                                                h2 By John Doe
+                                    .video-heading
+                                        h4 Heading goes here lorem ipsum dolor sit amet, 
+                                            span consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus
+            div 
+                .video-control
+                    video( controls='')
+                        source(src="../assets/image/video.mp4", type='video/mp4')
+            div 
+                .video-control
+                    video( controls='')
+                        source(src="../assets/image/video.mp4", type='video/mp4')
+            div 
+                .video-control
+                    video( controls='')
+                        source(src="../assets/image/video.mp4", type='video/mp4')
+   

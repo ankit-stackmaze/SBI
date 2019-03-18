@@ -736,7 +736,19 @@
             text-align: right;
         }
     }
-    
+    // multimedia slider scss video ralative class
+    #multimedia-wrapper {
+        .video-content {
+            bottom: 106px
+        }
+        .video-control video {
+            width: 100%;
+            height: 550px;
+        }
+        
+        
+        
+    }
 }
 
 
@@ -746,7 +758,7 @@
 @media screen and (max-width: 48.000em) {
     
     #header  {
-        .general-detail{
+        .general-detail {
            width: 100%;
         }
         .cell.large-6.search-bar {
@@ -1092,6 +1104,25 @@
             width: 25%;
         }
     }
+    // multimedia-wrapper PAGE IPAD SCSS
+    #multimedia-wrapper {
+        .video-content {
+            bottom: 106px;
+        }
+        .video-heading span {
+            display: none;
+        }
+        
+    }
+    #video-photo-archive {
+        .archive-notice label {
+            margin: 0 10px;
+        }
+        .archive-notice select {
+            padding: 14px 54px 14px 11px;
+        }
+    }
+    
 }
 //  for only news-single-standard-articleformat page
 @media (min-width: 39.9375em) and (max-width: 48.000em) {
@@ -1101,6 +1132,30 @@
         }
         .sponsored-detail a {
             font-size: 12px;
+        }
+    }
+     // obituary page ipad media scss only
+     #obituary {
+        .john-doe-name h2 {
+            font-size: 15px;
+        }
+        .multi-read {
+            padding: 20px 0 0 0;
+        }
+        .multi-heading p {
+            font-size: 14px;
+        }
+        .date-multi a {
+            font-size: 12px;
+        }
+        .date-multi h3 {
+            font-size: 12px;
+        }
+        .multi-read a {
+            font-size: 12px;
+        }
+        .date-multi li {
+            padding-right: 13px;
         }
     }
   } 
@@ -2480,6 +2535,21 @@
         }
         .cart-line {
             padding: 12px 0;
+        }
+    }
+    // for header mobile media
+    #header {
+        .head-mobile-search {
+            padding: 0;
+        }
+        .head.cell.large-4.logo-part.medium-4 {
+            padding: 0;
+        }
+    }
+    // videro slider scss
+    #multimedia-wrapper {
+        .video-content {
+            bottom: 72px;
         }
     }
 }

@@ -28,11 +28,12 @@ button {
     border: none;
     color: #fff;
     border-radius: 4px;
+    font-weight: 500;
 }  
 button:hover {
     background-color: #a70a0ad9;
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
 }
 a:hover {
     color: $red;

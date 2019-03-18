@@ -161,5 +161,15 @@
     .category-a a {
         font-family: EloquentJFRegularPro ☞;
     }
+    // for video-photo-archive page scss
+    .section-latest {
+        text-align: center;
+        padding: 24px 0;
+    }
+    .section-latest h2{
+        font-family: EloquentJFRegularPro ☞;
+        font-size: 20px;
+        color: $red;
+    }
 }
   

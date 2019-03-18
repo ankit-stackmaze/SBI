@@ -11,41 +11,40 @@ html.no-js(lang='en')
                 .section.grid-x
                     .section-part.cell.large-12.text-center
                         img(src="../assets/image/Rectangle.png", alt="")
+                .section-latest
                         h2 LATEST MULTIMEDIA    
             include video-slider
 
+        #video-photo-archive
             .grid-container     
                 .archive-img(style="background-image: url(../assets/image/sds.jpg)")
             .grid-container
                 .grid-x.type-category
                     .cell.archive-search.large-6.medium-6
-                        p search
                         form
                             input(type='text', placeholder='Search..', name='search2')
                             button(type='submit')
                                 i.fa.fa-search
                     .cell.archive-notice.large-3.medium-3
-                        .dropdown
-                            button.dropbtn
-                                | type 
-                                i.fa.fa-caret-down
-                            .dropdown-content
-                                a(href='#') Link 1
-                                a(href='#') Link 2
-                                a(href='#') Link 3
+                        label
+                            select
+                                option(value='husker') type
+                                option(value='starbuck') Starbuck
+                                option(value='hotdog') Hot Dog
+                                option(value='apollo') Apollo
 
-                    .cell.archive-create.large-3.medium-3
-                        .dropdown
-                            button.dropbtn
-                                | category 
-                                i.fa.fa-caret-down
-                            .dropdown-content
-                                a(href='#') Link 1
-                                a(href='#') Link 2
-                                a(href='#') Link 3
+
+                    .cell.archive-notice.large-3.medium-3
+                        label
+                            select
+                                option(value='husker') category
+                                option(value='starbuck') Starbuck
+                                option(value='hotdog') Hot Dog
+                                option(value='apollo') Apollo
+
     
-    include many-images-contain
-    .archive-load-more
-        button load more
+            include many-images-contain
+            .archive-load-more
+                button load more
     include scripts
     include footer
