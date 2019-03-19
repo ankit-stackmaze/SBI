@@ -13,7 +13,6 @@
     .demographic-part a {
         font-size: 14px;
         color: $red;
-        border-bottom: 1px solid $red; 
         font-weight: bold;
         text-transform: capitalize;
         line-height: 2;
@@ -81,10 +80,6 @@
         margin: 8px 50px;
     }
     .request-information button {
-        background: #900;
-        color: #fff;
-        text-transform: capitalize;
-        cursor: pointer;
         font-size: 14px;
         width: 370px;
         padding: 14px 0;
@@ -101,10 +96,10 @@
         margin: 20px 18px 0 0;
     }
     .request h2 {
-            display: inline-block;
-            font-size: 20px;
-            font-family: EloquentJFRegularPro ☞;
-            padding: 0 0 0 10px;
+        display: inline-block;
+        font-size: 20px;
+        font-family: EloquentJFRegularPro ☞;
+        padding: 0 0 0 10px;
     }
     .request i.fas.fa-retweet {
         font-size: 20px;
@@ -118,5 +113,8 @@
     }
     .request form {
         padding: 30px 0;
+    }
+    .request-information {
+        padding-bottom: 88px;
     }
 }

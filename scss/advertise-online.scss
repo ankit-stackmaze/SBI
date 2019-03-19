@@ -26,12 +26,15 @@
         font-weight: bold;
         text-transform: capitalize;
     }
-    .options p {
+    .options a {
         font-size: 14px;
         font-weight: bold;
         text-transform: capitalize;
         color: $red;
         line-height: 3;
+    }
+    .options a:hover {
+        border-bottom: 1px solid #fff;
     }
     .new-red p {
         background: $red;

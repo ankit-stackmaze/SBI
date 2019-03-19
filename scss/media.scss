@@ -605,7 +605,7 @@
             padding: 50px 20px;
         }
         .change-cover-two {
-            left: 14%;
+            left: 11%;
         }
     }
     // event-single page scss
@@ -745,9 +745,6 @@
             width: 100%;
             height: 550px;
         }
-        
-        
-        
     }
 }
 
@@ -832,9 +829,7 @@
 
     }
     #brief-two {
-        .grid-x>.medium-6 {
-            width: 100%;
-        }
+        
         .grid-container {
             padding: 0 .625rem!important;
         }
@@ -862,9 +857,7 @@
         .featured-category li {
             padding: 0 3px;
         }
-        .more-child-head-second{
-            padding: 56px 0 0 0;
-        }
+        
         .sign-in-section button.signupbtn {
             padding: 12px 5px;
         }
@@ -1121,6 +1114,9 @@
         .archive-notice select {
             padding: 14px 54px 14px 11px;
         }
+        .archive-search button {
+            right: 75px;;
+        }
     }
     
 }
@@ -1156,6 +1152,26 @@
         }
         .date-multi li {
             padding-right: 13px;
+        }
+    }
+    #brief-two {
+        .cell.large-4.medium-4.bref-feature-story {
+            width: 100%;
+        }
+        .featured-heading-bg {
+            height: 230px;
+        }
+    }
+    // subscription news latter page
+    #subscriptions-newsletters {
+        .signup-subscription input[type="text"] {
+            padding: 2% 6% 2% 1%;
+        }
+        .signup-subscription input[type="email"] {
+            padding: 2% 5% 2% 1%;
+        }
+        .signup-subscription button {
+            padding: 14px 37px;
         }
     }
   } 
@@ -1670,8 +1686,13 @@
         }
     }
     // video-photo archive page media scss
-    .type-category {
-        display: none;
+    #video-photo-archive {
+        .filter {
+            display: block;
+        }
+        .archive-notice {
+            display: none;
+        }
     }
     // video-slider scss
     #multimedia-wrapper {
@@ -1888,6 +1909,9 @@
         .newsletter-order-first {
             display: block;
         }
+        .signup-subscription button {
+            width: 100%;
+        }
         .newsletter-order-second {
             display: none;
         }
@@ -2083,6 +2107,9 @@
             text-align: center;
             width: 100%;
         }
+        .news-tip label {
+            width: 100%;
+        }
         .visit-address {
             text-align: center;
         }
@@ -2122,6 +2149,9 @@
         .signup-section {
             padding: 10px 0 0 0;
         }
+        .sign-up-why {
+            text-align: center;
+        }
     }
     // edit profile page scss
     #edit-profile {
@@ -2146,11 +2176,7 @@
             left: 62%;
             transform: inherit;
         }
-        .change-cover-two {
-            top: 36%;
-            left: 37%;
-            position: absolute;
-        }
+       
     }
     // my account page scss
     #edit-profile {
@@ -2158,6 +2184,11 @@
             position: absolute;
             top: 434px;
             left: 0px;
+        }
+        .change-cover-two {
+            top: 36%;
+            left: 42%;
+            position: absolute;
         }
         .tabs-title>a {
             font-size: 10px;
@@ -2481,7 +2512,26 @@
             font-size: 19px;
         }
     }
-
+    //video-photo-archive inseacgh result page
+    #video-photo-archive {
+        .archive-search input[type="text"] {
+            width: 100%;
+        }
+        .archive-search button {
+            right: 25px;
+        }
+        .showing-result h3 {
+            font-size: 11px;
+        }
+        .showing-result {
+            padding-top: 10px;
+        }
+        // for page search--results-advanced-search-open-state
+        .showing-result-first h3 {
+            display: none;
+        }
+    }
+    
 
 }
 
@@ -2494,6 +2544,12 @@
             width: 180px;
             height: 130px;
             left: 59px;
+        }
+    } 
+    // edit profile page 
+    #edit-profile {
+        .change-cover-two {
+            left: 39%;
         }
     } 
     #matrics-charts {

@@ -99,13 +99,10 @@
         color: #000;
         margin: 0 4px;
     }
-    .signup-subscription input[type="submit"] {
-        color: #fff;
+    .signup-subscription button {
         font-weight: bold;
-        background: #990000;
-        border: 1px solid;
         font-size: 14px;
-        padding: 14px 24px;
+        padding: 18px 28px;
         border-radius: 4px;
         cursor: pointer;
     }
@@ -115,13 +112,16 @@
     .grid-x.news-letter-sub-bdr {
         border: 1px solid #EBEEF1;
     }
-    .daily-news-bdr {
-        border-bottom: 1px solid #dddddd;
+    .subscription-main {
+        border: 1px solid #dddddd;
     }
     .sign-up-newslatter {
         padding: 10px 0;
     }
     .newsletter-order-first {
         display: none;
+    }
+    .daily-sub-bdr {
+        width: 100%;
     }
 }

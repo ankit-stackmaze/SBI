@@ -37,7 +37,9 @@
     border-radius: 4px;
     padding: 14px 116px 14px 16px;
   }
-
+  .filter {
+    display: none;
+  }
 //  LOAD MORE BUTTON SCSS
   .archive-load-more {
       text-align: center;
@@ -60,4 +62,20 @@
     text-transform: uppercase;
     padding: 20px 0 10px 0;
   }
+  .filter h2 {
+    display: inline-block;
+    padding-left: 10px;
+  }      
+  .filter {
+    padding: 10px 0;
+  }
+  .showing-result h3 {
+    font-size: 12px;
+  }
+  .showing-result span {
+    font-weight: 600;
+  }
+  .showing-result {
+    padding-top: 10px;
+ }
 }

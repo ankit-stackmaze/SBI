@@ -94,9 +94,6 @@
     .more-child-head.cell.large-7.medium-7 {
         padding: 0 10px;
     }
-    .grid-x.more-child-clm {
-        padding: 11px 0;
-    }
     .feature-small-head {
         font-size: 20px;
         font-weight: bold;     
@@ -111,6 +108,9 @@
         text-transform: capitalize;
         padding: 10px 0;
     }
+    .more-child-head-second {
+        padding-top: 10px;
+    }
     .more-child-head p {
         font-size: 14px;
         font-family: roboto;
@@ -122,7 +122,6 @@
         background-repeat: no-repeat;
         height: 98px;
     }
-    
     .feature-heading h2 {
         font-size: 18px;
         font-weight: bold;
@@ -134,8 +133,6 @@
         font-size: 14px;
     }
     .more-category-stories button {
-        background: #990000;
-        color: #fff;
         font-size: 14px;
         font-weight: 500;
         text-transform: capitalize;
@@ -147,5 +144,11 @@
     }    
     .more-child-head.cell.large-6.medium-6 {
         padding: 0 0 0 5px;
+    }
+    .more-child-clm {
+        padding: 15px 0;
+    }
+    .featured-img {
+        padding-bottom: 5px;
     }
 }

@@ -22,44 +22,40 @@ html.no-js(lang='en')
                             h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae
                     .cell.large-2
 
-            
+        
+        #video-photo-archive
             .grid-container
                 .grid-x.type-category
                     .cell.archive-search.large-6.medium-6
-                        p search
                         form
                             input(type='text', placeholder='Search..', name='search2')
                             button(type='submit')
                                 i.fa.fa-search
                     .cell.archive-notice.large-3.medium-3
-                        .dropdown
-                            button.dropbtn
-                                | type 
-                                i.fa.fa-caret-down
-                            .dropdown-content
-                                a(href='#') Link 1
-                                a(href='#') Link 2
-                                a(href='#') Link 3
+                        label
+                            select
+                                option(value='husker') type
+                                option(value='starbuck') Starbuck
+                                option(value='hotdog') Hot Dog
+                                option(value='apollo') Apollo
 
-                    .cell.archive-create.large-3.medium-3
-                        .dropdown
-                            button.dropbtn
-                                | category 
-                                i.fa.fa-caret-down
-                            .dropdown-content
-                                a(href='#') Link 1
-                                a(href='#') Link 2
-                                a(href='#') Link 3
+
+                    .cell.archive-notice.large-3.medium-3
+                        label
+                            select
+                                option(value='husker') category
+                                option(value='starbuck') Starbuck
+                                option(value='hotdog') Hot Dog
+                                option(value='apollo') Apollo
                 .grid-x
-                    .cell.showing-result.large-6.medium-6
-                        h3 
-                        | Showing 5462 results for 
-                        span keyword
-                        
-                    .cell.showing-result.large-6.medium-6.text-right
+                    .cell.showing-result.large-6.medium-6.small-6.showing-result-first
                         .filter 
                            i.fas.fa-filter 
                            h2 filter
+                        h3 Showing 5462 results for 
+                            span keyword
+                        
+                    .cell.showing-result.large-6.medium-6.text-right.small-6
                         h3 Advanced search
 
         #advance-search
@@ -127,3 +123,4 @@ html.no-js(lang='en')
                                         h2 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                     .search-heading-h3
                                         h3 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula
+        include scripts 

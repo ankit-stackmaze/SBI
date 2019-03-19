@@ -3,8 +3,17 @@
         background: #F7F7F7;
         padding: 0 34px;
     }
+    .advance-search {
+        margin: 15px 0;
+    }
+    .advance-search-key label {
+        width: 100%;
+    }
+    .advance-search-label label {
+        width: 100%;
+    }
     .advance-search-key input[type="text"] {
-        width: 82%;
+        width: 92%;
         padding: 14px 20px;
         border: none;
     }
@@ -112,4 +121,5 @@
     form.open-search {
         width: 100%;
     }
+    
 }

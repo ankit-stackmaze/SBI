@@ -14,11 +14,10 @@ $white: #fff;
     border-bottom: 1px solid #000;
     padding: 0 0 15px 0; 
 }
-.back-ground {
+.background-image {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    border-radius: 4px;
 }
 
 button {
@@ -45,5 +44,8 @@ i:hover {
     font-family: EloquentJFRegularPro ☞;
     font-size: 20px;
     text-transform: uppercase;
+}
+img {
+    border-radius: 4px;
 }
     

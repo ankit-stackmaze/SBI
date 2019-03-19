@@ -18,8 +18,8 @@ html.no-js(lang='en')
             
             .grid-container
                 .grid-x
-                    .cell.large-2.medium-2
-                    .cell.large-8.medium-8
+                    .cell.large-2.medium-1
+                    .cell.large-8.medium-10
                         .grid-x
                             .cell
                                 .newsletter-title-h
@@ -28,7 +28,7 @@ html.no-js(lang='en')
                                     p Newsletter intro text here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque. Curabitur sit amet nisl arcu. In id quam porttitor augue porttitor bibendum sed vitae diam. Morbi pharetra odio eget neque auctor fermentum. Class aptent taciti sociosqu ad litora 
 
                         .grid-x.daily-sub-bdr
-                            .cell
+                            .cell.subscription-main
                                 .sign-up-newslatter.text-center
                                     i.fas.fa-envelope
                                     h2 Sign up For The Newsletter
@@ -64,13 +64,14 @@ html.no-js(lang='en')
                                                     form
                                                         input(type='checkbox',id=check-box name='featuer', value='feature')
                                                         p  Feature name goes here     
-                                    
-                                    .cell.signup-subscription
-                                        form(action='/action_page.php')
-                                            input(type='text', name='fullname', placeholder='name')
-                                            input(type='email', name='email', placeholder='email address')
-                                            input(type='submit', value='sign up now')
-                    .cell.large-2.medium-2
+                              
+                            .grid-x.daily-sub-bdr
+                                .cell.signup-subscription
+                                    form(action='/action_page.php')
+                                        input(type='text', name='fullname', placeholder='name')
+                                        input(type='email', name='email', placeholder='email address')
+                                        button sign up now
+                    .cell.large-2.medium-1
                 
         include scripts
         include footer
