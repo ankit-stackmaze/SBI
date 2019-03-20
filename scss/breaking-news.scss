@@ -77,8 +77,6 @@
         width: 100%;
         padding: 17px 0;
         cursor: pointer;
-        background-color: #990000;
-        color: #fff;
         font-family: EloquentJFRegularPro ☞;
         font-size: 18px;
         text-transform: capitalize;
@@ -127,9 +125,18 @@
     .side-images {
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center;    
         height: 423px;
         margin: 0 0 20px 0;
+        max-width: 850px;
+        transition: all .3s ease-in-out;
+        background-size: 100%;
+        position: center;
+            &:hover { 
+                background-size: 110%;
+                position: relative;
+            }
+               
     }
     .side-category li {
         display: inline-block;
@@ -171,5 +178,6 @@
         font-size: 20px;
         color: $red;
     }
+   
 }
   

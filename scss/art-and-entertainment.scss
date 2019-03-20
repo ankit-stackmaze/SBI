@@ -31,10 +31,8 @@
     }
     button.signupbtn {
         text-align: center;
-        background: #990000;
         width: 100%;
         padding: 13px 0;
-        color: #fff;
         cursor: pointer;
         border-radius: 4px;
     }
@@ -58,6 +56,14 @@
         background-size: contain;
         background-position: center;
         height: 286px;
+        max-width: 374px;
+        transition: all .3s ease-in-out;
+        background-size: 100%;
+        position: center;
+            &:hover { 
+                background-size: 105%;
+                position: relative;
+            }
     }
     .column {
         display: inline-block;
@@ -73,12 +79,21 @@
         background-size: cover;
         background-position: center;
         height: 286px;
+        max-width: 362px;
+        transition: all .3s ease-in-out;
+        background-size: 100%;
+        position: center;
+            &:hover { 
+                background-size: 110%;
+                position: relative;
+            }
     }
     .art-third {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
         height: 400px;
+        
     }
     .sponsores-t p {
         font-size: 13px;
@@ -92,13 +107,11 @@
     }
     .submit-btn button {
         text-align: center;
-        background: #990000 !important;
         width: 100%;
         padding: 13px 0;
         cursor: pointer;
         border: none !important;
         font-family: 'Montserrat', sans-serif;
-        color: #fff !important;
     }
     .question h2 {
         font-size: 20px;
@@ -133,6 +146,14 @@
         background-size: contain;
         background-position: center;
         height: 286px;
+        max-width: 362px;
+        transition: all .3s ease-in-out;
+        background-size: 100%;
+        position: center;
+            &:hover { 
+                background-size: 105%;
+                position: relative;
+            }   
     }
     .arts-living h2 {
         font-size: 16px;
@@ -184,7 +205,16 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        border-radius: 4px;
         height: 287px;
+        max-width: 362px;
+        transition: all .3s ease-in-out;
+        background-size: 100%;
+        position: center;
+            &:hover { 
+                background-size: 105%;
+                position: relative;
+            }
     }
     .hh-sport h2 {
         font-size: 20px;

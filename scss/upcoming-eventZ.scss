@@ -19,12 +19,9 @@
     padding-left: 25px;
 }    
 .event-btn button {
-    background: #990000;
     font-size: 14px;
-    padding: 18px 29px;
+    padding: 18px 26px;
     cursor: pointer;
-    border-radius: 4px;
-    color: #fff;  
     text-transform: capitalize;
 }     
 .premier-img-again {
@@ -79,3 +76,11 @@
 input#datepicker {
     width: 100%;
 }
+.ui-datepicker-title {
+    color: #990000;
+    font-family: roboto;
+}
+span.ui-icon.ui-icon-circle-triangle-e {
+    padding-left: 10px;
+}
+

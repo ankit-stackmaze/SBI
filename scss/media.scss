@@ -2502,6 +2502,17 @@
         .pull-load {
             padding: 10px 0 38px;
         }
+        // for page poll single page scss
+        .comn-option{
+            padding: 12px 0;
+            display: block;
+        }
+        .polls-single-h h2 {
+            font-size: 30px !important;
+        }
+        .poll-single {
+            padding: 20px 0 20px;
+        }
     } 
     // for error 404 mobile media scss
     div#error-padding {
@@ -2531,8 +2542,12 @@
             display: none;
         }
     }
-    
-
+     // tv-listing-movie-showtime
+    #tv-listing {
+        .tv-listing {
+            margin-top: 25px;
+        }
+    }
 }
 
 

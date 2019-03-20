@@ -7,6 +7,7 @@
         display: inline-block;
         font-size: 14px;
         font-weight: bold;
+        padding-left: 10px;
     }
     .title i.fas.fa-star {
         color: #fff;
@@ -30,9 +31,6 @@
     .common-btn-text {
         display: none;
     }
-    // .date-of-input {
-    //     display: none;
-    // }
     .purchase-premium.obit-h2 {
         display: none;
     }
@@ -46,9 +44,12 @@
     .cancel-btn button {
         width: 232px;
         padding: 16px 0;
-        background: $silver;
+        background: #DDDDDD;
         color: #000;
         font-weight: bold;
+    }
+    .cancel-btn button:hover {
+       background: $silver;
     }
     .product-btn {
         display: none;

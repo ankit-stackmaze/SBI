@@ -15,6 +15,10 @@
         font-weight: 300;
         font-size: 14px;
         text-transform: capitalize;
+        text-decoration: none;
+    }
+    .footer-menu a:hover {
+        color: $red;
     }
     footer {
         background: #000000;

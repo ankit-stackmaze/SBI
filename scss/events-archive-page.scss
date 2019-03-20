@@ -41,11 +41,9 @@
         margin: 25px 0 0 0;
     }
     .load-btn button {
-        background: #990000;
-        color: #fff;
         text-transform: capitalize;
         font-size: 14px;
-        padding: 18px 78px;;
+        padding: 18px 78px;
         border-radius: 4px;
         cursor: pointer;
     }
@@ -75,5 +73,8 @@
     }
     .upcoming-event-bdr {
         border-bottom: 1px solid #000;
+    }
+    .submit-event-main {
+        padding-top: 34px;
     }
 }

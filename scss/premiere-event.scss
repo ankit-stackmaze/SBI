@@ -10,6 +10,13 @@
         background-size: cover;
         background-position: center;
         height: 218px;
+        transition: all .3s ease-in-out;
+        background-size: 100%;
+        position: center;
+            &:hover { 
+                background-size: 110%;
+                position: relative;
+            }
     }
     .premier-hh h2 {
         padding: 0 0 10px 0;
@@ -120,6 +127,14 @@
         background-size: cover;
         background-position: center;
         height: 286px;
+        max-width: 339px;
+        transition: all .3s ease-in-out;
+        background-size: 100%;
+        position: center;
+            &:hover { 
+                background-size: 110%;
+                position: relative;
+            }
     }
     .center.heading h2 {
         font-size: 23px;
@@ -152,6 +167,14 @@
         background-size: cover;
         background-position: center;
         height: 286px;
+        max-width: 329px;
+        transition: all .3s ease-in-out;
+        background-size: 100%;
+        position: center;
+            &:hover { 
+                background-size: 105%;
+                position: relative;
+            }
     }
     .side-bdr {
         border-bottom: 1px solid #EBEEF1;
