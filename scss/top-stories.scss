@@ -1,5 +1,13 @@
 // top-stories 
 #top-stories {   
+    .top-story-h h2 {
+        font-family: EloquentJFRegularPro ☞;
+    }
+    .top-story-h h2 {
+        border-bottom: 1px solid #000;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
     .top-heading-img {
         width: 40%;
         padding: 0 10px 0 0;
@@ -15,7 +23,7 @@
     }
     .top-stories-main {
         border-bottom: 1px solid #EBEEF1;
-        padding-bottom: 8px;
+        padding: 24px 0 8px;
         margin-bottom: 20px;
     }
     .top-stories-main h2 {
@@ -38,7 +46,6 @@
     .top-add-img-cls {
         padding: 50px 0 0 0;
     }
-
     // get news in section scss
     .news-two.top-stories-news {
         border: none;

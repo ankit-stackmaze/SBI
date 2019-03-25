@@ -58,13 +58,39 @@ html.no-js(lang='en')
                                     .cell.large-6.submit-category-padd
                                         .event-title
                                             h3 admissoin
-                                        label
-                                            select
-                                                option(value='husker') $10
-                                                option(value='starbuck') $20
-                                                option(value='hotdog') $30
-                                                option(value='apollo') $40                                                       
-
+                                        .page-content
+                                            button.launcher $10
+                                        #modal.modal(tabindex='-1', role='dialog')
+                                            .modal-dialog(role='document')
+                                                button.modal-close(type='button', tabindex='-1') ×
+                                                h2 
+                                                    .grid-x
+                                                        .cell.admission-dropdown  
+                                                            form(action='#')
+                                                                p
+                                                                    input#test1(type='radio', name='radio-group', checked='')
+                                                                    label(for='test1') free
+                                                        .cell.admission-dropdown.dropdown-second
+                                                            form(action='#')
+                                                                p
+                                                                    input#test2(type='radio', name='radio-group')
+                                                                    label(for='test2')
+                                                                        input#myNumber(type='number', value='2')
+                                                                        span $
+                                                        .cell.admission-dropdown  
+                                                            form(action='#')  
+                                                                p
+                                                                    input#test3(type='radio', name='radio-group')
+                                                                    label(for='test3') free
+                                                                        input#myNumber-two(type='number', value='2')
+                                                                        
+                                                        .cell.admission-dropdown 
+                                                            .grid-x
+                                                                .cell.admission-input.large-7.medium-7.small-7
+                                                                    input(type='text', name='LastName', value='')
+                                                                .cell.admission-submit.large-5.medium-5.small-5
+                                                                    button other
+                
                             .cell 
                                 .grid-x
                                     .event-title

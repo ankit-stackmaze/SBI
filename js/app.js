@@ -363,12 +363,22 @@ if ($('#myBarChart-tt').length){
     }
   });
 }
-// date for event archive page
-$( function() {
-  $( "#datepicker" ).datepicker();
-} );
+  // date for event archive page
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
 
-// stickey header
+// // stickey header
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= 0) {
+      $('nav').addClass('fixed-header');
+      $('nav div').addClass('visible-title');
+  }
+  else {
+      $('nav').removeClass('fixed-header');
+      $('nav div').removeClass('visible-title');
+  }
+});
 // window.onscroll = function() {myFunction()};
 // var header = document.getElementById("myHeader-sticky");
 // // var sticky = header.offsetTop;
@@ -400,5 +410,25 @@ $('.sub').click(function () {
     if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
   }
 });
-  
+// submit event page drop down scss AND editorial staff page
+jQuery(document).ready(function($) {
+	var $modal = $('#modal');
+
+	$('.launcher').on('click', openModal);
+
+	$modal
+		.on('click', closeModal)
+		.on('click', '.modal-close', closeModal)
+		.on('click', '.modal-dialog', function(event) {
+		event.stopPropagation();  // prevent closing the modal window when user clicks on the window itself
+	});
+
+	function closeModal() {
+		$modal.fadeOut();
+	};
+
+	function openModal() {
+		$modal.fadeIn();
+	};
+});
   

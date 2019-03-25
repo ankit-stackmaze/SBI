@@ -1,172 +1,139 @@
 #editorial-staff {
-    .editorial-img {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
-        height: 287px; 
-        position: relative;
-        border-radius: 4px;
-    }
-    .editorial-hover i.fas.fa-info {
-        width: 20px;
-        background: #fff;
-        height: 20px;
-        text-align: center;
-        border-radius: 100%;
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        color: #000;
-    }
-    // .button {
-    //     margin: 0 !important;
-    //     padding: 0 !important;
-    //     border: none !important;
-    //     background-color: #1779ba !important;
-    // }
-    .cell.large-4.medium-4.editorial-img-main {
-        margin: 13px 0;
-    }
-    .more-staff-btn button {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 500;
-        background: #990000;
-        padding: 18px 43px;
-        border-radius: 4px;
-        cursor: pointer;
-        
-    }
-    .more-staff-btn {
-        text-align: center;
-        padding: 20px 0;
-    }
+  .editorial-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 287px; 
+    position: relative;
+    border-radius: 4px;
+  }
+  .editorial-hover i.fas.fa-info {
+    width: 20px;
+    background: #fff;
+    height: 20px;
+    text-align: center;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #000;
+  }
+ 
+  .cell.large-4.medium-4.editorial-img-main {
+      margin: 13px 0;
+  }
+  .more-staff-btn button {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 18px 43px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  .more-staff-btn {
+    text-align: center;
+    padding: 20px 0;
+  }
+  // reveal button scss
 
-    // button pop up
-    .box {
-        margin: 0 auto;
-        height: 0;
-        width: 0;
-        background: rgba(255,255,255,0.2);
-        border: 2px solid #fff;
-        background-clip: padding-box;
-        text-align: center;
-      }
-      
-      .button {
-        font-size: 1em;
-        padding: 10px;
-        color: #fff;
-        border: 2px solid #06D85F;
-        border-radius: 20px/50px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: all 0.3s ease-out;
-      }
-      .button:hover {
-        background: #06D85F;
-      }
-      
-      .overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.7);
-        transition: opacity 500ms;
-        visibility: hidden;
-        opacity: 0;
-      }
-      .overlay:target {
-        visibility: visible;
-        opacity: 1;
-      }
-      
-      .popup {
-        margin: 70px auto;
-        padding: 20px;
-        background: #fff;
-        border-radius: 5px;
-        width: 30%;
-        position: relative;
-        transition: all 5s ease-in-out;
-      }
-      .popup .close {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        transition: all 200ms;
-        font-size: 30px;
-        font-weight: bold;
-        text-decoration: none;
-        color: #333;
-      }
-      .popup .close:hover {
-        color: #06D85F;
-      }
-      .popup .content {
-        max-height: 30%;
-        overflow: auto;
-      }
-      
-      @media screen and (max-width: 700px){
-        .box{
-          width: 70%;
-        }
-        .popup{
-          width: 70%;
-        }
-      }
-    
-}
-    // reveal button scss
-#exampleModal1 {
-    .edit-icon-a p {
-        display: inline-block;
-    }
-    .edit-icon-a li {
-        display: inline-block;
-        padding: 0 10px;
-    }
-    .edit-icon-a li:first-child {
-        padding-left: 0;
-    }
-    .edit-staff  h1 {
-        font-size: 24px;    
-        font-weight: bold;
-        text-transform: capitalize;
-    }
-    .edit-staff p {
-        display: inline-block;
-        font-size: 14px;
-        font-family: Roboto;
-        text-transform: capitalize;
-    }
-    .edit-staff h2 {
-        display: inline-block;
-        font-size: 14px;
-        font-family: Roboto;
-        padding-left: 15px; 
-    }
-    .edit-staff-P {
-        font-size: 16px;
-        line-height: 1.5;
-        padding: 10px 0 30px 0;
-    }
-    .edit-icon-a i {
-        font-size: 20px;
-        color: #000;
-    }
-    .edit-staff {
-        padding: 10px 0;
-    }
-    .edit-icon-p p {
-        font-size: 12px;
-        color: #990000;
-    }
-    // .reveal {
-    //     width: 525px;
-    // }
-    
+  .edit-icon-a p {
+      display: inline-block;
+  }
+  .edit-icon-a li {
+      display: inline-block;
+      padding: 0 10px;
+  }
+  .edit-icon-a li:first-child {
+      padding-left: 0;
+  }
+  .edit-staff  h1 {
+      font-size: 24px;    
+      font-weight: bold;
+      text-transform: capitalize;
+  }
+  .edit-staff p {
+      display: inline-block;
+      font-size: 14px;
+      font-family: Roboto;
+      text-transform: capitalize;
+  }
+  .edit-staff h2 {
+      display: inline-block;
+      font-size: 14px;
+      font-family: Roboto;
+      padding-left: 15px; 
+  }
+  .edit-staff-P {
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 10px 0 30px 0;
+  }
+  .edit-icon-a i {
+      font-size: 20px;
+      color: #000;
+  }
+  .edit-icon-a i:hover {
+    color: $red;
+  }
+  .edit-staff {
+      padding: 10px 0;
+  }
+  .edit-icon-p p {
+      font-size: 12px;
+      color: $red;
+  }
+  .popup {
+    padding: 10px 0;
+  }
+    // popup scss second 
+    /* heart of the matter */
+  .modal {
+    background: rgba(196, 196, 196, 0.5);
+    display: none;
+    outline: 0;
+    overflow: hidden;
+    position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 9000;
+    -webkit-overflow-scrolling: touch;
+  }
+  .modal-dialog {
+    background: #fff;
+    border: 1px solid #666;
+    border-radius: 9px;
+    margin: 45px auto 0;
+    max-width: 90%;
+    position: relative;
+    padding: 0 18px;
+    max-width: 527px;
+  }
+  .modal-close {
+    background: transparent;
+    border: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 1;
+    margin: 0;
+    outline: none !important;
+    padding: 0 6px;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    text-align: center;
+    color: #AEBDC4;
+  }
+  // button scss popup
+  button.launcher {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
 }

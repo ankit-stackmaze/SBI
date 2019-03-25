@@ -45,7 +45,7 @@
     .comn-submit-lable input[type="text"], input#url {
         width: 100%;
         border: 1px solid $silver;
-        padding: 15px 5px;
+        padding: 17px 5px;
         font-size: 12px;
     }
     .comn-submit-lable textarea {
@@ -56,7 +56,7 @@
         padding-top: 20px;
     }
     .submit-category-event select {
-        background: $silver;
+        background: #DDDDDD;
         border: none;
         padding: 15px 10px;
         font-size: 14px;
@@ -134,49 +134,167 @@
         width: 100%;
         padding: 50px 0 65px 0;
     }
-
-    // drop down 
-    .dropbtn {
-        background-color: #4CAF50;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-      
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      
-      .dropdown-content {
-        display: none;
+    [type="radio"]:checked,
+    [type="radio"]:not(:checked) {
         position: absolute;
-        background-color: red;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        top: 50px;
+        left: -9999px;
+    }
+    [type="radio"]:checked + label,
+    [type="radio"]:not(:checked) + label
+    {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        color: #666;
+    }
+    [type="radio"]:checked + label:before,
+    [type="radio"]:not(:checked) + label:before {
+        content: '';
+        position: absolute;
         left: 0;
-      }
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+        background: #fff;
+    }
+    [type="radio"]:checked + label:after,
+    [type="radio"]:not(:checked) + label:after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: $red;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    [type="radio"]:not(:checked) + label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    [type="radio"]:checked + label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    // admission open input
+    .admission-dropdown input#myNumber {
+        width: 40px;
+        border: 1px solid #EBEEF1;
+    }
+    .admission-dropdown input#myNumber-two {
+        margin-left: 9px;
+        width: 40px;
+        border: 1px solid #EBEEF1;
+    }
+    .admission-dropdown  {
+        padding: 10px 0;
+    }
+    .admission-submit button {
+        padding: 16px 0;
+        width: 127px;
+        margin-left: 5px;
+    }
+    .admission-input input[type="text"] {
+        border-radius: 4px;
+    }
+        // drop down scss
+    .modal {
+        display: none;
+        outline: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 841px;
+        right: 0;
+        bottom: 0;
+        left: 371px;
+        height: 100%;
+        z-index: 9000;
+        -webkit-overflow-scrolling: touch;
+    }
+    .modal-dialog {
+        background: #fff;
+        margin: 45px auto 0;
+        max-width: 90%;
+        padding: 0 18px;
+        box-shadow: 3px 6px 28px -5px rgba(0,0,0,0.7);
+        max-width: 372px;
+    }
+    .modal-close {
+        background: #00000047;
+        cursor: pointer;
+        font-size: 30px;
+        line-height: 1;
+        margin: 0;
+        outline: none !important;
+        padding: 0 6px;
+        position: absolute; 
+        top: 8px; 
+        right: -312px;
+        text-align: center;
+    }
+    .modal-dialog button {
+        position: relative;
+    }
+    .page-content button.launcher {
+        background: #DDDDDD;
+        color: #000;
+        padding: 17px;
+        width: 371px;
+    }
+    /* decorations */
+    *, *:after, *:before {
+        box-sizing: border-box;
+    }
+    // drop down 
+    // .dropbtn {
+    //     background-color: #4CAF50;
+    //     color: white;
+    //     padding: 16px;
+    //     font-size: 16px;
+    //     border: none;
+    //   }
       
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
+    //   .dropdown {
+    //     position: relative;
+    //     display: inline-block;
+    //   }
       
-      .dropdown-content a:hover {background-color: #ddd;}
+    //   .dropdown-content {
+    //     display: none;
+    //     position: absolute;
+    //     background-color: red;
+    //     min-width: 160px;
+    //     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    //     z-index: 1;
+    //     top: 50px;
+    //     left: 0;
+    //   }
       
-      .dropdown:hover .dropdown-content {display: block;}
+    //   .dropdown-content a {
+    //     color: black;
+    //     padding: 12px 16px;
+    //     text-decoration: none;
+    //     display: block;
+    //   }
       
-      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    //   .dropdown-content a:hover {background-color: #ddd;}
+      
+    //   .dropdown:hover .dropdown-content {display: block;}
+      
+    //   .dropdown:hover .dropbtn {background-color: #3e8e41;}
     
-    .main {
-        display:inline-box;
-    }
-    .rglm {
-        display:inline-box;
-    }
+    // .main {
+    //     display:inline-box;
+    // }
+    // .rglm {
+    //     display:inline-box;
+    // }
 }

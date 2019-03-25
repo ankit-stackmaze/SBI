@@ -59,5 +59,13 @@
     .Contribute-main {
         padding: 0 0 0 25px;
     }
+    .announcement-img img {
+        height: auto;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .announcement-img:hover img {
+        transform: scale(1.1);
+    }
 }
   
