@@ -26,6 +26,9 @@ html.no-js(lang='en')
         #video-photo-archive
             .grid-container
                 .grid-x.type-category
+                    .cell.large-12.medium-12.small-12
+                        .search-video
+                            h2 search
                     .cell.archive-search.large-6.medium-6
                         form
                             input(type='text', placeholder='Search..', name='search2')
@@ -34,7 +37,7 @@ html.no-js(lang='en')
                     .cell.archive-notice.large-3.medium-3.text-right
                         label
                             select
-                                option(value='husker') type
+                                option(value='husker') filter
                                 option(value='starbuck') Starbuck
                                 option(value='hotdog') Hot Dog
                                 option(value='apollo') Apollo
@@ -43,7 +46,7 @@ html.no-js(lang='en')
                     .cell.archive-notice.large-3.medium-3.text-right
                         label
                             select
-                                option(value='husker') category
+                                option(value='husker') sort
                                 option(value='starbuck') Starbuck
                                 option(value='hotdog') Hot Dog
                                 option(value='apollo') Apollo
@@ -58,6 +61,12 @@ html.no-js(lang='en')
                         
                     .cell.showing-result.large-6.medium-6.text-right.small-6
                         h3 Advanced search
+                .grid-x
+                    .cell
+                        .callout.success(data-closable='slide-out-right')
+                            include search--results-advanced-search-open-state-page
+                            button.close-button(aria-label='Dismiss alert', type='button', data-close='')
+                                span(aria-hidden='true') ×
 
         #search-result
             .grid-container
@@ -70,10 +79,10 @@ html.no-js(lang='en')
                                     .search-img(style="background-image: url(../assets/image/ef.jpg)")
                                 .cell.large-8.medium-8.search-bdr.search-bg-cell-second                             
                                     .search-category
-                                        ul         
-                                            li
+                                        ul.grid-x         
+                                            li.cell.search-li
                                                 h3 category
-                                            li
+                                            li.cell.search-two-li
                                                 h4 MON, JUL 09
                                     .search-heading-h2
                                         h2 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -85,10 +94,10 @@ html.no-js(lang='en')
                                     .search-img(style="background-image: url(../assets/image/ef.jpg)")
                                 .cell.large-8.medium-8.search-bdr.search-bg-cell-second                             
                                     .search-category
-                                        ul         
-                                            li
+                                        ul.grid-x         
+                                            li.cell.search-li
                                                 h3 category
-                                            li
+                                            li.cell.search-two-li
                                                 h4 MON, JUL 09
                                     .search-heading-h2
                                         h2 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -99,10 +108,10 @@ html.no-js(lang='en')
                             .grid-x.grid-margin-x.search-repeat   
                                 .cell.large-12.search-bg-cell-second                   
                                     .search-category
-                                        ul         
-                                            li
+                                        ul.grid-x         
+                                            li.cell.search-li
                                                 h3 category
-                                            li
+                                            li.cell.search-two-li
                                                 h4 MON, JUL 09
                                     .search-heading-h2
                                         h2 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -115,10 +124,10 @@ html.no-js(lang='en')
                                     .search-img(style="background-image: url(../assets/image/ef.jpg)")
                                 .cell.large-8.medium-8.search-bdr.search-bg-cell-second                             
                                     .search-category
-                                        ul         
-                                            li
+                                        ul.grid-x         
+                                            li.cell.search-li
                                                 h3 category
-                                            li
+                                            li.cell.search-two-li
                                                 h4 MON, JUL 09
                                     .search-heading-h2
                                         h2 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -137,10 +146,10 @@ html.no-js(lang='en')
                                         .search-img(style="background-image: url(../assets/image/ef.jpg)")
                                     .cell.large-8.medium-8.search-bdr.search-bg-cell-second                             
                                         .search-category
-                                            ul         
-                                                li
+                                            ul.grid-x         
+                                                li.cell.search-li
                                                     h3 category
-                                                li
+                                                li.cell.search-two-li
                                                     h4 MON, JUL 09
                                         .search-heading-h2
                                             h2 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. 

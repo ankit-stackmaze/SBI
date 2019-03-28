@@ -10,7 +10,7 @@
         padding: 2px 0 10px 0;
     }
     .cell.large-6.search-bar {
-        padding: 0 0 0 70px;
+        padding: 0 0 0 150px;
         overflow: hidden;
     }
     .date li {
@@ -23,13 +23,16 @@
     .users i.fas.fa-user {
         color: #fff;
     }
+    .nav-search {
+        display: inline-block;
+    }
     .users {
         display: inline-block;
         padding: 11px 0 0 0;
     }
     .mail-part {
         float: left;
-        border-bottom: 2px solid #fff;
+        border-bottom: 1px solid #707070;
         padding: 9px 0 0 0;
     }
     .mail-section label {
@@ -41,12 +44,13 @@
     }
     .contribute {
         float: left;
-        padding: 4px 20px 0;
+        padding: 4px 17px 0;
     }
     .contribute p {
         color: #fff;
         text-transform: capitalize;
         margin: 5px 0 0 0;
+        font-size: 12px;
     }
     .mail-section input[type="text"] {
         padding: 5px 0;
@@ -67,6 +71,8 @@
     }
     .lable-part p {
         color: #fff;
+        font-size: 12px;
+        font-weight: 600;
     }
     .head i.fas.fa-bars {
         font-size: 28px;
@@ -85,6 +91,9 @@
     }
     .date.cell.large-6 a {
         color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 300;
     }
     .head.cell.large-4.logo-part.medium-4 {
         padding: 10px 0 0 0;
@@ -105,6 +114,7 @@
         font-family: 'Montserrat', sans-serif;
         cursor: pointer;
         margin: 12px 0 0 0;
+        font-size: 14px;
     }
     .head img {
         width: 50px;
@@ -132,13 +142,17 @@
         padding: 0 10px;
     }
     .btm-header a:hover{
-        color: red;
+        color: $red;
+        border-bottom: 1px solid $red;
+        padding-bottom: 18px;
     }
     .btm-header a {
         color: #000;
         text-transform: capitalize;
         font-weight: 600;
         padding: 0 0 20px 0;
+        font-size: 16px;
+        text-decoration: none;
         -webkit-transition: 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95) all;
         transition: 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95) all;
     }

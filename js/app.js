@@ -166,37 +166,6 @@ $(document).ready(function(){
     centerMode: false,
     });
   });
-  
-  // click to up and down menu for (about us page)
-  $('.click_advance').click(function(){
-    $('.display_advance').toggle('1000');
-    icon = $(this).find("i");
-    icon.toggleClass("fas fa-angle-up fas fa-angle-down")
-   })
-
-  $('.click-t').click(function(){
-    $('.display-t').toggle('1000');
-    icon = $(this).find("i");
-    icon.toggleClass("fas fa-angle-up fas fa-angle-down")
-  })
-
-  $('.click_advance-one').click(function(){
-    $('.display_advance-one').toggle('1000');
-    icon = $(this).find("i");
-    icon.toggleClass("fas fa-angle-up fas fa-angle-down")
-  })
-
-  $('.click_advance-second').click(function(){
-    $('.display_advance-second').toggle('1000');
-    icon = $(this).find("i");
-    icon.toggleClass("fas fa-angle-up fas fa-angle-down")
-  })
-
-  $('.click_advance-third').click(function(){
-    $('.display_advance-third').toggle('1000');
-    icon = $(this).find("i");
-    icon.toggleClass("fas fa-angle-up fas fa-angle-down")
-  })
 
 // js CHARTS about us page
   if ($('#myChart').length){
@@ -379,17 +348,6 @@ $(window).scroll(function(){
       $('nav div').removeClass('visible-title');
   }
 });
-// window.onscroll = function() {myFunction()};
-// var header = document.getElementById("myHeader-sticky");
-// // var sticky = header.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
 
 // submit event page drop down
   $(document).foundation();
@@ -431,4 +389,41 @@ jQuery(document).ready(function($) {
 		$modal.fadeIn();
 	};
 });
-  
+//-tabing slider for 
+$('.tabing').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplaySpeed: 2000,
+  arrows:false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerMode: true,
+        infinite: true,
+ 
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        centerMode: true,
+        slidesToScroll: 1,
+ 
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        centerMode: true,
+        slidesToScroll: 1,
+ 
+      }
+    }
+  ]
+ });

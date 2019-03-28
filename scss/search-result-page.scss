@@ -91,6 +91,35 @@
         text-align: center;
         padding: 15px 0 50px;
     }
+    li.cell.search-two-li {
+        width: auto;
+        padding-top: 7px;
+    }
+    li.cell.search-li {
+        width: auto;
+    }
+}
+#video-photo-archive {
+    .archive-notice label {
+        width: 95%;
+    }
+    .search-video h2 {
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+    .callout {
+        border: none;
+    }
+    .callout.success {
+        background-color: #F7F7F7;
+        color: #0a0a0a;
+        margin-top: 20px;
+    }
+    button.close-button {
+        background: none;
+    }
     
 }
+
     

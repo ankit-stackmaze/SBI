@@ -10,7 +10,7 @@
     .household {
         padding-top: 100px;
     }
-     h2 {
+    h2 {
         font-family: EloquentJFRegularPro ☞;
         font-size: 20px;
         text-transform: capitalize;
@@ -28,12 +28,10 @@
     }  
     .media-download i.fas.fa-download {
         color: #fff;
-        position: absolute;
-        left: 200px;
+        padding-right: 10px;
     }
     .media-download {
         padding: 48px 0 0 0;        
-        position: relative;
     }
     .media-kit input[placeholder="name"],
      [placeholder="email"], 
@@ -50,12 +48,10 @@
         padding: 16px 15px;
         margin: 8px 50px;
     }
-    .media-download a {
+    .media-download button  {
         max-width: 391px;
-        background-color: #900;
-        color: #fff;
         text-transform: capitalize;
-        padding: 15px 134px;
+        padding: 17px 118px;
         border-radius: 4px;
         font-family: 'Montserrat', sans-serif;
     }
@@ -66,6 +62,9 @@
     }
     .media-title {
         padding: 0 0 35px 0;
+    }
+    .media-title button {
+        background: none;
     }
     
 }

@@ -57,6 +57,10 @@
     .cell.medium-8.sponsored-grid-two-cls {
         padding-left: 0;
     }
+    .sponsored-grid-two-cls span {
+        color: $red;
+        font-size: 20px;
+      }
     .cell.medium-8.sponsored-grid-two-cls p {
         font-size: 18px;
         font-family: Roboto;

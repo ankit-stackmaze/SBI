@@ -117,6 +117,7 @@
         background: #AEBDC4;
         display: inline-block;
         border-radius: 4px;
+        vertical-align: top;
     }
     .red-line {
         width: 55px;
@@ -172,6 +173,20 @@
     .advertise.grid-x {
         padding-top: 40px;
     }
+    .red-line h2 {
+        text-align: center;
+        padding: 49px 0;
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    .small-add  h2 {
+        text-align: center;
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 600;
+        padding: 14px 0;
+    }
     
     
 }
@@ -189,6 +204,7 @@
     font-size: 16px;
     color: #000;
     font-weight: 500;
+    text-decoration: none;
 }
 div#panel2c p {
     font-size: 18px;

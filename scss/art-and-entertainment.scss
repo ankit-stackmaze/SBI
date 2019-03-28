@@ -59,7 +59,6 @@
         max-width: 374px;
         transition: all .3s ease-in-out;
         background-size: 100%;
-        position: center;
             &:hover { 
                 background-size: 105%;
                 position: relative;
@@ -82,7 +81,6 @@
         max-width: 362px;
         transition: all .3s ease-in-out;
         background-size: 100%;
-        position: center;
             &:hover { 
                 background-size: 110%;
                 position: relative;
@@ -97,6 +95,7 @@
     }
     .sponsores-t p {
         font-size: 13px;
+        text-transform: capitalize;
     }
     // radio button scss
     .opinion-input {
@@ -129,6 +128,7 @@
     }
     .opinion-input label {
         font-family: 'Montserrat', sans-serif;
+        vertical-align: top;
     }
     
     // part-two
@@ -149,14 +149,13 @@
         max-width: 362px;
         transition: all .3s ease-in-out;
         background-size: 100%;
-        position: center;
             &:hover { 
                 background-size: 105%;
                 position: relative;
             }   
     }
     .arts-living h2 {
-        font-size: 16px;
+        font-size: 26px;
         font-weight: bold;
         text-align: left;
        }
@@ -198,7 +197,7 @@
     .feature h2 {
         font-weight: 500;
         font-family: EloquentJFRegularPro ☞;
-        font-size: 21px;
+        font-size: 25px;
         text-transform: capitalize;
     }
     .image-sport {
@@ -210,24 +209,19 @@
         max-width: 362px;
         transition: all .3s ease-in-out;
         background-size: 100%;
-        position: center;
             &:hover { 
                 background-size: 105%;
                 position: relative;
             }
     }
     .hh-sport h2 {
-        font-size: 20px;
+        font-size: 26px;
         font-weight: bold;
+        padding: 10px 0;
     }
     .pp-sport p {
         font-size: 12px;
         text-transform: capitalize;
-    }
-    .hh-sport h2 {
-        font-size: 20px;
-        font-weight: bold;
-        padding: 10px 0;
     }
     .hh-sport {
         padding: 20px 0;
@@ -307,7 +301,7 @@
     }
     .food-drink h2 {
         font-family: EloquentJFRegularPro ☞;
-        font-size: 21px;
+        font-size: 25px;
         text-transform: capitalize;
     }
     // living stories

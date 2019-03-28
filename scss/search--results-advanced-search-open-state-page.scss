@@ -121,5 +121,11 @@
     form.open-search {
         width: 100%;
     }
-    
+    .callout {
+        border: none;
+    }
+    .callout.success {
+        background-color: #F7F7F7;
+        color: #0a0a0a;
+    }
 }

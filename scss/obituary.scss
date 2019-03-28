@@ -54,6 +54,8 @@
     .notice a:hover {
         color: #990000;
         transition: 1s all;
+        border-bottom: 1px solid $red;
+        text-decoration: none;
     }
     .create-obituary button {
         font-size: 14px;
@@ -74,6 +76,10 @@
         font-size: 14px;
         font-weight: 600;
         text-transform: capitalize;
+        text-decoration: none;
+    }  
+    .atoz a:hover {
+        color: $red;
     }   
     .atoz {
         text-align: center;
@@ -107,6 +113,7 @@
     .multi-read a {
         text-transform: capitalize;
         color: #990000;
+        font-size: 12px;
     }
     .date-multi {
         padding: 5px 0;

@@ -35,17 +35,20 @@
     }
     .footer-comn p {
         color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
     }
     .newsletter-sign-up p {
         color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
     }
     .center-footer {
         border-bottom: 1px solid #d2cbcb4d;
         padding: 20px 0 40px 0;
     }
     .top-footer {
-        border-bottom: 1px solid #d2cbcb4d;
-        
+        border-bottom: 1px solid #d2cbcb4d; 
     }
     .privacy li {
         display: inline-block;
@@ -54,9 +57,10 @@
     .privacy a {
         color: #fff;
         font-size: 12px;
+        text-transform: capitalize;
     }
     .privacy li:first-child {
-        padding-left: 0;
+        padding-left: 0px;
     }
     .copyrights p {
         color: #cccccc;
@@ -77,10 +81,11 @@
         float: right;
         border-bottom: 1px solid #fff;
         width: 40%;
-        padding-bottom: 14px;
+        padding: 0 0 14px 0;
     }
     .lable-part-ftr p {
         color: #fff;
+        text-transform: capitalize;
     }
     .lable-part-ftr {
         display: inline-block;

@@ -1,126 +1,39 @@
-doctype html
-html.no-js(lang='en')
-    head
-        include head
-  
-    body
-        include header
-        #breaking-news
-            .grid-container
-                .section.grid-x
-                    .section-part.cell.large-12.text-center
-                        img(src="../assets/image/Rectangle.png", alt="")
+#video-photo-archive
+    .grid-container
+        .grid-x
+            .cell.showing-result.large-6.medium-6.small-6.showing-result-first
+                .filter 
+                    i.fas.fa-filter 
+                    h2 filter
+#advance-search
+    .grid-container
+        .grid-x.advance-search
+            .cell
+                .grid-x.advance-search-inner
+                    .cell.advance-search-key.large-6.medium-6
+                        h2  Keyword
+                        label
+                            input(type='text', placeholder='search')
 
-        #search-result
-            .grid-container
+                    .cell.advance-search-label.large-6.medium-6
+                        label
+                            select
+                                option(value='category') Select category
+                                option(value='starbuck') Starbuck
+                                option(value='hotdog') Hot Dog
+                                option(value='apollo') Apollo
+
                 .grid-x
-                    .cell.large-2.search-media
-                    .cell.large-8.search-media-second
-                        .search-head-h  
-                            h2 search
-                        .search-heading-h
-                            h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae
-                    .cell.large-2
+                    .cell.large-8.advance-input
+                        h1 date:
+                        form.advance-search-label-padd from: 
+                            input(type='date', name='from')
 
+                        form to: 
+                            input(type='date', name='from')
+
+                        form.open-search 
+                            i.fa.fa-search
+                            input(type='text', placeholder='Search', name='search2')
+                                                        
         
-        #video-photo-archive
-            .grid-container
-                .grid-x.type-category
-                    .cell.archive-search.large-6.medium-6
-                        form
-                            input(type='text', placeholder='Search..', name='search2')
-                            button(type='submit')
-                                i.fa.fa-search
-                    .cell.archive-notice.large-3.medium-3
-                        label
-                            select
-                                option(value='husker') type
-                                option(value='starbuck') Starbuck
-                                option(value='hotdog') Hot Dog
-                                option(value='apollo') Apollo
-
-
-                    .cell.archive-notice.large-3.medium-3
-                        label
-                            select
-                                option(value='husker') category
-                                option(value='starbuck') Starbuck
-                                option(value='hotdog') Hot Dog
-                                option(value='apollo') Apollo
-                .grid-x
-                    .cell.showing-result.large-6.medium-6.small-6.showing-result-first
-                        .filter 
-                           i.fas.fa-filter 
-                           h2 filter
-                        h3 Showing 5462 results for 
-                            span keyword
-                        
-                    .cell.showing-result.large-6.medium-6.text-right.small-6
-                        h3 Advanced search
-
-        #advance-search
-            .grid-container
-                .grid-x.advance-search
-                    .cell
-                        .grid-x.advance-search-inner
-                            .cell.advance-search-key.large-6.medium-6
-                                h2  Keyword
-                                label
-                                    input(type='text', placeholder='search')
-
-                            .cell.advance-search-label.large-6.medium-6
-                                label
-                                    select
-                                        option(value='category') Select category
-                                        option(value='starbuck') Starbuck
-                                        option(value='hotdog') Hot Dog
-                                        option(value='apollo') Apollo
-
-                        .grid-x
-                            .cell.large-8.advance-input
-                                h1 date:
-                                form.advance-search-label-padd from: 
-                                    input(type='date', name='from')
-
-                                form to: 
-                                    input(type='date', name='from')
-
-                                form.open-search 
-                                    i.fa.fa-search
-                                    input(type='text', placeholder='Search', name='search2')
-                                                                
-            .grid-container
-                .grid-x.search-main-cls
-                    .cell.large-1.medium-2
-
-                    .cell.large-10.medium-8
-                            .grid-x.grid-margin-x.search-repeat   
-                                .cell.large-4.medium-4.search-bg-cell
-                                    .search-img(style="background-image: url(../assets/image/ef.jpg)")
-                                .cell.large-8.medium-8.search-bdr.search-bg-cell-second                             
-                                    .search-category
-                                        ul         
-                                            li
-                                                h3 category
-                                            li
-                                                h4 MON, JUL 09
-                                    .search-heading-h2
-                                        h2 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    .search-heading-h3
-                                        h3 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula
-                            
-                            .grid-x.grid-margin-x.search-repeat   
-                                .cell.large-4.medium-4.search-bg-cell
-                                    .search-img(style="background-image: url(../assets/image/ef.jpg)")
-                                .cell.large-8.medium-8.search-bdr.search-bg-cell-second                             
-                                    .search-category
-                                        ul         
-                                            li
-                                                h3 category
-                                            li
-                                                h4 MON, JUL 09
-                                    .search-heading-h2
-                                        h2 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    .search-heading-h3
-                                        h3 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula
-        include scripts 

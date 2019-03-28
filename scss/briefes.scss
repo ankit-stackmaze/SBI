@@ -45,13 +45,16 @@
         text-transform: capitalize;
         font-family: EloquentJFRegularPro ☞;
         font-size: 14px;
-        padding: 5px 0 5px 0;
+        padding: 10px 0;
     }
     .briefs-heading-th p {
         font-size: 14px;
         font-family: roboto;
         text-transform: capitalize;
-    }     
+    }   
+    .briefs-heading-img img {
+        height: 111px;
+    }  
 
     //briefs get news in section scss
     .news-two.briefs-news {
@@ -93,7 +96,7 @@
     .twitter-main {
         background: #EBEEF1;
         text-align: center;
-        padding: 250px 0;
+        padding: 220px 0;
         margin: 20px 0 0 0;
     }
     .twitter-p p {

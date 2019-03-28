@@ -3,11 +3,7 @@
     font-size: 1.111em;
     overflow-x: hidden;
 }
-#breaking-news .cell.center-category h2 {
-    font-weight: bold;
-    font-size: 35px;
-    overflow-x: hidden;
-}
+
 // News Single / Standard Articleformat
 // for i-pad media query
 @media screen and (max-width: 63.9375em) {
@@ -99,7 +95,10 @@
             font-size: 30px;
         }
         .side-images {
-            background-size: contain;
+            background-size: cover;
+        }
+        .bottom-category {
+            padding-bottom: 30px;
         }
     }
 // home page premiere event scss
@@ -203,9 +202,6 @@
         .submit-letter-P p {
             font-size: 0.938em;
         }
-        .top-stories-news p {
-            font-size: 18px;
-        }
         .submit-letter-btn button {
             padding: 9px 35px;
         }
@@ -216,7 +212,7 @@
             padding: 170px 0;
         }
         .top-stories-news p {
-            font-size: 15px;
+            font-size: 20px;
             text-transform: capitalize;
             font-weight: 500;
         }
@@ -446,7 +442,10 @@
         }
         .notice li {
             display: inline-block;
-            padding: 0 6px;
+            padding: 0 2px;
+        }
+        .atoz li {
+            padding: 0 9px;
         }
     } 
     // photo-video single page scss
@@ -561,13 +560,6 @@
         }         
     }
     // about us page media scss
-    #intro-sbi {
-        .click_advance-one.click_advance-cmn i.fas.fa-angle-down {
-            display: inline-block;
-            width: 1%;
-            vertical-align: top;
-        }
-    }
     #exampleModal1 {
         .edit-staff-P {
             font-size: 16px;
@@ -755,13 +747,6 @@
 @media screen and (max-width: 48.000em) {
     
     #header  {
-        .general-detail {
-           width: 100%;
-        }
-        .cell.large-6.search-bar {
-            padding: 0;
-            width: 100%;
-        }
         .toogle-menu {
             display: inline-block;
             position: absolute;
@@ -771,6 +756,14 @@
         .toogle-menu {
             top: 95px;
         }
+        .search-bar {
+            width: 60%;
+            padding: 0!important;
+        }
+        .general-detail {
+            width: 40%;
+        }
+        
     }
     // for footer ipad scss
     #footer {
@@ -810,6 +803,18 @@
             padding: 15px 0 20px 0 !important;
         }
     }
+    // breaking news ipad
+    #breaking-news {
+        .heading-main a#panel1c-label {
+            font-size: 18px;
+        }
+        .heading-main a#panel2c-label {
+            font-size: 18px;    
+        }
+        .tabs-title>a {
+           padding: 1.25rem 0.5rem;
+        }
+    }
     // brief section
     #briefs {
         .briefs-heading-th h2 {
@@ -826,10 +831,18 @@
         .briefs-news p {
             font-size: 18px;
         }
-
+        .briefs-heading-img img {
+            height: 95px;
+        }
     }
+    // memoriam ipad scss
+    #memoriam {
+        .memoriam p {   
+            font-size: 16px;
+        }
+    }
+    
     #brief-two {
-        
         .grid-container {
             padding: 0 .625rem!important;
         }
@@ -865,6 +878,16 @@
             padding: 11px 5px;
         }   
     }
+    // obituary-second page ipad media
+    #obituary-second {
+        .premium-heading span {
+            display: none;
+        }
+        .premium-date li {
+            padding-right: 45px;
+        }
+    }
+    // subscriptions-newsletters ipad scss
     #subscriptions-newsletters {
         .daily-news-feature form {
             padding: 10px 0;
@@ -1146,6 +1169,12 @@
 }
 //  for only news-single-standard-articleformat page
 @media (min-width: 39.9375em) and (max-width: 48.000em) {
+    // header only ipad
+    #header {
+        .contribute {
+            padding: 4px 20px 0;
+        }
+    }
     #sponsored {
         .sponsored-detail li {
             padding: 0 5px;
@@ -1185,6 +1214,9 @@
         .featured-heading-bg {
             height: 230px;
         }
+        .more-child-img {
+            height: 266px;
+        }
     }
     // subscription news latter page
     #subscriptions-newsletters {
@@ -1197,8 +1229,27 @@
         .signup-subscription button {
             padding: 14px 37px;
         }
+        .daily-news-letter {
+            padding: 0 0 0 18px;
+        }
+        .daily-news-feature p {
+            padding: 0 0 0 7px;
+        }
     }
-  } 
+    // breaking-news ipad only scss 
+    #breaking-news {
+        .heading-main a#panel2c-label {
+            font-size: 15px;
+        }
+        .heading-main a#panel1c-label {
+            font-size: 14px;
+        }
+        .breaking-one {
+            vertical-align: top;
+        }
+    }
+    
+} 
 
 
 // for mobile mediaquery
@@ -1214,6 +1265,9 @@
     #header {
         .cell.large-6.search-bar {
             display: none;
+        }
+        .general-detail {
+            width: 100%;
         }
         .head-btm.cell.large-4.logo-part button{
             display: none;
@@ -1242,7 +1296,6 @@
         .head-mobile-search i.fas.fa-search {
             color: #000;
         }
-        
     }
 // breaking-news scss
     #breaking-news { 
@@ -1263,6 +1316,7 @@
         }
         .heading-left {
             padding: 0;
+            order: 2;
         }
         .side-images {
             height: 232px;
@@ -1275,6 +1329,12 @@
         }
         .news-full-img {
             margin: 50px 0 0 0;
+            height: 250px;
+        }
+        .heading-right {
+            order: 1;
+        }
+        .side-images {
             height: 250px;
         }
     }
@@ -1295,6 +1355,18 @@
         }
         .more-head-p {
             padding: 10px 0 10px 0;
+        }
+        .art-second {
+            max-width: inherit;
+        }
+        .arts-img {
+            max-width: inherit; 
+        }
+        .image-sport {
+            max-width: inherit;
+        }
+        .art {
+            max-width: inherit;
         }
     }
 // premiere event scss
@@ -1317,6 +1389,7 @@
         } 
         .last-img {
             background-size: contain;
+            max-width: inherit;
         }
         .premiere-bg-img {
             background-size: contain;
@@ -1515,6 +1588,7 @@
         }
         .cell.medium-4.sponsored-grid-four-cls {
             order: 1;
+            text-align: center;
         }
         .sponsored-grid-four-cls p {
             font-size: 16px;
@@ -1651,6 +1725,13 @@
     .news-full-img-second {
         height: 250px;
     }
+    .write-img {
+        background-size: cover;
+        height: 270px;
+    }
+    .news-single-h {
+        bottom: 17px;
+    }
     // obituary page media scss
     #obituary {
         .cell.large-4.medium-4 {
@@ -1683,6 +1764,9 @@
         .notice a {
             font-size: 14px;
         }
+        .common-obitury {
+            padding-top: 7px;
+        }      
     }
     #obituary-second {
         .Premium-obituary-section {
@@ -1706,10 +1790,23 @@
         }
         .premium-head {
             text-align: center;
+            padding-top: 20px;
         }
         .premium-date li {
             padding-right: 20px;
             width: 50%;
+        }
+        .premium-heading {
+            padding-bottom: 15px;
+        }
+        .memoriam li {
+            padding-right: 25px;
+        }
+        .memoriam p {
+            padding-right: 0;
+        }
+        .memories-head {
+            padding-top: 20px; 
         }
     }
     // video-photo archive page media scss
@@ -1775,10 +1872,20 @@
             float: left;
         }
         .search-category li {
-            display: inherit;
             padding-right: 0;
             text-align: right;
             padding-top: 6px;
+        }
+        .search-li {
+            order: 1;
+            width: 100%!important;
+            text-align: right;
+            display: inline-block;
+        }
+        .search-two-li {
+            text-align: right;
+            width: 100% !important;
+            padding-top: 17px!important;
         }
         .grid-x.type-category {
             display: block;
@@ -1791,10 +1898,12 @@
         }
         .cell.showing-result.large-6.medium-6 {
             order: 2;
+            width: 100%;
         }
         .cell.showing-result.large-6.medium-6.text-right {
             order: 1;
             padding: 20px 0 0 0;
+            width: 100%;
         }
         .filter {
             display: inline-block;
@@ -2203,7 +2312,6 @@
             left: 62%;
             transform: inherit;
         }
-       
     }
     // my account page scss
     #edit-profile {
@@ -2273,7 +2381,7 @@
         }
         .checkbox-media {
             text-align: center;
-        }
+        }  
     }
     // Events Archive page scss
     .upcoming-event{
@@ -2326,6 +2434,12 @@
         .load-btn button {
             width: 100%;
         }
+        .event-last {
+            padding: 0!important;
+        }
+        .center-img {   
+            max-width: inherit;
+        }
     }
     //  event single part media mobile scss
     #event-single {
@@ -2334,7 +2448,6 @@
             margin: 20px 0;
             background-size: cover;
         }
-        
         .event-title h2 {
             font-size: 30px;
             font-weight: bold;
@@ -2361,7 +2474,7 @@
         .location-category {
             padding: 0 0 15px 0;
         }
-        .event-icons {
+        .event-icons {  
             padding: 0;
             display: inline-block;
             position: absolute;
@@ -2580,7 +2693,11 @@
             margin-top: 25px;
         }
     }
+    // #intro-sbi {
+       
+    // }
 }
+    
 
 
 
@@ -2672,5 +2789,10 @@
             margin-left: 0;
         }
     }
-   
+    #advance-search {
+        .open-search i.fa.fa-search {
+            left: 114px;
+        }
+    }
+  
 }

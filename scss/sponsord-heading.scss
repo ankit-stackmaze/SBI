@@ -20,7 +20,9 @@
         font-family: EloquentJFRegularPro ☞;
         color: $red;
     }
-    
+    .sponsored-list-icon i:hover {
+        color: $red;
+    }
     .sponsored-heading {
         padding: 20px 0;
     }
@@ -29,7 +31,7 @@
         padding: 0 10px;
         margin-top: 17px;
     }
-    
+
     .sponsored-detail li:first-child {
         padding-left: 0;
         border-right: 1px solid #000000;
@@ -146,7 +148,7 @@
     }
     }
     .slider-heading img {
-        width: 100;
+        width: 100%;
     }
     
     // custome scss slider
