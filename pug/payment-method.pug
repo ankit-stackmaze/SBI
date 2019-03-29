@@ -22,7 +22,7 @@ html.no-js(lang='en')
         //-same id with page check out because of same structure #check-out
         #check-out
             .grid-container
-                .grid-x
+                .grid-x.check-out-comn
                     .cell.large-10.checkout-center     
                         .grid-x.cart-main.grid-padding-x
                             .cell.large-8.medium-8.cart-part.btm-payment
@@ -63,7 +63,7 @@ html.no-js(lang='en')
                                                         option(value='hotdog') 2018 
                                                         option(value='apollo') 2019
                                             .cell.large-4.medium-4.small-4
-                                                .customer-detail
+                                                .customer-detail.cvv
                                                     h3 cvv
                                                 .customer-input
                                                     input(type='text', name='fullname')
@@ -80,7 +80,7 @@ html.no-js(lang='en')
                                                 h4  4627 Strother Street, <br> Tuscaloosa, Alabama.<br>35404<br>  Mobile Number - 205-633-0558
                                                     
                                             .grid-x
-                                                .cell.large-1.medium-1.small-1
+                                                .cell.large-1.medium-1.small-1.billing-payment
                                                     .o-checkbox
                                                         input#my-checkbox(type='checkbox', value='None', name='')
                                                         label(for='my-checkbox')

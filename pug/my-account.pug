@@ -34,15 +34,25 @@ html.no-js(lang='en')
                     .cell
                         ul#example-tabs.tabs(data-tabs='').bg-trans
                             li.tabs-title.is-active
-                                a(href='#panel1', aria-selected='true') My Interests
+                                a(href='#panel1', aria-selected='true') My Interests 
+                                    span 
+                                        | 32
                             li.tabs-title
                                 a(data-tabs-target='panel2', href='#panel2') My Events
+                                    span 
+                                        | 06
                             li.tabs-title
-                                a(data-tabs-target='panel3', href='#panel3') Newsletter preferences     
+                                a(data-tabs-target='panel3', href='#panel3') Newsletter preferences   
+                                    span 
+                                        | 12  
                             li.tabs-title
                                 a(data-tabs-target='panel4', href='#panel4') My Purchases 
+                                    span 
+                                        | 06
                             li.tabs-title
-                                a(data-tabs-target='panel5', href='#panel5') Favourites     
+                                a(data-tabs-target='panel5', href='#panel5') Favourites    
+                                    span 
+                                        | 03 
                         .tabs-content(data-tabs-content='example-tabs')
                            
                             //-  tab one my interest
@@ -60,11 +70,11 @@ html.no-js(lang='en')
                                             each item in [1,2,3,4,5,6,7,8]
                                                 .grid-x
                                                     each item in [1,2,3,4]
-                                                        .cell.large-3.medium-3.small-6
-                                                            form
-                                                                input(type="checkbox")
-                                                                |   Interest name
-                                     
+                                                        .cell.large-3.medium-3.small-6.ckec
+                                                            label.container
+                                                                | Interest name
+                                                                input(type='checkbox', checked='checked')
+                                                                span.checkmark
 
                                     .explore
                                         h2 
@@ -87,20 +97,22 @@ html.no-js(lang='en')
                                         .grid-x.grid-padding-x
                                             each item in [1,2,3,4,5,6]
                                                 .cell.large-4.medium-4
-                                                    .premier
-                                                        .premier-img(style="background-image: url(../assets/image/sd.jpg)")
+                                                    .small-4.columns
+                                                        .image-wrapper.overlay-fade-in.premier
+                                                            img(src='../assets/image/sd.jpg')
+                                                            .image-overlay-content
+                                                                a.button(href='#') 
+                                                                    i.fas.fa-trash-alt 
+                                                                    | remove   
                                                         .premier-time
-                                                            i.far.fa-clock
+                                                            i.fas.fa-clock
                                                             p 6:46 A.M &nbsp; &nbsp;&nbsp; MON, JUL 09
                                                         .premier-p
                                                             i.fas.fa-map-marker-alt
                                                             p Santa Barbara
                                                         .premier-head
                                                             h2 Heading goes here is is sit th amet, consectetur elit adipiscing 
-                                                        .remove-btn
-                                                            button 
-                                                                i.fas.fa-trash-alt 
-                                                                | remove   
+                                                            
                                     .cell.large-1.medium-1
 
                                 .explore
@@ -121,14 +133,15 @@ html.no-js(lang='en')
                                 .grid-x.checkbox-interest
                                     .cell.large-1.medium-1
                                     .cell.large-10.medium-10
-                                        each item in [1,2,3]
+                                        each item,index in [1,2,3]
                                             .grid-x.grid-padding-x
                                                 .cell.newsletter-name
-                                                    fieldset.v-checkbox
-                                                        input.field(id="checkbox", type="checkbox")
-                                                        label.label(for="checkbox") Newsletter name
+                                                    label.container.check-interest
+                                                        | Newsletter name
+                                                        input(type='checkbox', checked='checked')
+                                                        span.checkmark
                                                     p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-                                    .cell.large-1.medium-1
+                                .cell.large-1.medium-1
 
                                 .explore
                                     h2 

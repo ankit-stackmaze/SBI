@@ -100,7 +100,7 @@
     input {
         height: 58px;
         width: 50px;
-        background: $silver;
+        background: #dddddd47;
         border: none;
         font-weight: bold;
         padding-left: 10px;
@@ -111,15 +111,10 @@
     button#add {
         position: absolute;
         left: 38px;
-        
     }
     button#sub {
         position: absolute;
         left: 38px;
         bottom: 0;
     }
-    
-   
-    
-    
 }

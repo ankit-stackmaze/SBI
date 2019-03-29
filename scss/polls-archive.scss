@@ -103,12 +103,13 @@
         max-width: 370px;
     }
     .polls-category select {
+        text-transform: capitalize;
         max-width: 212px;
         border: none;
-        background: $red;
+        background: #900;
         border-radius: 4px;
-        padding: 14px 10px;
-        color:#fff;
+        padding: 14px 15px;
+        color: #fff;
     }
     .polls-category {
         padding: 30px 0;
@@ -117,6 +118,7 @@
         font-family: EloquentJFRegularPro ☞;
         font-size: 14px;
         color:$red;
+        text-transform: capitalize;
     }
     .polls-vote, .polls-result {
         padding-top: 5px;
@@ -139,6 +141,12 @@
     }
     .pull-load {
         padding: 30px 0 62px;
+    }
+    .polls-result {
+        padding-left: 15px;
+    }
+    .polls-vote, .polls-result {
+        padding: 5px 0 0 8px;
     }
     .cell:nth-of-type(10) {
         .polls-bdr {

@@ -10,7 +10,6 @@
         color: $red;
         font-size: 12px;
     }
-    
     .billing-address {
         padding-top: 11px;
     }
@@ -20,7 +19,16 @@
     .order-btn.payment-btn {
         padding-bottom: 32px;
     }
-    
-    
-    
+    .order-section {
+        margin-top: 70px;
+    }    
+    .cart-part.btm-payment {
+        padding-right: 100px;
+    }
+    .cvv h3 {
+        text-transform: uppercase;
+    }
+    .billing-payment {
+        width: 6.33%;
+    }
 }

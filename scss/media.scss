@@ -1110,6 +1110,9 @@
         .check-out-part {
             padding: 50px 0 20px 0;
         }
+        .cart-part.btm-payment {
+            padding-right: 0.635em;
+        }
     }
     // polls archive page tab scss
     #polls-archive {
@@ -1166,6 +1169,7 @@
                 width: 100%;
         }
     } 
+    
 }
 //  for only news-single-standard-articleformat page
 @media (min-width: 39.9375em) and (max-width: 48.000em) {
@@ -1248,7 +1252,16 @@
             vertical-align: top;
         }
     }
-    
+    // polls archive page scss
+    #polls-archive {
+        .polls-vote {
+            width: 13%;
+        }
+        .polls-h2{
+            width: 12.66%;
+        }
+    }
+        
 } 
 
 
@@ -2658,6 +2671,14 @@
         .poll-single {
             padding: 20px 0 20px;
         }
+        .polls-result {
+            padding-left: 0;
+        }
+        .slick-custom-arrow.slick-custom-arrow-right.slick-arrow {
+            right: 286px;
+            bottom: -22px !important;
+            top: inherit;
+        }
     } 
     // for error 404 mobile media scss
     div#error-padding {
@@ -2693,9 +2714,14 @@
             margin-top: 25px;
         }
     }
-    // #intro-sbi {
-       
-    // }
+     // submit event button mobile scss
+     .event-btn i.fas {
+        padding-left: 302px;
+    }
+    .search-event i.fa.fa-search {
+        top: 8px;
+        right: 11px;
+    }
 }
     
 
@@ -2794,5 +2820,14 @@
             left: 114px;
         }
     }
-  
+    // submit event button mobile scss
+    .event-btn i.fas {
+        padding-left: 302px;
+    }
+    #polls-archive {
+        .slick-custom-arrow.slick-custom-arrow-right.slick-arrow {
+            right: 166px;
+        }
+    }
+   
 }

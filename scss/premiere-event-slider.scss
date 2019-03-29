@@ -22,6 +22,21 @@
     .slider-img {
         padding-bottom: 10px;
     }
-    
+    .slick-dots li button:before {
+        color: #fff;
+    }
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #fff;
+    }
+    .slick-dots li button:before {
+        font-size: 10px;
+    }
+    span.fa.fa-angle-left {
+        display: none;
+    }
+    span.fa.fa-angle-right {
+        display: none;
+    }
 }
 

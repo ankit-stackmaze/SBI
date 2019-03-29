@@ -75,9 +75,10 @@
         border: none;
         background: #dddddd;
     }
-    .cell.large-6.date-time-background {
-        background: $silver;
+    .date-time-background {
+        background: #dddddd4f;
         padding: 0 10px;
+        border-radius: 4px;
     }
     .date-time-background input[type="date"], input[type="time"] {
         border: #dddddd;
@@ -98,6 +99,7 @@
         cursor: pointer;
         padding: 20px 0 0 0;
         font-size: 12px;
+        font-weight: 600;
       }
       
     input[type=checkbox] {
@@ -253,48 +255,11 @@
     *, *:after, *:before {
         box-sizing: border-box;
     }
-    // drop down 
-    // .dropbtn {
-    //     background-color: #4CAF50;
-    //     color: white;
-    //     padding: 16px;
-    //     font-size: 16px;
-    //     border: none;
-    //   }
-      
-    //   .dropdown {
-    //     position: relative;
-    //     display: inline-block;
-    //   }
-      
-    //   .dropdown-content {
-    //     display: none;
-    //     position: absolute;
-    //     background-color: red;
-    //     min-width: 160px;
-    //     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    //     z-index: 1;
-    //     top: 50px;
-    //     left: 0;
-    //   }
-      
-    //   .dropdown-content a {
-    //     color: black;
-    //     padding: 12px 16px;
-    //     text-decoration: none;
-    //     display: block;
-    //   }
-      
-    //   .dropdown-content a:hover {background-color: #ddd;}
-      
-    //   .dropdown:hover .dropdown-content {display: block;}
-      
-    //   .dropdown:hover .dropbtn {background-color: #3e8e41;}
-    
-    // .main {
-    //     display:inline-box;
-    // }
-    // .rglm {
-    //     display:inline-box;
-    // }
+    #fileupload-example-3::-webkit-file-upload-button {
+        color: white;
+        border-radius: 4px;
+        background: $red;
+        padding: 10px 30px;
+        border: none;
+    }
 }

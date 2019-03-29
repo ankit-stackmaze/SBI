@@ -1,10 +1,12 @@
 // event single page scss
 #event-single {
-    .create-event-h2  h2 {
+    .create-event-h2 h2 {
         font-size: 14px;
         text-transform: capitalize;
         font-weight: bold;
         display: inline-block;
+        vertical-align: top;
+        padding-top: 7px;
     }
     .create-event-h2 i {
         color: $red;
