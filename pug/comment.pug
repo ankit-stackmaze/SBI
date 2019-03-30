@@ -5,16 +5,16 @@
                 .comment-heading
                     p comments
                 .comment-numbers
-                i.far.fa-comment
+                    i.far.fa-comment
+                    h5 30
             .respond-post
                 .respond-head
                     h2 Respond to this post
                 .text-area-section
                     textarea
                 .notify-section
-                    input(type='checkbox', name='vehicle3', value='Boat', checked='')
-                    h2  Notify me about new comments via email
-                    br
+                    input#fruit1(type='checkbox', name='fruit-1', value='Apple')
+                    label(for='fruit1') Notify me about new comments via email
                     br
                     input(type='submit', value='post comment', 
                     )
@@ -39,6 +39,7 @@
                                     h1 replay
                                     a(href="#")
                                         i.far.fa-thumbs-up
+                                    p 55
 
                 .comment-john-doe.grid-x.admin
                     .comment-jonn-main
@@ -62,6 +63,7 @@
                                 h1 replay
                                 a(href="#")
                                     i.far.fa-thumbs-up
+                                p 55
 
                 .comment-john-doe.grid-x.admin-btm
                     .comment-jonn-main
@@ -82,6 +84,7 @@
                                 h1 replay
                                 a(href="#")
                                     i.far.fa-thumbs-up
+                                p 55
 
                     each item in [1,2,3,4]
                         .comment-john-doe.grid-x.admin-right
@@ -100,7 +103,7 @@
                                     .comment-john-doe-response
                                         a(href="#") 
                                             i.far.fa-thumbs-up
-                                    
+                                        h5 55
                     
 
                 each item in [1,2,3,4]
@@ -123,6 +126,7 @@
                                     h1 replay
                                     a(href="#")
                                         i.far.fa-thumbs-up
+                                    p 55
             .comment-john-doe.grid-x
                 .comment-jonn-main
                     .comment-img.cell.large-1.medium-1
@@ -142,19 +146,21 @@
                             h1 replay
                             a(href="#")
                                 i.far.fa-thumbs-up
+                            h6 55
+                            
                         .respond-post
                             .respond-head.respond-head-last
                                 h2 Reply to John Doe's comment
                             .text-area-section
                                 textarea
                             .notify-section
-                                input(type='checkbox', name='vehicle3', value='Boat', checked='')
-                                h2  Notify me about new comments via email
-                                br
+                                input#fruit1(type='checkbox', name='fruit-1', value='Apple')
+                                label(for='fruit1') Notify me about new comments via email
                                 br
                                 input(type='submit', value='post reply', 
                                 )
                                 button(type='cancel', value='cancel') cancel
+
             each item in [1,2]
                 .comment-john-doe.grid-x
                     .comment-jonn-main
@@ -175,3 +181,4 @@
                                 h1 replay
                                 a(href="#")
                                     i.far.fa-thumbs-up
+                                p 55

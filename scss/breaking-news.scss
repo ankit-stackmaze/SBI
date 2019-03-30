@@ -134,6 +134,10 @@
     .heading-main .tabs-panel {
         padding: 0.5rem 0.5rem 0;
     }
+    .tabs-title>a[aria-selected='true'] {
+        background: #990000;
+        color: #fff;
+    }
     // heading-right
     .side-images {
         background-repeat: no-repeat;

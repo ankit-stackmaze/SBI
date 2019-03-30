@@ -95,6 +95,9 @@
         font-size: 12px;
         font-weight: 300;
     }
+    .accordian-icon {
+        text-align: center;
+    }
     .head.cell.large-4.logo-part.medium-4 {
         padding: 10px 0 0 0;
     }
@@ -104,6 +107,22 @@
     .hide-mobile {
         display: inline-block;
     }   
+    li.is-submenu-item.is-accordion-submenu-item button {
+        padding: 10px 73px;
+        margin: 13px 0 0 40px;
+        font-size: 13px;
+    }
+    .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
+        display: block;
+        width: 0;
+        height: 0;
+        border: inset 6px;
+        content: '';
+        border-bottom-width: 0;
+        border-top-style: solid;
+        border-color: #fff transparent transparent;
+        
+    }
     // bottom header scss
     .head-btm.cell button {
         text-transform: capitalize;
@@ -158,6 +177,13 @@
     }
 
     // side nav
+    .contribute-nav {
+        display: none;
+    }
+    .mail-nav {
+        display: none;
+        width: 100%;
+    }
     .sidenav {
         height: 100%;
         width: 0;
@@ -165,15 +191,14 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #111;
+        background-color: #000000;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
     }
       
     .sidenav a {
-        margin: 13px 8px 0 32px;
-        padding-bottom: 14px;
+        margin: 7px 8px 0 32px;
         text-decoration: none;
         font-size: 13px;
         color: #fff;
@@ -195,7 +220,7 @@
     .sidenav .closebtn {
         position: absolute;
         top: 0;
-        right: 25px;
+        left: 0;
         font-size: 36px;
         margin-left: 50px;
     }

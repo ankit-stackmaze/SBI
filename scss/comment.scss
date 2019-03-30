@@ -22,7 +22,8 @@
     
     }
     .comment-numbers i.far.fa-comment {
-        color: #990000;
+        color: $red;
+        font-size: 22px;
     }
     .text-area-section textarea {
         width: 100%;
@@ -38,25 +39,16 @@
     .respond-head {
         padding: 20px 0 10px;
     }
-    .notify-section h2 {
-        display: inline-block;
-        font-size: 12px;
-    }
     .notify-section input[type="submit"] {
         text-transform: capitalize;
         color: #fff; 
         font-weight: bold;
-        border: navajowhite;
+        border: none;
         background: #990000;
         font-family: 'Montserrat', sans-serif;
         padding: 16px 52px;
         cursor: pointer;
         border-radius: 4px; 
-    }
-    .notify-section h2 {
-        display: inline-block;
-        font-size: 12px;
-        font-weight: 400;
     }
     .comment-john-doe-response h1 {
         display: inline-block;
@@ -146,11 +138,10 @@
         border-left: 2px solid #EBEEF1;
     }
     .main-border-line:before {
-        //&:first-child(1) { height: 600px;}
         content: "";
         position: absolute;
         width: 2px;
-        background: red;
+        background: $red;
         border-left: 2px solid #EBEEF1;
         top: 50px;
         height: 500px;
@@ -176,5 +167,156 @@
         display: inline-block;
         width: 50%;
     }
-}   
-   
+   // for check box scss
+    input[type=checkbox] + label {
+        display: block;
+        cursor: pointer;
+        padding: 20px 0 0 0;
+        font-size: 12px;
+    }
+    
+    input[type=checkbox] {
+        display: none;
+    }
+    
+    input[type=checkbox] + label:before {
+        content: "\2714";
+        border: 0.1em solid #000;
+        border-radius: 0.2em;
+        display: inline-block;
+        width: 1.5em;
+        height: 1.4em;
+        padding-left: 0.2em;
+        padding-bottom: 1.4em;
+        margin-right: 0.8em;
+        vertical-align: bottom;
+        color: transparent;
+        transition: .2s;
+    }
+    input[type=checkbox] + label:active:before {
+        transform: scale(0);
+    }
+    input[type=checkbox]:checked + label:before {
+        background-color: $red;
+        border-color: $red;
+        color: #fff;
+    }
+    .submit-event-btn button {      
+        width: 400px;
+        padding: 17px 0;
+    }
+    .submit-event-btn  {
+        width: 100%;
+        padding: 50px 0 65px 0;
+    }
+    [type="radio"]:checked,
+    [type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="radio"]:checked + label,
+    [type="radio"]:not(:checked) + label
+    {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        color: #666;
+    }
+    [type="radio"]:checked + label:before,
+    [type="radio"]:not(:checked) + label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+        background: #fff;
+    }
+    [type="radio"]:checked + label:after,
+    [type="radio"]:not(:checked) + label:after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: $red;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    [type="radio"]:not(:checked) + label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    [type="radio"]:checked + label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    // comment after number thums up
+    .comment-john-doe-response p {
+        background: #990000;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 6px 0;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        bottom: 40px;
+        left: 150px;
+        color: #fff;
+    }
+    .comment-john-doe-response h5 {
+        background: #990000;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 6px 0;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        bottom: 40px;
+        left: 60px;
+        color: #fff;
+    }
+    .comment-john-doe-response h6 {
+        background: #990000;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 6px 0;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 174px;
+        left: 154px;
+        color: #fff;
+    }
+    .comment-main {
+        position: relative;
+    }
+    .comment-numbers h5 {
+        background: #990000;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 6px 0;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: -6px;
+        left: 174px;
+        color: #fff;
+    }
+}

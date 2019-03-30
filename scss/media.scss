@@ -1309,6 +1309,14 @@
         .head-mobile-search i.fas.fa-search {
             color: #000;
         }
+        .contribute-nav {
+            display: block;
+        }
+        .mail-nav {
+            display: block;
+            width: 100%;
+            padding: 30px 0 30px 30px !important;
+        }
     }
 // breaking-news scss
     #breaking-news { 
@@ -1658,6 +1666,19 @@
         }
         .comment-img img {
             left: -14px;
+        }
+         // comment after number thums up
+        .comment-john-doe-response p {
+            bottom: 40px;
+            left: 122px;
+        }
+        .comment-john-doe-response h5 {
+            bottom: 40px;
+            left: 42px;
+        }
+        .comment-john-doe-response h6 {
+            top: 254px;
+            left: 126px;
         }
     }
 
@@ -2829,5 +2850,4 @@
             right: 166px;
         }
     }
-   
 }

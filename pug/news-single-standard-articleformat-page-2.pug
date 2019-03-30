@@ -6,7 +6,15 @@ html.no-js(lang='en')
   
   body
     include header
-    include head
+    .grid-container 
+      .grid-x
+        .cell
+          #breaking-news
+            .grid-container
+                .section.grid-x
+                    .section-part.cell.large-12.text-center
+                        img(src="../assets/image/ascd.jpg", alt="")
+                        
     .grid-container.top-stories
       .grid-x.grid-margin-x
         .cell.large-4.medium-4.top-stories-main
