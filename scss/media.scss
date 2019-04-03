@@ -24,7 +24,7 @@
             font-size: 14px;
         }
         .contribute {
-            padding: 4px 9px 0;
+            padding: 4px 9px  0 0;
         }
         .contribute p {
             font-size: 14px;
@@ -63,8 +63,8 @@
         }
        
     }
-   
 
+    //breaking news scss 
     #breaking-news { 
         .breaking-two {
             padding: 5px 0 0 0;
@@ -151,6 +151,24 @@
             padding: 12px 19px;
             font-size: 12px;
         }
+        // events-archive-page
+        span.ui-icon.ui-icon-circle-triangle-e {
+            position: absolute;
+            right: 42px;
+            top: -2
+        }
+        span.ui-icon.ui-icon-circle-triangle-w {
+            position: absolute;
+            left: 7px;
+            top: -21px;
+        }
+        .event-dtae-pick i.fas.fa-chevron-right {
+            position: absolute;
+            right: 23px;
+            top: 5px;
+        }
+       
+
     }
 // multimedia-Stories-slider scss start
     #multimedia-Stories-slider {
@@ -375,15 +393,6 @@
         .comment-john-doe-content p {
             font-size: 12px;
         }
-        .comment-john-doe-response i.fas.fa-reply {
-            font-size: 19px;
-        }
-        .comment-john-doe-response h1 {
-            font-size: 12px;
-        }
-        .comment-john-doe-response i.far.fa-thumbs-up {
-            font-size: 18px;
-        }
         .text-area-section textarea {
             height: 106px;
         }
@@ -442,7 +451,7 @@
         }
         .notice li {
             display: inline-block;
-            padding: 0 2px;
+            padding: 0 3px;
         }
         .atoz li {
             padding: 0 9px;
@@ -745,7 +754,6 @@
 
 // FOR IPAD MEDIA SCSS
 @media screen and (max-width: 48.000em) {
-    
     #header  {
         .toogle-menu {
             display: inline-block;
@@ -805,14 +813,20 @@
     }
     // breaking news ipad
     #breaking-news {
-        .heading-main a#panel1c-label {
-            font-size: 18px;
+        #tab2:checked ~ nav .tab2 label {
+            font-size: 13px;
         }
-        .heading-main a#panel2c-label {
-            font-size: 18px;    
+        #tab1:checked ~ nav .tab1 label {
+            font-size: 13px;
         }
-        .tabs-title>a {
-           padding: 1.25rem 0.5rem;
+        .pc-tab ul li label {
+            font-family: EloquentJFRegularPro ☞;
+            float: left;
+            padding: 15px 14px;
+            border-bottom: 1px solid #000;
+            color: #444;
+            text-transform: capitalize;
+            font-size: 13px;
         }
     }
     // brief section
@@ -934,7 +948,6 @@
     // contact-us  page ipad media scss
     #contact-us {
         .cell.large-6.medium-6 {
-            width: 100%;
             padding: 10px 0;
         }   
         .send-email.grid-x {
@@ -964,18 +977,15 @@
         .premier-time p {
             padding-left: 4px;
             line-height: 1.2;
-            font-size: 13px;
+            font-size: 12px;
             display: inline-block;
         }
         .premier-time {
             padding: 5px 0 0 0;
         }  
-        ul#example-tabs {
-            width: 800px;
-            position: absolute;
-            top: 414px;
-            right: -32px;
-        }   
+        .tab button {
+            padding: 14px 10px;
+        } 
         .premier-img {
             height: 170px;
         }   
@@ -1013,7 +1023,7 @@
             font-size: 16px;
         }
         .event-dtae-pick {
-            margin: 18px 0 0 0;
+            margin: 21px 0 0 0;
         }
         .last-img {
             height: 206px;
@@ -1026,6 +1036,29 @@
         }
         .premiere-sm-p p {
             font-size: 14px;
+        }
+        // eventz page
+        .search-event i.fa.fa-search {
+            position: absolute;
+            top: 11px;
+            right: 2px;
+        }
+        .event-dtae-pick i.fas.fa-chevron-right {
+            right: -17px;
+            top: 2px;
+        }
+        .event-dtae-pick i.fas.fa-chevron-left {
+            left: -20px;
+            top: 2px;
+        }
+        span.ui-icon.ui-icon-circle-triangle-w {
+            left: -24px;
+        }
+        span.ui-icon.ui-icon-circle-triangle-e {
+            top: -17px;
+        }
+        input#datepicker {
+            padding-left: 9px;
         }
         
     }
@@ -1093,7 +1126,7 @@
         } 
     }
      // for cart page media scss
-     #cart {
+    #cart {
         .cart-part {
             width: 100%;
         }
@@ -1169,6 +1202,22 @@
                 width: 100%;
         }
     } 
+    // intro sbi ipad and mobile scss
+    #intro-sbi {
+        z-index: 111;
+        position: inherit;
+        top: 410px;
+        width: 100%;
+        .visible-title {
+            width: 50%;
+        }
+    }
+    // intro sbi ipad and mobile scss same top
+    #about {
+        .header {
+            width: 100%;
+        }
+    } 
     
 }
 //  for only news-single-standard-articleformat page
@@ -1176,7 +1225,7 @@
     // header only ipad
     #header {
         .contribute {
-            padding: 4px 20px 0;
+            padding: 4px 7px 0;
         }
     }
     #sponsored {
@@ -1318,7 +1367,32 @@
             padding: 30px 0 30px 30px !important;
         }
     }
-// breaking-news scss
+// editorial-staff scss
+    #editorial-staff {
+        .modal-dialog {
+            margin: 251px auto 0;
+        }
+        .edit-staff-P {
+            padding: 3px 0 20px 0;
+        }
+        .modal-dialog {
+            max-width: 357px;
+        }
+        .edit-staff {
+            padding: 5px 0;
+        }
+        .edit-staff-P span {
+            display: none;
+        }
+    }
+    // delivery-info MOBILE SCSS
+    #delivery-info .tabgroup .panel {
+        padding: 135px 11px 10px;
+        display: none;
+        width: 100%;
+    }
+    
+// breaking-news scss mobile
     #breaking-news { 
         .breaking-one {
             padding: 0 0 0 10px;
@@ -1426,7 +1500,7 @@
             padding: 20px 0;
         }
     }
-//announcement patr scss
+//announcement paRT scss
     #announcement {
         .announcement {
             padding: 0;
@@ -1667,21 +1741,15 @@
         .comment-img img {
             left: -14px;
         }
-         // comment after number thums up
-        .comment-john-doe-response p {
-            bottom: 40px;
-            left: 122px;
-        }
-        .comment-john-doe-response h5 {
-            bottom: 40px;
-            left: 42px;
-        }
-        .comment-john-doe-response h6 {
-            top: 254px;
-            left: 126px;
+        .cell.large-4.medium-4.top-stories-main {
+            order: 2;
         }
     }
-
+    // john-doe scss  mobile
+    #john-doe .john-doe-img {
+        padding-left: 0;
+        text-align: center;
+    }
     #top-stories  {
         .top-heading-img {
             width: 26%;
@@ -2294,7 +2362,7 @@
             width: 100%;
         }
         .help label {
-            padding: 0 ;
+            padding: 3px 0 0 32px;
         }
         .send-input input#fname{
             width: 100%;
@@ -2323,7 +2391,7 @@
             text-align: center;
         }
     }
-    // edit profile page scss
+    // edit profile page mobile scss
     #edit-profile {
         .personal-info h2 {
             display: inline-block;
@@ -2341,11 +2409,16 @@
             transform: translate(-50%, -50%);
             left: 50%;
         }
-        .change-cover-one {
-            top: 6%;
-            left: 62%;
-            transform: inherit;
+        .tab button {
+            padding: 14px 8px;
         }
+        .tab button {
+            font-size: 12px;
+        }
+        .tab {
+            top: 428px;
+        }
+      
     }
     // my account page scss
     #edit-profile {
@@ -2743,6 +2816,7 @@
         top: 8px;
         right: 11px;
     }
+    
 }
     
 
@@ -2761,6 +2835,16 @@
     #edit-profile {
         .change-cover-two {
             left: 39%;
+        }
+        .tab {
+            top: 379px;
+        }
+        .tab button {
+            padding: 14px 7px;
+        }
+        .change-cover-one {
+            top: 11%;
+            left: 69%;
         }
     } 
     #matrics-charts {
@@ -2838,7 +2922,7 @@
     }
     #advance-search {
         .open-search i.fa.fa-search {
-            left: 114px;
+            left: 84px;
         }
     }
     // submit event button mobile scss
@@ -2850,4 +2934,45 @@
             right: 166px;
         }
     }
+    //premiere-event page mobile
+    #premiere-event {
+        .event-dtae-pick i.fas.fa-chevron-right {
+            right: 33px;
+            top: 4px;
+        }
+        .event-dtae-pick i.fas.fa-chevron-left {
+            left: 70px;
+            top: 4px;
+        }
+        input#datepicker {
+            padding: 6px 0;
+            text-align: center;
+        }
+        span.ui-icon.ui-icon-circle-triangle-e {
+            position: absolute;
+            right: -89px;
+            top: -25px;
+        }
+        div#ui-datepicker-div {
+            text-align: center;
+            right: 7px;
+        }
+    }
+    //premiere-event page mobile also
+    span.ui-icon.ui-icon-circle-triangle-e {
+        position: absolute;
+        right: -89px;
+        top: -27px;
+    }
+    span.ui-icon.ui-icon-circle-triangle-w {
+        position: absolute;
+        left: 57px;
+        top: -28px;
+    }
+    //  contact-us mpbile scss
+    #contact-us{
+        .container {
+            margin-bottom: 0;
+        }
+    } 
 }

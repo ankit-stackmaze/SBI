@@ -41,8 +41,11 @@ html.no-js(lang='en')
                                             .cell.help-checkbox  
                                                 .grid-x
                                                     .cell.large-6.medium-6
-                                                        input#checkbox1(type='checkbox')
-                                                        label(for='checkbox1') Submit Editorial
+                                                        label.container
+                                                            | Submit Editorial
+                                                            input(type='checkbox', checked='checked')
+                                                            span.checkmark
+                                                                    
                                                     .cell.large-6.medium-6
                                                         .news-tip
                                                             label
@@ -54,13 +57,17 @@ html.no-js(lang='en')
                                                 
                                                 
                                             .cell.help-checkbox.help-select   
-                                                input#checkbox2(type='checkbox')
-                                                label(for='checkbox2') Report an Issue
+                                                label.container
+                                                    | Report an Issue
+                                                    input(type='checkbox', checked='checked')
+                                                    span.checkmark 
                                             .cell.help-checkbox.help-select 
-                                                input#checkbox2(type='checkbox')
-                                                label(for='checkbox2') General Contact info
-                                     
-                                        
+                                                label.container
+                                                    | General Contact info
+                                                    input(type='checkbox', checked='checked')
+                                                    span.checkmark
+                                                                    
+
                                     .news-button
                                         button send
                             .cell.large-6.send-input-padd.medium-6

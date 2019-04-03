@@ -24,89 +24,86 @@
             .cell.large-4.heading-left.text-center.medium-4
                  
                 //- tabs section
-                ul#collapsing-tabs.tabs(data-active-collapse='true', data-tabs='')
-                    li.tabs-title.is-active
-                        a(href='#panel1c', aria-selected='true')  recent news
-                    li.tabs-title
-                        a(href='#panel2c') top stories
-                   
-                
-                .tabs-content(data-tabs-content='collapsing-tabs')
-                    #panel1c.tabs-panel.is-active
-                        .cell.sponsored 
-                            .sponsores-h.bld.text-left
-                                h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
-                            .sponsores-t
-                                .sponsores-left.comn-p
-                                    p by john doe
-                                .sponsores-right        
-                                    button sponsored
+                .pc-tab
+                    input#tab1(checked='checked', type='radio', name='pct')
+                    input#tab2(type='radio', name='pct')
+                    nav
+                        ul
+                            li.tab1
+                                label(for='tab1') recent news
+                            li.tab2
+                                label(for='tab2') top stories
+                    section
+                        .tab1
+                            .cell.sponsored 
+                                .sponsores-h.bld.text-left
+                                    h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
+                                .sponsores-t
+                                    .sponsores-left.comn-p
+                                        p by john doe
+                                    .sponsores-right        
+                                        button sponsored
 
-                        .cell.sponsored 
-                            .sponsores-h.text-left
-                                h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
-                            .sponsores-t.text-left.comn-p
-                                    p by john doe
+                            .cell.sponsored 
+                                .sponsores-h.text-left
+                                    h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
+                                .sponsores-t.text-left.comn-p
+                                        p by john doe
 
-                        .cell.sponsored 
-                            .sponsores-h.text-left
-                                h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
-                            .sponsores-t.text-left.comn-p
-                                    p by john doe
+                            .cell.sponsored 
+                                .sponsores-h.text-left
+                                    h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
+                                .sponsores-t.text-left.comn-p
+                                        p by john doe
 
-                        .cell.sponsored 
-                            .sponsores-h.bld.text-left
-                                h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
-                            .sponsores-t
-                                .sponsores-left.comn-p
-                                    p by john doe
-                                .sponsores-right     
-                                    button sponsored
-                        .cell.sponsored 
-                            .sponsores-h.text-left
-                                h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
-                            .sponsores-t.text-left.comn-p
-                                    p by john doe
-
-
-                    #panel2c.tabs-panel
-                        .cell.sponsored 
-                            .sponsores-h.bld.text-left
-                                h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
-                            .sponsores-t
-                                .sponsores-left.comn-p
-                                    p by john doe
-                                .sponsores-right        
-                                    button sponsored
-
-                        .cell.sponsored 
-                            .sponsores-h.text-left
-                                h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
-                            .sponsores-t.text-left.comn-p
+                            .cell.sponsored 
+                                .sponsores-h.bld.text-left
+                                    h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
+                                .sponsores-t
+                                    .sponsores-left.comn-p
+                                        p by john doe
+                                    .sponsores-right     
+                                        button sponsored
+                            .cell.sponsored 
+                                .sponsores-h.text-left
+                                    h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
+                                .sponsores-t.text-left.comn-p
                                     p by john doe
 
-                        .cell.sponsored 
-                            .sponsores-h.text-left
-                                h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
-                            .sponsores-t.text-left.comn-p
-                                    p by john doe
+                        .tab2
+                            .cell.sponsored 
+                                .sponsores-h.bld.text-left
+                                    h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
+                                .sponsores-t
+                                    .sponsores-left.comn-p
+                                        p by john doe
+                                    .sponsores-right        
+                                        button sponsored
 
-                        .cell.sponsored 
-                            .sponsores-h.bld.text-left
-                                h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
-                            .sponsores-t
-                                .sponsores-left.comn-p
-                                    p by john doe
-                                .sponsores-right     
-                                    button sponsored
-                        .cell.sponsored 
-                            .sponsores-h.text-left
-                                h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
-                            .sponsores-t.text-left.comn-p
-                                    p by john doe
-              
+                            .cell.sponsored 
+                                .sponsores-h.text-left
+                                    h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
+                                .sponsores-t.text-left.comn-p
+                                        p by john doe
 
+                            .cell.sponsored 
+                                .sponsores-h.text-left
+                                    h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
+                                .sponsores-t.text-left.comn-p
+                                        p by john doe
 
+                            .cell.sponsored 
+                                .sponsores-h.bld.text-left
+                                    h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
+                                .sponsores-t
+                                    .sponsores-left.comn-p
+                                        p by john doe
+                                    .sponsores-right     
+                                        button sponsored
+                            .cell.sponsored 
+                                .sponsores-h.text-left
+                                    h2 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat 
+                                
             .cell.large-8.heading-right.medium-8
                 .grid-x
                     .cell     

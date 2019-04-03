@@ -32,199 +32,184 @@ html.no-js(lang='en')
                     //- for tabs html
                 .grid-x
                     .cell
-                        ul#example-tabs.tabs(data-tabs='').bg-trans
-                            li.tabs-title.is-active
-                                a(href='#panel1', aria-selected='true') My Interests 
-                                    span 
-                                        | 32
-                            li.tabs-title
-                                a(data-tabs-target='panel2', href='#panel2') My Events
-                                    span 
-                                        | 06
-                            li.tabs-title
-                                a(data-tabs-target='panel3', href='#panel3') Newsletter preferences   
-                                    span 
-                                        | 12  
-                            li.tabs-title
-                                a(data-tabs-target='panel4', href='#panel4') My Purchases 
-                                    span 
-                                        | 06
-                            li.tabs-title
-                                a(data-tabs-target='panel5', href='#panel5') Favourites    
-                                    span 
-                                        | 03 
-                        .tabs-content(data-tabs-content='example-tabs')
+                        .tab
+                            button.tablinks(onclick="openCity(event, 'My-Interests')") My Interests
+                                span 32
+                            button.tablinks(onclick="openCity(event, 'My-Events')") My Events
+                                span 06
+                            button.tablinks(onclick="openCity(event, 'Newsletter')") Newsletter preferences
+                                span 12
+                            button.tablinks(onclick="openCity(event, 'Purchases')") My Purchases
+                                span 06
+                            button.tablinks(onclick="openCity(event, 'Favourites')") Favourites
+                                span 03
+            
                            
-                            //-  tab one my interest
-                            #panel1.tabs-panel.is-active
-                                .interest-padd
-                                    .interest
-                                        p Interested in 
-                                            span 32 topics
-                                    .unsubscribe
-                                        h2 Unsubscribe to all
-                                                                
-                                    .grid-x.checkbox-interest.grid-padding-x.checkbox-media
-                                        
-                                        .cell.large-10.medium-10.text-center.check-center
-                                            each item in [1,2,3,4,5,6,7,8]
-                                                .grid-x
-                                                    each item in [1,2,3,4]
-                                                        .cell.large-3.medium-3.small-6.ckec
-                                                            label.container
-                                                                | Interest name
-                                                                input(type='checkbox', checked='checked')
-                                                                span.checkmark
-
-                                    .explore
-                                        h2 
-                                            span explore 
-                                            | all topics
-                                        
-
-                            //- tab two my event
-                            #panel2.tabs-panel
-                                .interest-padd
-                                    .interest
-                                        p Interested in 
-                                            span 32 topics
-                                    .unsubscribe
-                                        h2 Clear All Events all
-                                                             
-                                .grid-x.checkbox-interest
-                                    .cell.large-1.medium-1
-                                    .cell.large-10.medium-10
-                                        .grid-x.grid-padding-x
-                                            each item in [1,2,3,4,5,6]
-                                                .cell.large-4.medium-4
-                                                    .small-4.columns
-                                                        .image-wrapper.overlay-fade-in.premier
-                                                            img(src='../assets/image/sd.jpg')
-                                                            .image-overlay-content
-                                                                a.button(href='#') 
-                                                                    i.fas.fa-trash-alt 
-                                                                    | remove   
-                                                        .premier-time
-                                                            i.fas.fa-clock
-                                                            p 6:46 A.M &nbsp; &nbsp;&nbsp; MON, JUL 09
-                                                        .premier-p
-                                                            i.fas.fa-map-marker-alt
-                                                            p Santa Barbara
-                                                        .premier-head
-                                                            h2 Heading goes here is is sit th amet, consectetur elit adipiscing 
+                        //-  tab one my interest
+                        #My-Interests.tabcontent
+                            .interest-padd
+                                .interest
+                                    p Interested in 
+                                        span 32 topics
+                                .unsubscribe
+                                    h2 Unsubscribe to all
                                                             
-                                    .cell.large-1.medium-1
+                                .grid-x.checkbox-interest.checkbox-media
+                                    .cell.large-10.medium-12.text-center.check-center
+                                        each item in [1,2,3,4,5,6,7,8]
+                                            .grid-x
+                                                each item in [1,2,3,4]
+                                                    .cell.large-3.medium-3.small-6.ckec
+                                                        label.container
+                                                            | Interest name
+                                                            input(type='checkbox', checked='checked')
+                                                            span.checkmark
 
                                 .explore
                                     h2 
                                         span explore 
-                                        | all events
-                                
+                                        | all topics
+                                    
 
-                            //- tab three news letter preference
-                            #panel3.tabs-panel
-                                .interest-padd
-                                    .interest
-                                        p Interested in 
-                                            span 32 topics
-                                    .unsubscribe
-                                        h2 Unsubscribe to all
-                                                             
-                                .grid-x.checkbox-interest
-                                    .cell.large-1.medium-1
-                                    .cell.large-10.medium-10
-                                        each item,index in [1,2,3]
-                                            .grid-x.grid-padding-x
-                                                .cell.newsletter-name
-                                                    label.container.check-interest
-                                                        | Newsletter name
-                                                        input(type='checkbox', checked='checked')
-                                                        span.checkmark
-                                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                        //- tab two my event
+                        #My-Events.tabcontent
+                            .interest-padd
+                                .interest
+                                    p Interested in 
+                                        span 32 topics
+                                .unsubscribe
+                                    h2 Clear All Events all
+                                                            
+                            .grid-x.checkbox-interest
+                                .cell.large-1.medium-1
+                                .cell.large-10.medium-10
+                                    .grid-x.grid-padding-x
+                                        each item in [1,2,3,4,5,6]
+                                            .cell.large-4.medium-4
+                                                .small-4.columns
+                                                    .image-wrapper.overlay-fade-in.premier
+                                                        img(src='../assets/image/sd.jpg')
+                                                        .image-overlay-content
+                                                            a.button(href='#') 
+                                                                i.fas.fa-trash-alt 
+                                                                | remove   
+                                                    .premier-time
+                                                        i.fas.fa-clock
+                                                        p 6:46 A.M &nbsp; &nbsp;&nbsp; MON, JUL 09
+                                                    .premier-p
+                                                        i.fas.fa-map-marker-alt
+                                                        p Santa Barbara
+                                                    .premier-head
+                                                        h2 Heading goes here is is sit th amet, consectetur elit adipiscing 
+                                                        
                                 .cell.large-1.medium-1
 
-                                .explore
-                                    h2 
-                                        span explore 
-                                        | all newsletters
+                            .explore
+                                h2 
+                                    span explore 
+                                    | all events
+                            
 
+                        //- tab three news letter preference
+                        #Newsletter.tabcontent
+                            .interest-padd
+                                .interest
+                                    p Interested in 
+                                        span 32 topics
+                                .unsubscribe
+                                    h2 Unsubscribe to all
+                                                            
+                            .grid-x.checkbox-interest
+                                .cell.large-1.medium-1
+                                .cell.large-10.medium-10
+                                    each item,index in [1,2,3]
+                                        .grid-x.grid-padding-x
+                                            .cell.newsletter-name
+                                                label.container.check-interest
+                                                    | Newsletter name
+                                                    input(type='checkbox', checked='checked')
+                                                    span.checkmark
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                            .cell.large-1.medium-1
 
-                            //- tab four my purchase
-                            #panel4.tabs-panel
-                                .grid-container
-                                    .grid-x.grid-padding-x
-                                        .cell
-                                            .interest-padd
-                                                .interest
-                                                    p Purchased 
-                                                        span 3 Items
-                                                
-                                                                        
-                                            .grid-x.purchase-main
-                                                .cell.large-2.purchase.medium-2.small-5
-                                                    h2 evant
-                                                    p 29th July 2018
-                                                .cell.large-9.obituary.medium-9.small-7
-                                                    p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque...
-                                                    a(href="#") more details
-                                                .cell.large-1.subscription.medium-1.small-7
-                                                    a(href="#") more details
+                            .explore
+                                h2 
+                                    span explore 
+                                    | all newsletters
 
-                                            .grid-x.purchase-main.purchase-padd
-                                                .cell.large-2.purchase.medium-2.small-5
-                                                    h2 obituary
-                                                    p 29th July 2018
-                                                .cell.large-9.obituary.medium-9.small-7
-                                                    h2 john doe
-                                                    h3 1934 - 2018 
-                                                    p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis
-                                                    a(href="#") more details
+                        //- tab four my purchase
+                        #Purchases.tabcontent
+                            .grid-x.grid-padding-x
+                                .cell.large-12
+                                    .interest-padd
+                                        .interest
+                                            p Purchased 
+                                                span 3 Items
+    
+                                    .grid-x.purchase-main
+                                        .cell.large-2.purchase.medium-2.small-5
+                                            h2 event
+                                            p 29th July 2018
+                                        .cell.large-9.obituary.medium-9.small-7
+                                            p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec suscipit tellus eu sagittis pellentesque...
+                                            a(href="#") more details
+                                        .cell.large-1.subscription.medium-1.small-7
+                                            a(href="#") more details
 
-                                                .cell.large-1.subscription.medium-1
-                                                    a(href="#") more details
-                                            
-                                            .grid-x.purchase-main
-                                                .cell.large-2.purchase.medium-2.small-5
-                                                    h2 subscription
-                                                    p 29th July 2018
-                                                .cell.large-9.obituary.medium-9.small-7
-                                                    p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus
-                                                    a(href="#") more details
-                                                .cell.large-1.subscription.medium-1
-                                                    a(href="#") more details
+                                    .grid-x.purchase-main.purchase-padd
+                                        .cell.large-2.purchase.medium-2.small-5
+                                            h2 obituary
+                                            p 29th July 2018
+                                        .cell.large-9.obituary.medium-9.small-7
+                                            h2 john doe
+                                            h3 1934 - 2018 
+                                            p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis
+                                            a(href="#") more details
 
-                            //- tab five
-                            #panel5.tabs-panel
-                                .interest-padd
-                                    .interest
-                                        p Interested in 
-                                            span 32 topics
-                                    .unsubscribe
-                                        h2 Unsubscribe to all
-                                each itam in [1,2,3]                             
-                                    .grid-x.checkbox-interest.grid-padding-x.remove-bdr
-                                        .cell.large-2.medium-2.small-9.favourites-bg
-                                            img(src="../assets/image/we.jpg", alt="")
+                                        .cell.large-1.subscription.medium-1
+                                            a(href="#") more details
+                                    
+                                    .grid-x.purchase-main
+                                        .cell.large-2.purchase.medium-2.small-5
+                                            h2 subscription
+                                            p 29th July 2018
+                                        .cell.large-9.obituary.medium-9.small-7
+                                            p Event name goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus
+                                            a(href="#") more details
+                                        .cell.large-1.subscription.medium-1
+                                            a(href="#") more details
 
-                                            .cell.large-9.remove-john.medium-8.small-9.remove-hide
-                                                .remove-comn
-                                                    h2 by john doe
-                                                .remove-comn 
-                                                    h3 Heading goes here lorem ipsum dolor sit amet, sectetur   adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat 
-                                                    h4 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec 
+                        //- tab five
+                        #Favourites.tabcontent
+                            .interest-padd
+                                .interest
+                                    p Interested in 
+                                        span 32 topics
+                                .unsubscribe
+                                    h2 Unsubscribe to all
+                            each itam in [1,2,3]                             
+                                .grid-x.checkbox-interest.grid-padding-x.remove-bdr
+                                    .cell.large-2.medium-2.small-9.favourites-bg
+                                        img(src="../assets/image/we.jpg", alt="")
 
-                                            
-                                        .cell.large-9.remove-john.medium-8.small-9.remove-mobile-hide
+                                        .cell.large-9.remove-john.medium-8.small-9.remove-hide
                                             .remove-comn
                                                 h2 by john doe
                                             .remove-comn 
-                                                h3 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat 
+                                                h3 Heading goes here lorem ipsum dolor sit amet, sectetur   adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat 
                                                 h4 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec 
 
-                                        .cell.large-1.text-center.remove-red.medium-2.small-3
-                                            i.far.fa-heart
-                                            h2 remove
+                                        
+                                    .cell.large-9.remove-john.medium-8.small-9.remove-mobile-hide
+                                        .remove-comn
+                                            h2 by john doe
+                                        .remove-comn 
+                                            h3 Heading goes here lorem ipsum dolor sit amet, sectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat 
+                                            h4 Heading goes here lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat metus. Etiam volutpat vehicula turpis, ultricies volutpat metus convallis at. In vitae purus ligula. Donec 
 
+                                    .cell.large-1.text-center.remove-red.medium-2.small-3
+                                        i.far.fa-heart
+                                        h2 remove
         
         include scripts
         include footer

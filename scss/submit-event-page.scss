@@ -52,6 +52,9 @@
         width: 100%;
         border: 1px solid $silver;
     }
+    .event-lables textarea {
+        height: 190px;
+    }
     .event-title {
         padding-top: 20px;
     }
@@ -173,17 +176,14 @@
         top: 3px;
         left: 3px;
         border-radius: 100%;
-        -webkit-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
     [type="radio"]:not(:checked) + label:after {
         opacity: 0;
-        -webkit-transform: scale(0);
         transform: scale(0);
     }
     [type="radio"]:checked + label:after {
         opacity: 1;
-        -webkit-transform: scale(1);
         transform: scale(1);
     }
     // admission open input
@@ -207,7 +207,7 @@
     .admission-input input[type="text"] {
         border-radius: 4px;
     }
-        // drop down scss
+    // drop down scss
     .modal {
         display: none;
         outline: 0;

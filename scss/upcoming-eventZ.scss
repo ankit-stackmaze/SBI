@@ -48,6 +48,7 @@
 }
 .event-dtae-pick {
     margin: 25px 0 0 0;
+    position: relative;
 }
 .create-event {
     margin: 30px 0 0 0;
@@ -64,13 +65,23 @@
 }
 input#datepicker {
     width: 100%;
+    border: none;   
 }
 .ui-datepicker-title {
     color: #990000;
     font-family: roboto;
 }
 span.ui-icon.ui-icon-circle-triangle-e {
-    padding-left: 10px;
+    position: absolute;
+    right: 81px;
+    top: -17px;
+    opacity: 0;
+}
+span.ui-icon.ui-icon-circle-triangle-w {
+    position: absolute;
+    left: -43px;
+    top: -18px;
+    opacity: 0;
 }
 .comn-select select {
     background: #900;
@@ -86,4 +97,14 @@ form.example {
 }
 .event-btn i.fas {
     padding: 0 0 0 30px;
+}
+.event-dtae-pick i.fas.fa-chevron-left {
+    position: absolute;
+    left: -30px;
+    top: 2px;
+}
+.event-dtae-pick i.fas.fa-chevron-right {
+    position: absolute;
+    right: 103px;
+    top: 2px;
 }

@@ -42,5 +42,8 @@
     .date-icon i {
         font-size: 20px;
         color: #000;
+    }   
+    .date-icon i:hover {
+        color: $red;
     }     
 }

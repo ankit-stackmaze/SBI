@@ -5,22 +5,25 @@
                 .comment-heading
                     p comments
                 .comment-numbers
-                    i.far.fa-comment
-                    h5 30
+                    a(href="#")
+                        span.count_comm_thumb
+                            i.far.fa-comment.counter_com_thumb
+
             .respond-post
                 .respond-head
                     h2 Respond to this post
                 .text-area-section
                     textarea
                 .notify-section
-                    input#fruit1(type='checkbox', name='fruit-1', value='Apple')
-                    label(for='fruit1') Notify me about new comments via email
-                    br
-                    input(type='submit', value='post comment', 
-                    )
+                    label.container.check-interest
+                        | Notify me about new comments via email
+                        input(type='checkbox', checked='checked')
+                        span.checkmark
+
+              
                     
                 each item in [1,2]
-                    .comment-john-doe.grid-x
+                    .comment-john-doe.grid-x.main-border-line
                         .comment-jonn-main
                             .comment-img.cell.large-1.medium-1
                                 img(src="../assets/image/rge.png", alt="")
@@ -38,8 +41,9 @@
                                         i.fas.fa-reply 
                                     h1 replay
                                     a(href="#")
-                                        i.far.fa-thumbs-up
-                                    p 55
+                                        span.count_comm_thumb
+                                            i.far.fa-thumbs-up.counter_com_thumb
+                                    
 
                 .comment-john-doe.grid-x.admin
                     .comment-jonn-main
@@ -62,8 +66,8 @@
                                     i.fas.fa-reply 
                                 h1 replay
                                 a(href="#")
-                                    i.far.fa-thumbs-up
-                                p 55
+                                    span.count_comm_thumb
+                                        i.far.fa-thumbs-up.counter_com_thumb
 
                 .comment-john-doe.grid-x.admin-btm
                     .comment-jonn-main
@@ -83,8 +87,8 @@
                                     i.fas.fa-reply 
                                 h1 replay
                                 a(href="#")
-                                    i.far.fa-thumbs-up
-                                p 55
+                                    span.count_comm_thumb
+                                        i.far.fa-thumbs-up.counter_com_thumb
 
                     each item in [1,2,3,4]
                         .comment-john-doe.grid-x.admin-right
@@ -101,10 +105,10 @@
                                     .comment-john-doe-content
                                         p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
                                     .comment-john-doe-response
-                                        a(href="#") 
-                                            i.far.fa-thumbs-up
-                                        h5 55
-                    
+                                        a(href="#")
+                                            span.count_comm_thumb
+                                                i.far.fa-thumbs-up.counter_com_thumb
+                            
 
                 each item in [1,2,3,4]
                     .comment-john-doe.grid-x.admin-btm
@@ -125,8 +129,8 @@
                                         i.fas.fa-reply 
                                     h1 replay
                                     a(href="#")
-                                        i.far.fa-thumbs-up
-                                    p 55
+                                        span.count_comm_thumb
+                                            i.far.fa-thumbs-up.counter_com_thumb
             .comment-john-doe.grid-x
                 .comment-jonn-main
                     .comment-img.cell.large-1.medium-1
@@ -145,8 +149,8 @@
                                 i.fas.fa-reply 
                             h1 replay
                             a(href="#")
-                                i.far.fa-thumbs-up
-                            h6 55
+                                span.count_comm_thumb
+                                    i.far.fa-thumbs-up.counter_com_thumb
                             
                         .respond-post
                             .respond-head.respond-head-last
@@ -154,12 +158,11 @@
                             .text-area-section
                                 textarea
                             .notify-section
-                                input#fruit1(type='checkbox', name='fruit-1', value='Apple')
-                                label(for='fruit1') Notify me about new comments via email
-                                br
-                                input(type='submit', value='post reply', 
-                                )
-                                button(type='cancel', value='cancel') cancel
+                                label.container.check-interest
+                                    | Notify me about new comments via email
+                                    input(type='checkbox', checked='')
+                                    span.checkmark
+                                
 
             each item in [1,2]
                 .comment-john-doe.grid-x
@@ -180,5 +183,5 @@
                                     i.fas.fa-reply 
                                 h1 replay
                                 a(href="#")
-                                    i.far.fa-thumbs-up
-                                p 55
+                                    span.count_comm_thumb
+                                        i.far.fa-thumbs-up.counter_com_thumb

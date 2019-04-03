@@ -123,8 +123,8 @@
   }
   .cell.newsletter-name {
     padding-bottom: 25px;
-}
-
+  }
+  
   // news letter check box scss
   .v-checkbox {
     border: 0 none transparent;
@@ -254,35 +254,12 @@
     position: relative;
   }
   // TABS SCSS 
-  a#panel1-label span {
+  .tablinks span {
     color: #fff;
     background: $red;
     border-radius: 50%;
     padding: 5px;
- }
-  a#panel2-label span {
-    color: #fff;
-    background: $red;
-    border-radius: 50%;
-    padding: 5px;
-  }
-  a#panel3-label span {
-    color: #fff;
-    background: $red;
-    border-radius: 50%;
-    padding: 5px;
-  }
-  a#panel4-label span {
-    color: #fff;
-    background: $red;
-    border-radius: 50%;
-    padding: 5px;
-  }
-  a#panel5-label span {
-    color: #fff;
-    background: $red;
-    border-radius: 50%;
-    padding: 5px;
+    margin-left: 5px;
   }
   .tabs-title>a {
     font-size: 14px;
@@ -291,12 +268,7 @@
     background: #FFFFFF;
     color: #000;
   }
-  ul#example-tabs {
-    width: 800px;
-    position: absolute;
-    top: 415px;
-    right: 0;
-  }
+  
   .tabs-panel.is-active {
     box-shadow: 0px 3px 13px 12px #fefcfcdb;
   }
@@ -458,5 +430,48 @@
   }
   .tabs-title>a {
     padding: 1.25rem 0.9rem;
- }
+  }  
+
+  // tabs scss
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    background-color: transparent;
+    position: absolute;
+    top: 418px;
+    right: 0;
+  }
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 14px;
+    border-radius: 4px 4px 0 0;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #fff;
+    color: #000;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background: #fff;
+  }
 }

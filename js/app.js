@@ -77,14 +77,22 @@ function uploadFile(file, i) {
       // Error. Inform the user
     }
   })
-
-  // formData.append('upload_preset', 'ujpu6gyk')
-  // formData.append('file', file)
-  // xhr.send(formData)
 }
 
-
-
+// my account page tabs
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 
 // FOR TOOGLE MENU in home page
 function openNav() {
@@ -389,60 +397,63 @@ jQuery(document).ready(function($) {
 		$modal.fadeIn();
 	};
 });
-//-tabing slider for 
-$('.tabing').slick({
-  lazyLoad: 'ondemand',
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplaySpeed: 2000,
-  arrows:false,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        centerMode: true,
-        infinite: true,
- 
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        centerMode: true,
-        slidesToScroll: 1,
- 
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        centerMode: true,
-        slidesToScroll: 1,
- 
-      }
-    }
-  ]
- });
 
 // jump section scss about us page
+$(document).ready(function() {
+  $('a[href*=#]').bind('click', function(e) {
+      e.preventDefault(); // prevent hard jump, the default behavior
 
-// function scrollNav() {
-//   $('.nav a').click(function(){  
-//     //Toggle Class
-//     $(".active").removeClass("active");      
-//     $(this).closest('li').addClass("active");
-//     var theClass = $(this).attr("class");
-//     $('.'+theClass).parent('li').addClass('active');
-//     //Animate
-//     $('html, body').stop().animate({
-//         scrollTop: $( $(this).attr('href') ).offset().top - 160
-//     }, 400);
-//     return false;
-//   });
-//   $('.scrollTop a').scrollTop();
-// }
-// scrollNav();
+      var target = $(this).attr("href"); // Set the target as variable
+
+      // perform animated scrolling by getting top-position of target-element and set it as scroll target
+      $('html, body').stop().animate({
+          scrollTop: $(target).offset().top
+      }, 600, function() {
+          location.hash = target; //attach the hash (#jumptarget) to the pageurl
+      });
+
+      return false;
+  });
+});
+
+$(window).scroll(function() {
+  var scrollDistance = $(window).scrollTop();
+
+  // Assign active class to nav links while scolling
+  $('.page-section').each(function(i) {
+      if ($(this).position().top <= scrollDistance) {
+          $('.navigation a.active').removeClass('active');
+          $('.navigation a').eq(i).addClass('active');
+      }
+  });
+}).scroll();
+
+// sticky head from about us page
+
+var header = document.getElementById("myHeader");
+if (header){
+  var sticky = header.offsetTop;
+  window.onscroll = function() {myFunction()};
+}
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+
+// var sidebar = $('myHeader');
+// var nav = sidebar.find('nav');
+// var navWidth = nav.width();
+
+// $(window).scroll(function() {
+//   if($(this).scrollTop() > sidebar.offset().top) {
+//     nav.css({position: 'fixed', width: navWidth});
+//   } else {
+//     nav.css({position: 'relative', top: 0});
+//   }
+// });

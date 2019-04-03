@@ -44,9 +44,13 @@ html.no-js(lang='en')
                                                 p Select features that you want to subscibe to
                                             .daily-news-feature
                                                 each item in [1,2,3,4,5]
-                                                    form
-                                                        input(type='checkbox', name='featuer', value='feature')
-                                                        p  Feature name goes here     
+                                                    label.container.check-interest
+                                                        | Feature name goes here 
+                                                        input(type='checkbox', checked='checked')
+                                                        span.checkmark
+                                                    //- form
+                                                    //-     input(type='checkbox', name='featuer', value='feature')
+                                                    //-     p  Feature name goes here     
 
                                     .cell.large-6.medium-6.newsletter-order-second
                                         .daily-news-bg(style="background-image: url(../assets/image/hdf.jpg)")
@@ -61,9 +65,10 @@ html.no-js(lang='en')
                                                 p Select features that you want to subscibe to
                                             .daily-news-feature
                                                 each item in [1,2,3,4,5]
-                                                    form
-                                                        input(type='checkbox',id=check-box name='featuer', value='feature')
-                                                        p  Feature name goes here     
+                                                    label.container.check-interest
+                                                        | Feature name goes here 
+                                                        input(type='checkbox', checked='checked')
+                                                        span.checkmark     
                               
                             .grid-x.daily-sub-bdr
                                 .cell.signup-subscription

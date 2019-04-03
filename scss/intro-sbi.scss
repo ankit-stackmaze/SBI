@@ -1,4 +1,9 @@
 #intro-sbi {
+    position: fixed;
+    top: 410px;
+    width: 300px;
+    background: #DDDDDD;
+    z-index: 111;
     .intro-sbi a {
         font-size: 14px;
         font-weight: 600;
@@ -15,6 +20,4 @@
     .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
         border-color: #990000 transparent transparent;
     }
-    
-    
 }
